@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Keystion</title>
+  <subtitle>前端技术博客</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://blog.webclown.net/"/>
+  <updated>2016-05-12T13:56:03.000Z</updated>
+  <id>http://blog.webclown.net/</id>
+  
+  <author>
+    <name>Keystion</name>
+    <email>i@webclown.net</email>
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Git-常用命令</title>
+    <link href="http://blog.webclown.net/2015/04/14/Git-%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
+    <id>http://blog.webclown.net/2015/04/14/Git-常用命令/</id>
+    <published>2015-04-14T12:23:03.000Z</published>
+    <updated>2016-05-12T13:56:03.000Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;develop-via-a-single-branch&quot;&gt;&lt;a href=&quot;#develop-via-a-single-branch&quot; class=&quot;headerlink&quot; title=&quot;develop via a single branch&quot;&gt;&lt;/a&gt;develop via a single branch&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1. git branch -m &amp;#123;&amp;#123;branch&amp;#125;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2. git fetch origin&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3. git rebase origin/master -i&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4. git push origin &amp;#123;&amp;#123;branch&amp;#125;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&quot;create-a-new-branch&quot;&gt;&lt;a href=&quot;#create-a-new-branch&quot; class=&quot;headerlink&quot; title=&quot;create a new branch&quot;&gt;&lt;/a&gt;create a new branch&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1. git checkout -b &amp;#123;&amp;#123;branch&amp;#125;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&quot;checkout-remote-branch&quot;&gt;&lt;a href=&quot;#checkout-remote-branch&quot; class=&quot;headerlink&quot; title=&quot;checkout remote branch&quot;&gt;&lt;/a&gt;checkout remote branch&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1. git checkout -b &amp;#123;&amp;#123;branch&amp;#125;&amp;#125; origin/&amp;#123;&amp;#123;branch&amp;#125;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&quot;merge-branch-to-master&quot;&gt;&lt;a href=&quot;#merge-branch-to-master&quot; class=&quot;headerlink&quot; title=&quot;merge branch to master&quot;&gt;&lt;/a&gt;merge branch to master&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1. git checkout master&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2. git merge &amp;#123;&amp;#123;branch&amp;#125;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&quot;delete-branch&quot;&gt;&lt;a href=&quot;#delete-branch&quot; class=&quot;headerlink&quot; title=&quot;delete branch&quot;&gt;&lt;/a&gt;delete branch&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1. git branch -D &amp;#123;&amp;#123;localBranch&amp;#125;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2. git push --delete origin &amp;#123;&amp;#123;remoteBranch&amp;#125;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&quot;rename-repo&quot;&gt;&lt;a href=&quot;#rename-repo&quot; class=&quot;headerlink&quot; title=&quot;rename repo&quot;&gt;&lt;/a&gt;rename repo&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1. git remote -v&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2. // View existing remotes&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3. // origin  https://github.com/user/repo.git (fetch)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4. // origin  https://github.com/user/repo.git (push)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5. &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6. git remote set-url origin https://github.com/user/repo2.git&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7. // Change the &amp;apos;origin&amp;apos; remote&amp;apos;s URL&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&quot;add-tag&quot;&gt;&lt;a href=&quot;#add-tag&quot; class=&quot;headerlink&quot; title=&quot;add tag&quot;&gt;&lt;/a&gt;add tag&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1. git tag &amp;#123;&amp;#123;tag&amp;#125;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2. git push --tags&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&quot;add-tag-for-a-history-commit&quot;&gt;&lt;a href=&quot;#add-tag-for-a-history-commit&quot; class=&quot;headerlink&quot; title=&quot;add tag for a history commit&quot;&gt;&lt;/a&gt;add tag for a history commit&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1. // Set the HEAD to the old commit that we want to tag&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2. git checkout &amp;#123;&amp;#123;leading 7 chars of commit&amp;#125;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3. &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4. // temporarily set the date to the date of the HEAD commit, and add the tag&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5. GIT_COMMITTER_DATE=&amp;quot;$(git show --format=%aD | head -1)&amp;quot; git tag -a &amp;#123;&amp;#123;tag&amp;#125;&amp;#125; -m &amp;quot;&amp;#123;&amp;#123;commit message&amp;#125;&amp;#125;&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6. &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7. // set HEAD back to whatever you want it to be&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8. git checkout master&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9. &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10. git push --tags&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&quot;delete-tag&quot;&gt;&lt;a href=&quot;#delete-tag&quot; class=&quot;headerlink&quot; title=&quot;delete tag&quot;&gt;&lt;/a&gt;delete tag&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1. git tag --delete &amp;#123;&amp;#123;tag&amp;#125;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2. git push --delete origin &amp;#123;&amp;#123;tag&amp;#125;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&quot;gh-pages&quot;&gt;&lt;a href=&quot;#gh-pages&quot; class=&quot;headerlink&quot; title=&quot;gh-pages&quot;&gt;&lt;/a&gt;gh-pages&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1. http://&amp;#123;&amp;#123;group&amp;#125;&amp;#125;.github.io/&amp;#123;&amp;#123;repo&amp;#125;&amp;#125;/&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&quot;npm-add-owner&quot;&gt;&lt;a href=&quot;#npm-add-owner&quot; class=&quot;headerlink&quot; title=&quot;npm add owner&quot;&gt;&lt;/a&gt;npm add owner&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1. npm owner add &amp;#123;&amp;#123;name&amp;#125;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;Source：&lt;a href=&quot;https://github.com/fool2fish/blog/issues/9&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;fool2fish&lt;/a&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;develop-via-a-single-branch&quot;&gt;&lt;a href=&quot;#develop-via-a-single-branch&quot; class=&quot;headerlink&quot; title=&quot;develop via a single branch&quot;&gt;&lt;/a&gt;devel
+    
+    </summary>
+    
+      <category term="工具&平台" scheme="http://blog.webclown.net/categories/%E5%B7%A5%E5%85%B7-%E5%B9%B3%E5%8F%B0/"/>
+    
+    
+      <category term="git" scheme="http://blog.webclown.net/tags/git/"/>
+    
+      <category term="gh-pages" scheme="http://blog.webclown.net/tags/gh-pages/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>PSD图层管理指南</title>
+    <link href="http://blog.webclown.net/2015/04/14/PSD%E5%9B%BE%E5%B1%82%E7%AE%A1%E7%90%86%E6%8C%87%E5%8D%97/"/>
+    <id>http://blog.webclown.net/2015/04/14/PSD图层管理指南/</id>
+    <published>2015-04-14T10:41:21.000Z</published>
+    <updated>2016-05-12T13:54:17.000Z</updated>
+    
+    <content type="html">&lt;p&gt;PS图层命名和分组看似麻烦，会打断设计的兴致，但是当图层多得自己都找不到时就知道好处了。科学有调理的管理你的PSD既是一名优秀设计师的必备技能，也是设计师跟上下游同事打交道的礼仪准则。和你的基友协同工作的过程中，可以说对PSD图层的命名和管理是最大的冲突所在，一堆不知所云的“新建图层”和“图层1副本”只会让基友抓狂！&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;图层管理的精髓在于：分组、链接和命名。&lt;/li&gt;
+&lt;li&gt;合理使用图层分组（图层文件夹）。以UI组件、功能模块等为分组基准，图层分组可以更快地看清楚整个文件的架构，并且可以很快的找到想要的那一层。&lt;/li&gt;
+&lt;li&gt;善用链接，把关联紧密的图层相互链接，这样能保持相对位置、大小不变。就像人的脖子和头是一个整体，相互连在一起的&lt;/li&gt;
+&lt;li&gt;每个分组以及分组外的每个图层都必须命名，且是有意义的命名，像“图层1、副本、副本2、组3”这样的图层命名是严格禁止的，养成新建图层后第一件事就是命名的习惯。图层命名中英文均可。&lt;/li&gt;
+&lt;li&gt;icon与按钮。icon命名以&lt;code&gt;icon-&lt;/code&gt;为前缀，按钮命名以&lt;code&gt;btn-&lt;/code&gt;，例如：&lt;code&gt;icon-close.png&lt;/code&gt;, &lt;code&gt;btn-login.png&lt;/code&gt; , &lt;code&gt;btn-login-hover.png&lt;/code&gt;。&lt;/li&gt;
+&lt;li&gt;删除不必要的图层。你是一个图层堆积狂吗？PSD在交付给前端之前，请删除不必要的图层。&lt;/li&gt;
+&lt;li&gt;文本图层不要合并或格式化，方便修改及前端同事复制文本内容。&lt;/li&gt;
+&lt;li&gt;纯色文本不要使用颜色叠加进行配色，请使用文字工具进行配色。&lt;/li&gt;
+&lt;li&gt;字体的字号必须是整数，不要随意拉伸字体。除了会使字体变得难看模糊之外， HTML/CSS也无法实现这种效果。&lt;/li&gt;
+&lt;li&gt;中大型、长期项目需要提供至少两份附件：1、所有icon与按钮（各种状态）的集合；2、设计稿配色标注，可使用“设计稿配色标注”工具。&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;PS图层命名和分组看似麻烦，会打断设计的兴致，但是当图层多得自己都找不到时就知道好处了。科学有调理的管理你的PSD既是一名优秀设计师的必备技能，也是设计师跟上下游同事打交道的礼仪准则。和你的基友协同工作的过程中，可以说对PSD图层的命名和管理是最大的冲突所在，一堆不知所云的
+    
+    </summary>
+    
+      <category term="交互设计" scheme="http://blog.webclown.net/categories/%E4%BA%A4%E4%BA%92%E8%AE%BE%E8%AE%A1/"/>
+    
+    
+      <category term="Photoshop" scheme="http://blog.webclown.net/tags/Photoshop/"/>
+    
+      <category term="图层" scheme="http://blog.webclown.net/tags/%E5%9B%BE%E5%B1%82/"/>
+    
+  </entry>
+  
+</feed>
