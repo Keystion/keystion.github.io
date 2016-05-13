@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.webclown.net/"/>
-  <updated>2016-05-13T00:45:49.000Z</updated>
+  <updated>2016-05-13T11:06:39.000Z</updated>
   <id>http://blog.webclown.net/</id>
   
   <author>
@@ -14,6 +14,134 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>watch&amp;figlet</title>
+    <link href="http://blog.webclown.net/2016/05/13/watch-figlet/"/>
+    <id>http://blog.webclown.net/2016/05/13/watch-figlet/</id>
+    <published>2016-05-13T10:58:45.000Z</published>
+    <updated>2016-05-13T11:06:39.000Z</updated>
+    
+    <content type="html">&lt;h4 id=&quot;安装-watch&quot;&gt;&lt;a href=&quot;#安装-watch&quot; class=&quot;headerlink&quot; title=&quot;安装 watch&quot;&gt;&lt;/a&gt;安装 &lt;code&gt;watch&lt;/code&gt;&lt;/h4&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ sudo brew install watch&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;code&gt;iTerm or Terminal（终端）&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;示例代码&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ watch -t -n1 &amp;quot;date&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2016    3 29        20  33 54   CST&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;watch &amp;amp;&amp;amp; &lt;a href=&quot;/2016/05/13/figlet/&quot;&gt;figlet&lt;/a&gt;&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ watch -t -n1 &amp;quot;date +%T|figlet -f banner&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; #####    ###    #   #####  #        #  #        #####&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;#     #  #   #  ### #     # #    #  ### #    #  #     #&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      # #     #  #        # #    #   #  #    #  #     #&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; #####  #     #      #####  #    #      #    #   ######&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;#       #     #  #        # #######  #  #######       #&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;#        #   #  ### #     #      #  ###      #  #     #&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;#######   ###    #   #####       #   #       #   #####&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://brew.sh/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Homebrew&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h4 id=&quot;安装-watch&quot;&gt;&lt;a href=&quot;#安装-watch&quot; class=&quot;headerlink&quot; title=&quot;安装 watch&quot;&gt;&lt;/a&gt;安装 &lt;code&gt;watch&lt;/code&gt;&lt;/h4&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ sudo brew install watch&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;code&gt;iTerm or Terminal（终端）&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;示例代码&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ watch -t -n1 &amp;quot;date&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2016    3 29        20  33 54   CST&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;watch &amp;amp;&amp;amp; &lt;a href=&quot;/2016/05/13/figlet/&quot;&gt;figlet&lt;/a&gt;&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ watch -t -n1 &amp;quot;date +%T|figlet -f banner&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; #####    ###    #   #####  #        #  #        #####&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;#     #  #   #  ### #     # #    #  ### #    #  #     #&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      # #     #  #        # #    #   #  #    #  #     #&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; #####  #     #      #####  #    #      #    #   ######&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;#       #     #  #        # #######  #  #######       #&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;#        #   #  ### #     #      #  ###      #  #     #&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;#######   ###    #   #####       #   #       #   #####&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+      <category term="工具&平台" scheme="http://blog.webclown.net/categories/%E5%B7%A5%E5%85%B7-%E5%B9%B3%E5%8F%B0/"/>
+    
+    
+      <category term="figlet" scheme="http://blog.webclown.net/tags/figlet/"/>
+    
+      <category term="brew" scheme="http://blog.webclown.net/tags/brew/"/>
+    
+      <category term="watch" scheme="http://blog.webclown.net/tags/watch/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>figlet</title>
+    <link href="http://blog.webclown.net/2016/05/13/figlet/"/>
+    <id>http://blog.webclown.net/2016/05/13/figlet/</id>
+    <published>2016-05-13T10:39:43.000Z</published>
+    <updated>2016-05-13T10:59:14.000Z</updated>
+    
+    <content type="html">&lt;h4 id=&quot;安装-figlet&quot;&gt;&lt;a href=&quot;#安装-figlet&quot; class=&quot;headerlink&quot; title=&quot;安装 figlet&quot;&gt;&lt;/a&gt;安装 &lt;code&gt;figlet&lt;/code&gt;&lt;/h4&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ sudo brew install figlet&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;code&gt;iTerm or Terminal（终端）&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;示例代码&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ figlet &amp;quot;webclown&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;              _          _&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;__      _____| |__   ___| | _____      ___ __&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;\ \ /\ / / _ \ &amp;apos;_ \ / __| |/ _ \ \ /\ / / &amp;apos;_ \&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; \ V  V /  __/ |_) | (__| | (_) \ V  V /| | | |&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  \_/\_/ \___|_.__/ \___|_|\___/ \_/\_/ |_| |_|&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;设置字体&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ figlet -f tinker-toy &amp;quot;W e b c l o w n&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;o       o             o                 o&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;|       |             |                 |&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;o   o   o     o-o     O-o       o-o     |     o-o     o   o   o    o-o&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; \ / \ /      |-&amp;apos;     |  |     |        |     | |      \ / \ /     |  |&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  o   o       o-o     o-o       o-o     o     o-o       o   o      o  o&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://brew.sh/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Homebrew&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;Wiki&quot;&gt;&lt;a href=&quot;#Wiki&quot; class=&quot;headerlink&quot; title=&quot;Wiki&quot;&gt;&lt;/a&gt;Wiki&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.figlet.org/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.figlet.org/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h4 id=&quot;安装-figlet&quot;&gt;&lt;a href=&quot;#安装-figlet&quot; class=&quot;headerlink&quot; title=&quot;安装 figlet&quot;&gt;&lt;/a&gt;安装 &lt;code&gt;figlet&lt;/code&gt;&lt;/h4&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ sudo brew install figlet&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;code&gt;iTerm or Terminal（终端）&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;示例代码&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ figlet &amp;quot;webclown&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;              _          _&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;__      _____| |__   ___| | _____      ___ __&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;\ \ /\ / / _ \ &amp;apos;_ \ / __| |/ _ \ \ /\ / / &amp;apos;_ \&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; \ V  V /  __/ |_) | (__| | (_) \ V  V /| | | |&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  \_/\_/ \___|_.__/ \___|_|\___/ \_/\_/ |_| |_|&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;设置字体&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ figlet -f tinker-toy &amp;quot;W e b c l o w n&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;o       o             o                 o&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;|       |             |                 |&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;o   o   o     o-o     O-o       o-o     |     o-o     o   o   o    o-o&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; \ / \ /      |-&amp;apos;     |  |     |        |     | |      \ / \ /     |  |&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  o   o       o-o     o-o       o-o     o     o-o       o   o      o  o&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+      <category term="工具&平台" scheme="http://blog.webclown.net/categories/%E5%B7%A5%E5%85%B7-%E5%B9%B3%E5%8F%B0/"/>
+    
+    
+      <category term="figlet" scheme="http://blog.webclown.net/tags/figlet/"/>
+    
+      <category term="brew" scheme="http://blog.webclown.net/tags/brew/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>通过wget下载网站</title>
+    <link href="http://blog.webclown.net/2016/05/13/%E9%80%9A%E8%BF%87wget%E4%B8%8B%E8%BD%BD%E7%BD%91%E7%AB%99/"/>
+    <id>http://blog.webclown.net/2016/05/13/通过wget下载网站/</id>
+    <published>2016-05-13T09:56:00.000Z</published>
+    <updated>2016-05-13T10:26:53.000Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;通过wget下载一个网站&quot;&gt;&lt;a href=&quot;#通过wget下载一个网站&quot; class=&quot;headerlink&quot; title=&quot;通过wget下载一个网站&quot;&gt;&lt;/a&gt;通过wget下载一个网站&lt;/h2&gt;&lt;p&gt;工具&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;iTerm&lt;/code&gt; or &lt;code&gt;Terminal（终端）&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;示例代码&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;wget -r -p -np -k --restrict-file-names=nocontrol [url]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h4 id=&quot;如何在电脑上安装wget&quot;&gt;&lt;a href=&quot;#如何在电脑上安装wget&quot; class=&quot;headerlink&quot; title=&quot;如何在电脑上安装wget&quot;&gt;&lt;/a&gt;如何在电脑上安装wget&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://brew.sh/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Homebrew&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h4 id=&quot;简单的-shell-脚本&quot;&gt;&lt;a href=&quot;#简单的-shell-脚本&quot; class=&quot;headerlink&quot; title=&quot;简单的 shell 脚本&quot;&gt;&lt;/a&gt;简单的 shell 脚本&lt;/h4&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/Keystion/littletool/blob/master/wget.sh&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;wget.sh&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;put it in &lt;code&gt;/Users/$user&lt;/code&gt;&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;chmod -x wget.sh // Writable&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;./wget [url] // Any directory&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h4 id=&quot;Wiki&quot;&gt;&lt;a href=&quot;#Wiki&quot; class=&quot;headerlink&quot; title=&quot;Wiki&quot;&gt;&lt;/a&gt;Wiki&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Wget&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://en.wikipedia.org/wiki/Wget&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://wiki.ubuntuusers.de/wget/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://wiki.ubuntuusers.de/wget/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;通过wget下载一个网站&quot;&gt;&lt;a href=&quot;#通过wget下载一个网站&quot; class=&quot;headerlink&quot; title=&quot;通过wget下载一个网站&quot;&gt;&lt;/a&gt;通过wget下载一个网站&lt;/h2&gt;&lt;p&gt;工具&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;iTerm&lt;/code&gt; or &lt;code&gt;Terminal（终端）&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;示例代码&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;wget -r -p -np -k --restrict-file-names=nocontrol [url]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h4 id=&quot;如何在电脑上安装wget&quot;&gt;&lt;a href=&quot;#如何在电脑上安装wget&quot; class=&quot;headerlink&quot; title=&quot;如何在电脑上安装wget&quot;&gt;&lt;/a&gt;如何在电脑上安装wget&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://brew.sh/&quot;&gt;Homebrew&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="工具&平台" scheme="http://blog.webclown.net/categories/%E5%B7%A5%E5%85%B7-%E5%B9%B3%E5%8F%B0/"/>
+    
+    
+      <category term="wget" scheme="http://blog.webclown.net/tags/wget/"/>
+    
+      <category term="shell" scheme="http://blog.webclown.net/tags/shell/"/>
+    
+  </entry>
   
   <entry>
     <title>Git-常用命令</title>
