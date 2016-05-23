@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.webclown.net/"/>
-  <updated>2016-05-23T09:16:45.000Z</updated>
+  <updated>2016-05-23T09:21:24.000Z</updated>
   <id>http://blog.webclown.net/</id>
   
   <author>
@@ -14,6 +14,96 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>扯淡小分队【第N+回】</title>
+    <link href="http://blog.webclown.net/2016/05/22/%E6%89%AF%E6%B7%A1%E5%B0%8F%E5%88%86%E9%98%9F%E3%80%90%E7%AC%AC%E4%B8%80%E5%9B%9E%E3%80%91/"/>
+    <id>http://blog.webclown.net/2016/05/22/扯淡小分队【第一回】/</id>
+    <published>2016-05-22T15:40:04.000Z</published>
+    <updated>2016-05-23T09:21:24.000Z</updated>
+    
+    <content type="html">&lt;p&gt;为什么是第N+回呢，因为之前有好几回了，也不知道具体几回，记忆模糊所以就叫N+了（&lt;code&gt;好记忆不如烂笔头，所以就想记下来&lt;/code&gt;）&lt;/p&gt;
+&lt;h3 id=&quot;时间地点人物事件&quot;&gt;&lt;a href=&quot;#时间地点人物事件&quot; class=&quot;headerlink&quot; title=&quot;时间地点人物事件&quot;&gt;&lt;/a&gt;时间地点人物事件&lt;/h3&gt;&lt;p&gt;时间：&lt;code&gt;2016-05-23&lt;/code&gt;&lt;br&gt;地点：&lt;a href=&quot;http://www.dianping.com/shop/5338294&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;七年咖啡&lt;/a&gt; &lt;a href=&quot;http://www.dianping.com/shop/9966067&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;老北京前后涮羊肉(和平里店)&lt;/a&gt;&lt;br&gt;人物：&lt;a href=&quot;http://weibo.com/downmv&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;旭旭&lt;/a&gt;、&lt;a href=&quot;http://weibo.com/u/2280890141&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;苗神&lt;/a&gt;、&lt;a href=&quot;http://weibo.com/u/1995035333&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;教授&lt;/a&gt; 和 &lt;a href=&quot;http://weibo.com/444357767&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;我&lt;/a&gt;&lt;br&gt;事件：周末约吗&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;我们的扯淡小分队又聚会了；聚会目的是什么呢，说白了就是扯扯大家近况。旭旭刚从日本团建回来，给我们带来一些【Made in Japan】的小点心，然后我们就愉快的决定周六聚聚😄（吃货联盟）。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;先来张美图：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/posts/2016/05-22/02.jpg&quot; alt=&quot;小点心&quot;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;简单的JavaScript异步之setTimeout（ES5）&quot;&gt;&lt;a href=&quot;#简单的JavaScript异步之setTimeout（ES5）&quot; class=&quot;headerlink&quot; title=&quot;简单的JavaScript异步之setTimeout（ES5）&quot;&gt;&lt;/a&gt;简单的JavaScript异步之setTimeout（ES5）&lt;/h3&gt;&lt;p&gt;猜想下会打印什么东西来；&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;代码:&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;for (var i = 0; i &amp;lt; 10; i++) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    setTimeout(function() &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        console.log(i);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;, 0);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;blockquote&gt;
+&lt;p&gt;预览：&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;p&gt;&lt;img src=&quot;/images/posts/2016/05-22/setTimeout_1.gif&quot; alt=&quot;setTimeout预览&quot;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;简单的解释：&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;/images/posts/2016/05-22/setTimeout_2.jpg&quot; alt=&quot;setTimeout解释&quot;&gt;&lt;/p&gt;
+&lt;p&gt;嗯，就这些。&lt;/p&gt;
+&lt;h4 id=&quot;拓展-通过作用域来输出0-9&quot;&gt;&lt;a href=&quot;#拓展-通过作用域来输出0-9&quot; class=&quot;headerlink&quot; title=&quot;拓展 通过作用域来输出0-9&quot;&gt;&lt;/a&gt;拓展 通过作用域来输出0-9&lt;/h4&gt;&lt;p&gt;1） 可用ES5函数作用域；&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;for (var i = 0; i &amp;lt; 10; i++) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    (function (i) &amp;#123; // 作用域&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        setTimeout(function() &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            console.log(i);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#125;, 0);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;)(i);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;2） &lt;a href=&quot;http://es6.ruanyifeng.com/#docs/let#ES6的块级作用域&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;ES6的块级作用域&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;把&lt;code&gt;var&lt;/code&gt;换成&lt;code&gt;let&lt;/code&gt;&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;for (let i = 0; i &amp;lt; 10; i++) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    setTimeout(function() &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        console.log(i);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;, 0);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h4 id=&quot;图片集咯&quot;&gt;&lt;a href=&quot;#图片集咯&quot; class=&quot;headerlink&quot; title=&quot;图片集咯&quot;&gt;&lt;/a&gt;图片集咯&lt;/h4&gt;&lt;blockquote&gt;
+&lt;p&gt;七年咖啡Desk&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;/images/posts/2016/05-22/01.jpg&quot; alt=&quot;七年咖啡Desk&quot;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;小点心 （巧克力&amp;amp;&amp;amp;杏仁饼干）&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;/images/posts/2016/05-22/02.jpg&quot; alt=&quot;七年咖啡desk&quot;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;老北京前后涮羊肉的火锅&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;/images/posts/2016/05-22/03.jpg&quot; alt=&quot;老北京前后涮羊肉的火锅&quot;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;未完待续……&lt;/p&gt;
+&lt;hr&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;为什么是第N+回呢，因为之前有好几回了，也不知道具体几回，记忆模糊所以就叫N+了（&lt;code&gt;好记忆不如烂笔头，所以就想记下来&lt;/code&gt;）&lt;/p&gt;
+&lt;h3 id=&quot;时间地点人物事件&quot;&gt;&lt;a href=&quot;#时间地点人物事件&quot; class=&quot;headerlink&quot; title=&quot;时间地点人物事件&quot;&gt;&lt;/a&gt;时间地点人物事件&lt;/h3&gt;&lt;p&gt;时间：&lt;code&gt;2016-05-23&lt;/code&gt;&lt;br&gt;地点：&lt;a href=&quot;http://www.dianping.com/shop/5338294&quot;&gt;七年咖啡&lt;/a&gt; &lt;a href=&quot;http://www.dianping.com/shop/9966067&quot;&gt;老北京前后涮羊肉(和平里店)&lt;/a&gt;&lt;br&gt;人物：&lt;a href=&quot;http://weibo.com/downmv&quot;&gt;旭旭&lt;/a&gt;、&lt;a href=&quot;http://weibo.com/u/2280890141&quot;&gt;苗神&lt;/a&gt;、&lt;a href=&quot;http://weibo.com/u/1995035333&quot;&gt;教授&lt;/a&gt; 和 &lt;a href=&quot;http://weibo.com/444357767&quot;&gt;我&lt;/a&gt;&lt;br&gt;事件：周末约吗&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;我们的扯淡小分队又聚会了；聚会目的是什么呢，说白了就是扯扯大家近况。旭旭刚从日本团建回来，给我们带来一些【Made in Japan】的小点心，然后我们就愉快的决定周六聚聚😄（吃货联盟）。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;先来张美图：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/posts/2016/05-22/02.jpg&quot; alt=&quot;小点心&quot;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;简单的JavaScript异步之setTimeout（ES5）&quot;&gt;&lt;a href=&quot;#简单的JavaScript异步之setTimeout（ES5）&quot; class=&quot;headerlink&quot; title=&quot;简单的JavaScript异步之setTimeout（ES5）&quot;&gt;&lt;/a&gt;简单的JavaScript异步之setTimeout（ES5）&lt;/h3&gt;&lt;p&gt;猜想下会打印什么东西来；&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;代码:&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;for (var i = 0; i &amp;lt; 10; i++) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    setTimeout(function() &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        console.log(i);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;, 0);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;blockquote&gt;
+&lt;p&gt;预览：&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="扯淡小分队" scheme="http://blog.webclown.net/categories/%E6%89%AF%E6%B7%A1%E5%B0%8F%E5%88%86%E9%98%9F/"/>
+    
+    
+      <category term="Javascript" scheme="http://blog.webclown.net/tags/Javascript/"/>
+    
+      <category term="setTimeout" scheme="http://blog.webclown.net/tags/setTimeout/"/>
+    
+      <category term="setInterval" scheme="http://blog.webclown.net/tags/setInterval/"/>
+    
+      <category term="扯淡小分队" scheme="http://blog.webclown.net/tags/%E6%89%AF%E6%B7%A1%E5%B0%8F%E5%88%86%E9%98%9F/"/>
+    
+      <category term="let" scheme="http://blog.webclown.net/tags/let/"/>
+    
+      <category term="作用域" scheme="http://blog.webclown.net/tags/%E4%BD%9C%E7%94%A8%E5%9F%9F/"/>
+    
+  </entry>
   
   <entry>
     <title>扯淡小分队【第N+回】</title>
