@@ -124,7 +124,7 @@
 简单的JavaScript异步之setTimeout（ES5）猜想下会">
 <meta property="og:image" content="http://blog.webclown.net/images/posts/setTimeout_1.gif">
 <meta property="og:image" content="http://blog.webclown.net/images/posts/setTimeout_2.jpg">
-<meta property="og:updated_time" content="2016-05-23T08:37:52.000Z">
+<meta property="og:updated_time" content="2016-05-23T08:47:49.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="扯淡小分队【第一回】">
 <meta name="twitter:description" content="时间地点人物事件时间：2016-05-23地点：七年咖啡 老北京前后涮羊肉(和平里店)人物：旭旭、苗神、教授 和 我事件：周末约吗
@@ -417,11 +417,9 @@
 </blockquote>
 <p><img src="/images/posts/setTimeout_2.jpg" alt="setTimeout"></p>
 <p>嗯，就这些。</p>
-<h4 id="拓展"><a href="#拓展" class="headerlink" title="拓展"></a>拓展</h4><p>输出0-9，可用ES5函数作用域或者ES6<code>let</code>声明<code>i</code>；</p>
+<h4 id="拓展-通过作用域来输出0-9"><a href="#拓展-通过作用域来输出0-9" class="headerlink" title="拓展 通过作用域来输出0-9"></a>拓展 通过作用域来输出0-9</h4><p>1） 可用ES5函数作用域；</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">for (var i = 0; i &lt; 10; i++) &#123;</span><br><span class="line">    (function (i) &#123; // 作用域</span><br><span class="line">        setTimeout(function() &#123;</span><br><span class="line">            console.log(i);</span><br><span class="line">        &#125;, 0);</span><br><span class="line">    &#125;)(i);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>ES6</p>
-</blockquote>
+<p>2） <a href="http://es6.ruanyifeng.com/#docs/let#ES6的块级作用域" target="_blank" rel="external">ES6的块级作用域</a></p>
 <p>把<code>var</code>换成<code>let</code></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">for (let i = 0; i &lt; 10; i++) &#123;</span><br><span class="line">    setTimeout(function() &#123;</span><br><span class="line">        console.log(i);</span><br><span class="line">    &#125;, 0);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <hr>
@@ -586,7 +584,7 @@
           
             <div class="site-state-item site-state-categories">
               <a href="/categories">
-                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-count">3</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -779,7 +777,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#时间地点人物事件"><span class="nav-number">1.</span> <span class="nav-text">时间地点人物事件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#简单的JavaScript异步之setTimeout（ES5）"><span class="nav-number">2.</span> <span class="nav-text">简单的JavaScript异步之setTimeout（ES5）</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#拓展"><span class="nav-number">2.1.</span> <span class="nav-text">拓展</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#时间地点人物事件"><span class="nav-number">1.</span> <span class="nav-text">时间地点人物事件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#简单的JavaScript异步之setTimeout（ES5）"><span class="nav-number">2.</span> <span class="nav-text">简单的JavaScript异步之setTimeout（ES5）</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#拓展-通过作用域来输出0-9"><span class="nav-number">2.1.</span> <span class="nav-text">拓展 通过作用域来输出0-9</span></a></li></ol></li></ol></div>
             
           </div>
         </section>
