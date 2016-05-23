@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.webclown.net/"/>
-  <updated>2016-05-23T09:16:45.000Z</updated>
+  <updated>2016-05-23T18:27:00.000Z</updated>
   <id>http://blog.webclown.net/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://blog.webclown.net/2016/05/22/%E6%89%AF%E6%B7%A1%E5%B0%8F%E5%88%86%E9%98%9F%E3%80%90%E7%AC%ACN+%E5%9B%9E%E3%80%91/"/>
     <id>http://blog.webclown.net/2016/05/22/扯淡小分队【第N+回】/</id>
     <published>2016-05-22T15:40:04.000Z</published>
-    <updated>2016-05-23T09:16:45.000Z</updated>
+    <updated>2016-05-23T18:27:00.000Z</updated>
     
     <content type="html">&lt;p&gt;为什么是第N+回呢，因为之前有好几回了，记忆模糊（&lt;code&gt;好记忆不如烂笔头，所以就想记下来&lt;/code&gt;）&lt;/p&gt;
 &lt;h3 id=&quot;时间地点人物事件&quot;&gt;&lt;a href=&quot;#时间地点人物事件&quot; class=&quot;headerlink&quot; title=&quot;时间地点人物事件&quot;&gt;&lt;/a&gt;时间地点人物事件&lt;/h3&gt;&lt;p&gt;时间：&lt;code&gt;2016-05-23&lt;/code&gt;&lt;br&gt;地点：&lt;a href=&quot;http://www.dianping.com/shop/5338294&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;七年咖啡&lt;/a&gt; &lt;a href=&quot;http://www.dianping.com/shop/9966067&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;老北京前后涮羊肉(和平里店)&lt;/a&gt;&lt;br&gt;人物：&lt;a href=&quot;http://weibo.com/downmv&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;旭旭&lt;/a&gt;、&lt;a href=&quot;http://weibo.com/u/2280890141&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;苗神&lt;/a&gt;、&lt;a href=&quot;http://weibo.com/u/1995035333&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;教授&lt;/a&gt; 和 &lt;a href=&quot;http://weibo.com/444357767&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;我&lt;/a&gt;&lt;br&gt;事件：周末约吗&lt;/p&gt;
@@ -29,6 +29,7 @@
 &lt;/blockquote&gt;
 &lt;p&gt;先来张美图：&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;/images/posts/2016/05-22/02.jpg&quot; alt=&quot;小点心&quot;&gt;&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
 &lt;hr&gt;
 &lt;h3 id=&quot;简单的JavaScript异步之setTimeout（ES5）&quot;&gt;&lt;a href=&quot;#简单的JavaScript异步之setTimeout（ES5）&quot; class=&quot;headerlink&quot; title=&quot;简单的JavaScript异步之setTimeout（ES5）&quot;&gt;&lt;/a&gt;简单的JavaScript异步之setTimeout（ES5）&lt;/h3&gt;&lt;p&gt;猜想下会打印什么东西来；&lt;/p&gt;
 &lt;blockquote&gt;
@@ -38,7 +39,6 @@
 &lt;blockquote&gt;
 &lt;p&gt;预览：&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
 &lt;p&gt;&lt;img src=&quot;/images/posts/2016/05-22/setTimeout_1.gif&quot; alt=&quot;setTimeout预览&quot;&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;简单的解释：&lt;/p&gt;
@@ -76,15 +76,6 @@
 &lt;/blockquote&gt;
 &lt;p&gt;先来张美图：&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;/images/posts/2016/05-22/02.jpg&quot; alt=&quot;小点心&quot;&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id=&quot;简单的JavaScript异步之setTimeout（ES5）&quot;&gt;&lt;a href=&quot;#简单的JavaScript异步之setTimeout（ES5）&quot; class=&quot;headerlink&quot; title=&quot;简单的JavaScript异步之setTimeout（ES5）&quot;&gt;&lt;/a&gt;简单的JavaScript异步之setTimeout（ES5）&lt;/h3&gt;&lt;p&gt;猜想下会打印什么东西来；&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;代码:&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;for (var i = 0; i &amp;lt; 10; i++) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    setTimeout(function() &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        console.log(i);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;, 0);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;blockquote&gt;
-&lt;p&gt;预览：&lt;/p&gt;
-&lt;/blockquote&gt;
     
     </summary>
     
@@ -138,11 +129,11 @@
       <category term="工具&平台" scheme="http://blog.webclown.net/categories/%E5%B7%A5%E5%85%B7-%E5%B9%B3%E5%8F%B0/"/>
     
     
-      <category term="watch" scheme="http://blog.webclown.net/tags/watch/"/>
-    
       <category term="figlet" scheme="http://blog.webclown.net/tags/figlet/"/>
     
       <category term="brew" scheme="http://blog.webclown.net/tags/brew/"/>
+    
+      <category term="watch" scheme="http://blog.webclown.net/tags/watch/"/>
     
   </entry>
   
