@@ -1,3 +1,51 @@
+@font-face {
+  font-family: 'Myriad Set Pro';
+  font-style: normal;
+  font-weight: 200;
+  src: url("../fonts/Myriad-Set-Pro/myriad-set-pro_thin.woff") format("woff"), url("../fonts/Myriad-Set-Pro/myriad-set-pro_thin.ttf") format("truetype");
+  *src: url("");
+/* Copyright (c) 1992 Adobe Systems Incorporated. All Rights Reserved. Myriad is a trademark of Adobe Systems Incorporated. */
+}
+@font-face {
+  font-family: 'Myriad Set Pro';
+  font-style: italic;
+  font-weight: 200;
+  src: url("../fonts/Myriad-Set-Pro/myriad-set-pro_thin-italic.woff") format("woff"), url("../fonts/Myriad-Set-Pro/myriad-set-pro_thin-italic.ttf") format("truetype");
+  *src: url("");
+/* Copyright (c) 1992 Adobe Systems Incorporated. All Rights Reserved. Myriad is a trademark of Adobe Systems Incorporated. */
+}
+@font-face {
+  font-family: 'Myriad Set Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Myriad-Set-Pro/myriad-set-pro_text.woff") format("woff"), url("../fonts/Myriad-Set-Pro/myriad-set-pro_text.ttf") format("truetype");
+  *src: url("");
+/* Copyright (c) 1992 Adobe Systems Incorporated. All Rights Reserved. Myriad is a trademark of Adobe Systems Incorporated. */
+}
+@font-face {
+  font-family: 'Myriad Set Pro';
+  font-style: italic;
+  font-weight: 400;
+  src: url("../fonts/Myriad-Set-Pro/myriad-set-pro_text-italic.woff") format("woff"), url("../fonts/Myriad-Set-Pro/myriad-set-pro_text-italic.ttf") format("truetype");
+  *src: url("");
+/* Copyright (c) 1992 Adobe Systems Incorporated. All Rights Reserved. Myriad is a trademark of Adobe Systems Incorporated. */
+}
+@font-face {
+  font-family: 'Myriad Set Pro';
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/Myriad-Set-Pro/myriad-set-pro_semibold.woff") format("woff"), url("../fonts/Myriad-Set-Pro/myriad-set-pro_semibold.ttf") format("truetype");
+  *src: url("");
+/* Copyright (c) 1992 Adobe Systems Incorporated. All Rights Reserved. Myriad is a trademark of Adobe Systems Incorporated. */
+}
+@font-face {
+  font-family: 'Myriad Set Pro';
+  font-style: italic;
+  font-weight: 600;
+  src: url("../fonts/Myriad-Set-Pro/myriad-set-pro_semibold-italic.woff") format("woff"), url("../fonts/Myriad-Set-Pro/myriad-set-pro_semibold-italic.ttf") format("truetype");
+  *src: url("");
+/* Copyright (c) 1992 Adobe Systems Incorporated. All Rights Reserved. Myriad is a trademark of Adobe Systems Incorporated. */
+}
 /* normalize.css v3.0.2 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif; /* 1 */
@@ -185,7 +233,7 @@ th {
 }
 body {
   position: relative;
-  font-family: 'Monda', "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: 'Myriad Set Pro', "PingFang SC", "Microsoft YaHei", sans-serif;
   font-size: 14px;
   line-height: 2;
   color: #555;
@@ -216,7 +264,7 @@ h6 {
   padding: 0;
   font-weight: bold;
   line-height: 1.5;
-  font-family: 'Roboto Slab', 'Monda', "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: 'Myriad Set Pro', 'Myriad Set Pro', "PingFang SC", "Microsoft YaHei", sans-serif;
 }
 h2,
 h3,
@@ -503,7 +551,7 @@ pre,
 }
 pre,
 code {
-  font-family: 'PT Mono', consolas, Menlo, "PingFang SC", "Microsoft YaHei", monospace;
+  font-family: 'Source Code Pro', consolas, Menlo, "PingFang SC", "Microsoft YaHei", monospace;
 }
 code {
   padding: 2px 4px;
@@ -910,7 +958,7 @@ pre .javascript .function {
   line-height: 36px;
   font-size: 24px;
   font-weight: normal;
-  font-family: 'Source Code Pro', 'Monda', "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: 'Source Code Pro', 'Myriad Set Pro', "PingFang SC", "Microsoft YaHei", sans-serif;
 }
 .site-subtitle {
   margin-top: 10px;
@@ -999,7 +1047,7 @@ pre .javascript .function {
   opacity: 0;
 }
 .post-body {
-  font-family: 'Monda', "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: 'Myriad Set Pro', 'Myriad Set Pro', "PingFang SC", "Microsoft YaHei", sans-serif;
 }
 @media (max-width: 767px) {
   .post-body {
@@ -1264,7 +1312,7 @@ pre .javascript .function {
 .posts-expand .post-meta {
   margin: 3px 0 60px 0;
   color: #999;
-  font-family: 'Monda', "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: 'Myriad Set Pro', 'Myriad Set Pro', "PingFang SC", "Microsoft YaHei", sans-serif;
   font-size: 12px;
   text-align: center;
 }
@@ -1654,7 +1702,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #c4ffff;
+  background: #ff2516;
 }
 .links-of-blogroll {
   font-size: 13px;
