@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.webclown.net/"/>
-  <updated>2016-05-29T12:11:45.000Z</updated>
+  <updated>2016-06-02T16:47:44.000Z</updated>
   <id>http://blog.webclown.net/</id>
   
   <author>
@@ -14,6 +14,60 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>简单学习CSS box model Box-sizing</title>
+    <link href="http://blog.webclown.net/2016/06/02/%E7%AE%80%E5%8D%95%E5%AD%A6%E4%B9%A0CSS-box-model-box-sizing/"/>
+    <id>http://blog.webclown.net/2016/06/02/简单学习CSS-box-model-box-sizing/</id>
+    <published>2016-06-02T06:06:30.000Z</published>
+    <updated>2016-06-02T16:47:44.000Z</updated>
+    
+    <content type="html">&lt;p&gt;CSS盒模型描述了一个为文档树中的元素生成的并根据可视化格式模型进行布局的矩形框&lt;/p&gt;
+&lt;p&gt;先上一张Banner.&lt;br&gt;&lt;img src=&quot;/images/posts/2016/06-02/css-box-model.png&quot; alt=&quot;CSS box model&quot;&gt;&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;p&gt;Box-sizing这个CSS3中出现的新属性，以前只是用用，没有仔细的去学习一下（出来混总是要还的），最近不算忙就补习一下。&lt;/p&gt;
+&lt;p&gt;整理了一个简单的脑图&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/posts/2016/06-02/css-box-model-mind-map.png&quot; alt=&quot;CSS box model mind map&quot;&gt;&lt;/p&gt;
+&lt;p&gt;一个简单的demo&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;&lt;p data-height=&quot;265&quot; data-theme-id=&quot;0&quot; data-slug-hash=&quot;EyaqaV&quot; data-default-tab=&quot;css,result&quot; data-user=&quot;Keystion&quot; data-embed-version=&quot;2&quot; class=&quot;codepen&quot;&gt;See the Pen &lt;a href=&quot;http://codepen.io/Keystion/pen/EyaqaV/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;box-sizing&lt;/a&gt; by Keystion (&lt;a href=&quot;http://codepen.io/Keystion&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;@Keystion&lt;/a&gt;) on &lt;a href=&quot;http://codepen.io&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;CodePen&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;&lt;/p&gt;
+&lt;script async src=&quot;//assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;content-box(标准盒模型)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;box.width = content-box.width(300px)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;box.height = content-box.height(300px)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;box所占位置大小&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;宽：&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;margin-left(10px) + border-left-width(10px) + padding-left(10px) + content-width(300px) + padding-right(10px) + border-right-width(10px) + margin-right(10px) = 360px&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;高：&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;margin-top(10px) + border-top-width(10px) + padding-top(10px) + content-height(300px) + padding-bottom(10px) + border-bottom-width(10px) + margin-bottom(10px) = 360px&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;blockquote&gt;
+&lt;p&gt;border-box&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;box.width = border-left-width(10px) + padding-left(10px) + content-width(260px) + padding-right(10px) + border-right-width(10px) = 300px&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;box.height = border-top-width(10px) + padding-top(10px) + content-height(260px) + padding-bottom(10px) + border-bottom-width(10px) = 300px&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;box所占位置大小&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;宽：&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;margin-left(10px) + border-left-width(10px) + padding-left(10px) + content-width(260px) + padding-right(10px) + border-right-width(10px) + margin-right(10px) = 320px&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;高：&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;margin-top(10px) + border-top-width(10px) + padding-top(10px) + content-height(260px) + padding-bottom(10px) + border-bottom-width(10px) + margin-bottom(10px) = 320px&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;wiki相关：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://developer.mozilla.org/zh-CN/docs/Web/CSS/box-sizing&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;MDN - box-sizing&lt;/a&gt; &lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;MDN - 盒模型&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;CSS盒模型描述了一个为文档树中的元素生成的并根据可视化格式模型进行布局的矩形框&lt;/p&gt;
+&lt;p&gt;先上一张Banner.&lt;br&gt;&lt;img src=&quot;/images/posts/2016/06-02/css-box-model.png&quot; alt=&quot;CSS box model&quot;&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="HTML5和CSS3" scheme="http://blog.webclown.net/categories/HTML5%E5%92%8CCSS3/"/>
+    
+    
+      <category term="盒模型" scheme="http://blog.webclown.net/tags/%E7%9B%92%E6%A8%A1%E5%9E%8B/"/>
+    
+      <category term="box-sizing" scheme="http://blog.webclown.net/tags/box-sizing/"/>
+    
+      <category term="content-box" scheme="http://blog.webclown.net/tags/content-box/"/>
+    
+      <category term="border-box" scheme="http://blog.webclown.net/tags/border-box/"/>
+    
+      <category term="CSS box model" scheme="http://blog.webclown.net/tags/CSS-box-model/"/>
+    
+  </entry>
   
   <entry>
     <title>Javascript 变量的寻址与传递</title>
@@ -234,11 +288,11 @@
       <category term="工具&平台" scheme="http://blog.webclown.net/categories/%E5%B7%A5%E5%85%B7-%E5%B9%B3%E5%8F%B0/"/>
     
     
+      <category term="watch" scheme="http://blog.webclown.net/tags/watch/"/>
+    
       <category term="figlet" scheme="http://blog.webclown.net/tags/figlet/"/>
     
       <category term="brew" scheme="http://blog.webclown.net/tags/brew/"/>
-    
-      <category term="watch" scheme="http://blog.webclown.net/tags/watch/"/>
     
   </entry>
   
