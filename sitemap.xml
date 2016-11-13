@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.webclown.net/2016/11/13/Coder-2-Leader/</loc>
+    
+    <lastmod>2016-11-13T17:02:41.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://blog.webclown.net/2016/06/02/%E7%AE%80%E5%8D%95%E5%AD%A6%E4%B9%A0CSS-box-model-box-sizing/</loc>
     
     <lastmod>2016-11-13T15:43:26.000Z</lastmod>
@@ -12,13 +19,6 @@
     <loc>http://blog.webclown.net/2016/11/13/%E5%BF%AB%E9%80%9F%E5%88%87%E5%9B%BE/</loc>
     
     <lastmod>2016-11-13T13:25:42.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.webclown.net/2016/11/13/Coder-2-Leader/</loc>
-    
-    <lastmod>2016-11-13T12:13:00.000Z</lastmod>
     
   </url>
   
