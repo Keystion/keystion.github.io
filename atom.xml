@@ -1,0 +1,566 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Keystion</title>
+  <subtitle>来自乡村的小小web前端</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://blog.webclown.net/"/>
+  <updated>2016-11-13T13:25:42.000Z</updated>
+  <id>http://blog.webclown.net/</id>
+  
+  <author>
+    <name>Keystion</name>
+    <email>i@webclown.net</email>
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>快速切图</title>
+    <link href="http://blog.webclown.net/2016/11/13/%E5%BF%AB%E9%80%9F%E5%88%87%E5%9B%BE/"/>
+    <id>http://blog.webclown.net/2016/11/13/快速切图/</id>
+    <published>2016-11-13T12:39:12.000Z</published>
+    <updated>2016-11-13T13:25:42.000Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="第一种："><a href="#第一种：" class="headerlink" title="第一种："></a>第一种：</h3><p>按C用切片工具，然后随便框选你要的内容，F3（mac可能是Fn+F3），然后cmd+n，ctrl+v或者（F4）（mac可能是Fn+F4）<br>整个过程不用3s</p>
+<a id="more"></a>
+<h3 id="第二种："><a href="#第二种：" class="headerlink" title="第二种："></a>第二种：</h3><p>把你的要图层设置成组，然后命个名，比如xxx.png<br>然后菜单 &gt; 文件&gt; 生成 &gt; 生成xxx资源什么鬼的<br>然后保存</p>
+<h3 id="第三种："><a href="#第三种：" class="headerlink" title="第三种："></a>第三种：</h3><p>把你要的图层合并，M，cmd+c，cmd+n，cmd+v</p>
+<h3 id="其他："><a href="#其他：" class="headerlink" title="其他："></a>其他：</h3><p>第三方工具，一大堆</p>
+<p>By：Evan</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;第一种：&quot;&gt;&lt;a href=&quot;#第一种：&quot; class=&quot;headerlink&quot; title=&quot;第一种：&quot;&gt;&lt;/a&gt;第一种：&lt;/h3&gt;&lt;p&gt;按C用切片工具，然后随便框选你要的内容，F3（mac可能是Fn+F3），然后cmd+n，ctrl+v或者（F4）（mac可能是Fn+F4）&lt;br&gt;整个过程不用3s&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="前端技术" scheme="http://blog.webclown.net/categories/%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="Photoshop" scheme="http://blog.webclown.net/tags/Photoshop/"/>
+    
+      <category term="切图" scheme="http://blog.webclown.net/tags/%E5%88%87%E5%9B%BE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Coder 2 Leader</title>
+    <link href="http://blog.webclown.net/2016/11/13/Coder-2-Leader/"/>
+    <id>http://blog.webclown.net/2016/11/13/Coder-2-Leader/</id>
+    <published>2016-11-13T08:33:04.000Z</published>
+    <updated>2016-11-13T12:13:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/images/posts/2016/11-13/coder2leader.jpg" alt="coder2leader"></p>
+<p>公司内部TechDay分享，有<a href="http://weibo.com/spiritseekers" target="_blank" rel="external">@Terry</a>主讲，学习了很多，特此Mark一下。</p>
+<h3 id="困惑一：Code-vs-People"><a href="#困惑一：Code-vs-People" class="headerlink" title="困惑一：Code  vs  People"></a>困惑一：Code  vs  People</h3><blockquote>
+<p>机器/人</p>
+</blockquote>
+<ul>
+<li>Code：可控</li>
+<li>People：多变<a id="more"></a>
+从code和人的角度去阐述了coder转变到leader的过程，了解团队中的每一个人，学习他们的经验。即使没有做过管理也无妨，尝试去管理一件件小事情开始。</li>
+</ul>
+<h3 id="困惑二：0-1-vs-X"><a href="#困惑二：0-1-vs-X" class="headerlink" title="困惑二：0/1  vs  X"></a>困惑二：0/1  vs  X</h3><blockquote>
+<p>灰色</p>
+</blockquote>
+<ul>
+<li>0/1（二进制）：正确/错误</li>
+<li>X（未知数）：没有固定值，<strong>管理没有正确、错误</strong>，有足够产出的团队就是好团队</li>
+</ul>
+<p>对于初学者而言需要“暴力”②，成则成，败则败。</p>
+<p>Leader和手下员工比例在：1 vs 7的情况下是有时间去贴身管理每一个人的，超出这个范围将无法贴身去管理一些细节问题。</p>
+<h3 id="困惑三：权利双刃剑"><a href="#困惑三：权利双刃剑" class="headerlink" title="困惑三：权利双刃剑"></a>困惑三：权利双刃剑</h3><blockquote>
+<p>时间/效率</p>
+</blockquote>
+<p>管理是双向的，向上的管理，角色转换Coder care Leader需要什么？Leader care 产出。</p>
+<p>空降Leader如何去管理？</p>
+<p>前因后果了解之后再去使用权力，后来者天生具备弱势，相信认可别人，用实例（力）去证明，黔驴技穷之时可使用权力。</p>
+<h3 id="困惑四：沟通力量"><a href="#困惑四：沟通力量" class="headerlink" title="困惑四：沟通力量"></a>困惑四：沟通力量</h3><blockquote>
+<p>意大利人/赞比亚人（小故事）①</p>
+<ul>
+<li>简介：意呆利人去援助赞比亚，教当地人种地，当地人表示毫无兴趣。于是意呆利人就自己在河谷边种了番茄，长势喜人。成熟的那一晚，从赞比西河里跳出200多头河马，把西红柿吃个精光。第二天，意呆利人完全惊呆了，赞比亚人过来拍了拍肩膀安慰说：没错，这就是我们不在这里耕种的原因。</li>
+</ul>
+</blockquote>
+<h3 id="困惑五：公开演讲"><a href="#困惑五：公开演讲" class="headerlink" title="困惑五：公开演讲"></a>困惑五：公开演讲</h3><blockquote>
+<p>TED Talks</p>
+</blockquote>
+<h2 id="第三环节（Q-amp-A）"><a href="#第三环节（Q-amp-A）" class="headerlink" title="第三环节（Q&amp;A）"></a>第三环节（Q&amp;A）</h2><p>Q1：当你的团队有人“干仗”了咋整？</p>
+<hr>
+<p>注：</p>
+<ol>
+<li><a href="http://blog.3g.cnfol.com/lt20120818/article/1352166316-83534807.html" target="_blank" rel="external">木头的体积</a></li>
+<li>暴力：条件允许的情况下贴身管理，工期紧任务重；</li>
+<li>网易公开课上有段关于这个的演讲<a href="http://open.163.com/movie/2013/4/R/0/M9233REUV_M957HUPR0.html" target="_blank" rel="external">《想要帮助别人？闭嘴，听人家说！》</a></li>
+</ol>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;/images/posts/2016/11-13/coder2leader.jpg&quot; alt=&quot;coder2leader&quot;&gt;&lt;/p&gt;
+&lt;p&gt;公司内部TechDay分享，有&lt;a href=&quot;http://weibo.com/spiritseekers&quot;&gt;@Terry&lt;/a&gt;主讲，学习了很多，特此Mark一下。&lt;/p&gt;
+&lt;h3 id=&quot;困惑一：Code-vs-People&quot;&gt;&lt;a href=&quot;#困惑一：Code-vs-People&quot; class=&quot;headerlink&quot; title=&quot;困惑一：Code  vs  People&quot;&gt;&lt;/a&gt;困惑一：Code  vs  People&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;机器/人&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;Code：可控&lt;/li&gt;
+&lt;li&gt;People：多变
+    
+    </summary>
+    
+      <category term="技术管理" scheme="http://blog.webclown.net/categories/%E6%8A%80%E6%9C%AF%E7%AE%A1%E7%90%86/"/>
+    
+    
+      <category term="管理" scheme="http://blog.webclown.net/tags/%E7%AE%A1%E7%90%86/"/>
+    
+      <category term="技术管理" scheme="http://blog.webclown.net/tags/%E6%8A%80%E6%9C%AF%E7%AE%A1%E7%90%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>简单学习CSS box model Box-sizing</title>
+    <link href="http://blog.webclown.net/2016/06/02/%E7%AE%80%E5%8D%95%E5%AD%A6%E4%B9%A0CSS-box-model-box-sizing/"/>
+    <id>http://blog.webclown.net/2016/06/02/简单学习CSS-box-model-box-sizing/</id>
+    <published>2016-06-02T06:06:30.000Z</published>
+    <updated>2016-11-13T15:43:26.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>CSS盒模型描述了一个为文档树中的元素生成的并根据可视化格式模型进行布局的矩形框</p>
+<p>先上一张Banner.<br><img src="/images/posts/2016/06-02/css-box-model.jpg" alt="CSS box model"></p>
+<a id="more"></a>
+<p>Box-sizing这个CSS3中出现的新属性，以前只是用用，没有仔细的去学习一下（出来混总是要还的），最近不算忙就补习一下。</p>
+<p>整理了一个简单的脑图</p>
+<p><img src="/images/posts/2016/06-02/css-box-model-mind-map.png" alt="CSS box model mind map"></p>
+<p>一个简单的demo</p>
+<p></p><p data-height="265" data-theme-id="0" data-slug-hash="EyaqaV" data-default-tab="css,result" data-user="Keystion" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/Keystion/pen/EyaqaV/" target="_blank" rel="external">box-sizing</a> by Keystion (<a href="http://codepen.io/Keystion" target="_blank" rel="external">@Keystion</a>) on <a href="http://codepen.io" target="_blank" rel="external">CodePen</a>.</p><p></p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+
+<blockquote>
+<p>content-box(标准盒模型)</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">box.width = content-box.width(300px)</div><div class="line">box.height = content-box.height(300px)</div><div class="line"></div><div class="line">box所占位置大小</div><div class="line"></div><div class="line">宽：</div><div class="line">margin-left(10px) + border-left-width(10px) + padding-left(10px) + content-width(300px) + padding-right(10px) + border-right-width(10px) + margin-right(10px) = 360px</div><div class="line"></div><div class="line">高：</div><div class="line">margin-top(10px) + border-top-width(10px) + padding-top(10px) + content-height(300px) + padding-bottom(10px) + border-bottom-width(10px) + margin-bottom(10px) = 360px</div></pre></td></tr></table></figure>
+<blockquote>
+<p>border-box</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">box.width = border-left-width(10px) + padding-left(10px) + content-width(260px) + padding-right(10px) + border-right-width(10px) = 300px</div><div class="line">box.height = border-top-width(10px) + padding-top(10px) + content-height(260px) + padding-bottom(10px) + border-bottom-width(10px) = 300px</div><div class="line"></div><div class="line">box所占位置大小</div><div class="line"></div><div class="line">宽：</div><div class="line">margin-left(10px) + border-left-width(10px) + padding-left(10px) + content-width(260px) + padding-right(10px) + border-right-width(10px) + margin-right(10px) = 320px</div><div class="line"></div><div class="line">高：</div><div class="line">margin-top(10px) + border-top-width(10px) + padding-top(10px) + content-height(260px) + padding-bottom(10px) + border-bottom-width(10px) + margin-bottom(10px) = 320px</div></pre></td></tr></table></figure>
+<p>wiki相关：</p>
+<ul>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/box-sizing" target="_blank" rel="external">MDN - box-sizing</a> </li>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model" target="_blank" rel="external">MDN - 盒模型</a></li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;CSS盒模型描述了一个为文档树中的元素生成的并根据可视化格式模型进行布局的矩形框&lt;/p&gt;
+&lt;p&gt;先上一张Banner.&lt;br&gt;&lt;img src=&quot;/images/posts/2016/06-02/css-box-model.jpg&quot; alt=&quot;CSS box model&quot;&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="HTML5和CSS3" scheme="http://blog.webclown.net/categories/HTML5%E5%92%8CCSS3/"/>
+    
+    
+      <category term="盒模型" scheme="http://blog.webclown.net/tags/%E7%9B%92%E6%A8%A1%E5%9E%8B/"/>
+    
+      <category term="box-sizing" scheme="http://blog.webclown.net/tags/box-sizing/"/>
+    
+      <category term="content-box" scheme="http://blog.webclown.net/tags/content-box/"/>
+    
+      <category term="border-box" scheme="http://blog.webclown.net/tags/border-box/"/>
+    
+      <category term="CSS box model" scheme="http://blog.webclown.net/tags/CSS-box-model/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Javascript 变量的寻址与传递</title>
+    <link href="http://blog.webclown.net/2016/05/29/Javascript-%E5%8F%98%E9%87%8F%E7%9A%84%E5%AF%BB%E5%9D%80%E4%B8%8E%E4%BC%A0%E9%80%92/"/>
+    <id>http://blog.webclown.net/2016/05/29/Javascript-变量的寻址与传递/</id>
+    <published>2016-05-29T11:13:26.000Z</published>
+    <updated>2016-05-29T12:11:45.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>代码片段 1<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">var obj   = &#123;&#125;;</div><div class="line">    obj.x = 1;</div><div class="line">    obj.y = 2;</div><div class="line"></div><div class="line">function test (obj)  &#123;</div><div class="line">    obj.x = 111;</div><div class="line">&#125;</div><div class="line"></div><div class="line">test(obj);</div><div class="line">console.log(obj);</div><div class="line">// result &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;  &#123;x=111,y=2&#125;</div></pre></td></tr></table></figure></p>
+<p>代码片段 2<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">var obj   = &#123;&#125;;</div><div class="line">    obj.x = 1;</div><div class="line">    obj.y = 2;</div><div class="line"></div><div class="line">function test(obj) &#123;</div><div class="line">    var obj2 = &#123;&#125;;</div><div class="line">        obj  = obj2;</div><div class="line">&#125;</div><div class="line"></div><div class="line">test(obj);</div><div class="line">console.log(obj)</div><div class="line">// result &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;  &#123;x=1,y=2&#125;</div></pre></td></tr></table></figure></p>
+<p><strong>代码片段一</strong>就不在讲述，但凡对值类型和引用类型有一定的了解的话，那这个应该是没疑问的。</p>
+<a id="more"></a>
+<p><strong>代码片段二</strong>有两个应该注意的地方：</p>
+<blockquote>
+<p>1 test方法内变量的寻址</p>
+</blockquote>
+<p><code>test</code>方法内部可以取到<strong>三个变量</strong>，新定义了的<strong>对象obj2</strong>、<strong>参数obj</strong>、<strong>还有方法外的obj</strong>。<br>这三个参数有一个特别要注意的地方是，<strong><em>后面两个的名字是一样的</em></strong>，这样在方法运行的时候一定会<strong>优先取得参数的那个obj变量</strong>。而方法外的那个<code>obj</code>参数实际相当于<code>window.obj</code>。</p>
+<blockquote>
+<p>2 变量的传递过程</p>
+</blockquote>
+<p>在调用<code>test</code>方法，并传入<strong>方法外的obj变量</strong>，实际相当于传入<strong>window.obj</strong>这样一个<strong>引用类型</strong>①，也就是说代码<code>obj = obj2;</code>实际是对这个拷贝的地址的改变，因为这个地址只是个拷贝，所以这并不会改变其指向的真实对象。而代码片段1的<code>obj.x = 111;</code>这会通过<code>obj</code>这个地址查询到<code>x</code>这个属性，并对其赋值。</p>
+<p>other<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">var num = 1;</div><div class="line"></div><div class="line">function outFn() &#123;</div><div class="line">    this.num = 10;</div><div class="line">    function inFn() &#123;</div><div class="line">        console.log(num);</div><div class="line">        var num = 100;</div><div class="line">        console.log(this.num);</div><div class="line">        console.log(window.num);</div><div class="line">    &#125;</div><div class="line">    return inFn;</div><div class="line">&#125;</div><div class="line"></div><div class="line">var newfn = outFn();</div><div class="line">new newfn();  // this指向了对象</div></pre></td></tr></table></figure></p>
+<p>注：<br>① <strong>引用类型</strong>：引用类型的特点是在传递的过程中并不进行自身的值复制，而是传入地址的拷贝。</p>
+<p>原文：<a href="http://www.cnblogs.com/rulee/archive/2012/09/03/2663800.html" target="_blank" rel="external">js变量的寻址与传递  </a> By rulee</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;代码片段 1&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;8&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;9&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;10&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;11&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;var obj   = &amp;#123;&amp;#125;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    obj.x = 1;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    obj.y = 2;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;function test (obj)  &amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    obj.x = 111;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;test(obj);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;console.log(obj);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;// result &amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;  &amp;#123;x=111,y=2&amp;#125;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;代码片段 2&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;8&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;9&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;10&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;11&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;12&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;var obj   = &amp;#123;&amp;#125;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    obj.x = 1;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    obj.y = 2;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;function test(obj) &amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    var obj2 = &amp;#123;&amp;#125;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        obj  = obj2;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;test(obj);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;console.log(obj)&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;// result &amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;  &amp;#123;x=1,y=2&amp;#125;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;代码片段一&lt;/strong&gt;就不在讲述，但凡对值类型和引用类型有一定的了解的话，那这个应该是没疑问的。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="JavaScript" scheme="http://blog.webclown.net/categories/JavaScript/"/>
+    
+    
+      <category term="Javascript" scheme="http://blog.webclown.net/tags/Javascript/"/>
+    
+      <category term="var" scheme="http://blog.webclown.net/tags/var/"/>
+    
+      <category term="变量" scheme="http://blog.webclown.net/tags/%E5%8F%98%E9%87%8F/"/>
+    
+      <category term="reference" scheme="http://blog.webclown.net/tags/reference/"/>
+    
+      <category term="引用" scheme="http://blog.webclown.net/tags/%E5%BC%95%E7%94%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>足迹所到过城市之天津</title>
+    <link href="http://blog.webclown.net/2016/05/29/%E8%B6%B3%E8%BF%B9%E6%89%80%E5%88%B0%E8%BF%87%E5%9F%8E%E5%B8%82/"/>
+    <id>http://blog.webclown.net/2016/05/29/足迹所到过城市/</id>
+    <published>2016-05-29T06:21:20.000Z</published>
+    <updated>2016-05-29T08:06:49.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>先上美图：</p>
+<blockquote>
+<p>天津塘沽外滩公园</p>
+</blockquote>
+<p><img src="/images/posts/2016/05-29/01.jpg" alt="天津塘沽外滩公园01"><br>为什么天津辣（那）么多漂亮的地方，偏偏放一张外滩公园的图片，因为在天津塘沽待的时间相对比天津其他地方久，所以就放一张到目前印象相对比较深刻的地方；</p>
+<a id="more"></a>
+<h3 id="天津"><a href="#天津" class="headerlink" title="天津"></a>天津</h3><p>记忆碎片：豆腐脑、豆浆、油条、煎饼果子、塘沽区、洋货市场、轻轨、天津方言、保税区、室内装修、学生、天津奥林匹克体育中心、第三大街、信义隆装饰有限公司、泰达</p>
+<p>初次结缘天津大概是初三毕业之后的暑假（2006年7、8月份），有两个月的空闲期；所以就出去打工（玩咯），正好这是亲戚有在承包奥体中心的基础建设；嗯，也就是这个时候接触到天津，在奥体中心度过了一个多月，之后就回去念高中了。</p>
+<p>再次亲近天津，应该就是2007年、2008年，那时候就是来这里打工咯；<br>父亲大人在他朋友的装修装饰公司①上班，我就来这里打工学习生存技能；<br>到这里接触到了室内装潢、设计师、水电工、木工、瓦工、油漆工（刮腻子和刷涂料）等等（他们都是很可爱的人）；<br>也学到了很多技能：水电工、油漆工、木工等；<br>每天从住的地方（韶山北里②）出发，<br>带上必备的生存工具，<br>吃点早餐：煎饼果子、豆浆油条、豆腐脑；<br>屁颠屁颠的骑个自行车（有时候电动车）穿梭于塘沽区、滨海新区的大街小巷、各种小区去做干活；<br>累并快乐着。</p>
+<p>当然也经历过奥运会了；</p>
+<p>感觉会写好多… 就先写这些吧。 </p>
+<hr>
+<h4 id="图片集咯"><a href="#图片集咯" class="headerlink" title="图片集咯"></a>图片集咯</h4><p><img src="/images/posts/2016/05-29/01.jpg" alt="标志建筑物"><br>↑ 外滩公园 标志建筑物</p>
+<p><img src="/images/posts/2016/05-29/02.jpg" alt="夜景"><br>↑ 外滩公园 夜景</p>
+<p><img src="/images/posts/2016/05-29/03.jpg" alt="船和调皮的顽童"><br>↑ 外滩公园 船和调皮的顽童</p>
+<p><img src="/images/posts/2016/05-29/04.jpg" alt="海门大桥"><br>↑ 外滩公园 海门大桥</p>
+<p><img src="/images/posts/2016/05-29/05.jpg" alt="东方公主"><br>↑ 外滩公园 东方公主</p>
+<p><img src="/images/posts/2016/05-29/06.jpg" alt="洋货市场"><br>↑ 洋货市场</p>
+<hr>
+<p>注：<br>① 装修装饰公司：北京信义隆装饰有限公司（天津分公司），位置天津滨海新区第三大街豪威大厦B座104；<br>② 韶山北里：天津市塘沽区杭州道与韶山路交口；</p>
+<p>图片资源：</p>
+<ul>
+<li><a href="http://www.xialv.com/tianjin/photo/7989/121005" target="_blank" rel="external">桃子4427</a></li>
+<li><a href="http://wo.poco.cn/943195050a/post/id/1480322" target="_blank" rel="external">云水禅心</a></li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;先上美图：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;天津塘沽外滩公园&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;/images/posts/2016/05-29/01.jpg&quot; alt=&quot;天津塘沽外滩公园01&quot;&gt;&lt;br&gt;为什么天津辣（那）么多漂亮的地方，偏偏放一张外滩公园的图片，因为在天津塘沽待的时间相对比天津其他地方久，所以就放一张到目前印象相对比较深刻的地方；&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="我溜达过的城市" scheme="http://blog.webclown.net/categories/%E6%88%91%E6%BA%9C%E8%BE%BE%E8%BF%87%E7%9A%84%E5%9F%8E%E5%B8%82/"/>
+    
+    
+      <category term="天津" scheme="http://blog.webclown.net/tags/%E5%A4%A9%E6%B4%A5/"/>
+    
+      <category term="室内装潢" scheme="http://blog.webclown.net/tags/%E5%AE%A4%E5%86%85%E8%A3%85%E6%BD%A2/"/>
+    
+      <category term="塘沽区" scheme="http://blog.webclown.net/tags/%E5%A1%98%E6%B2%BD%E5%8C%BA/"/>
+    
+      <category term="滨海新区" scheme="http://blog.webclown.net/tags/%E6%BB%A8%E6%B5%B7%E6%96%B0%E5%8C%BA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>扯淡小分队【第N+回】</title>
+    <link href="http://blog.webclown.net/2016/05/22/%E6%89%AF%E6%B7%A1%E5%B0%8F%E5%88%86%E9%98%9F%E3%80%90%E7%AC%ACN+%E5%9B%9E%E3%80%91/"/>
+    <id>http://blog.webclown.net/2016/05/22/扯淡小分队【第N+回】/</id>
+    <published>2016-05-22T15:40:04.000Z</published>
+    <updated>2016-05-23T18:27:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>为什么是第N+回呢，因为之前有好几回了，记忆模糊（<code>好记忆不如烂笔头，所以就想记下来</code>）</p>
+<h3 id="时间地点人物事件"><a href="#时间地点人物事件" class="headerlink" title="时间地点人物事件"></a>时间地点人物事件</h3><p>时间：<code>2016-05-23</code><br>地点：<a href="http://www.dianping.com/shop/5338294" target="_blank" rel="external">七年咖啡</a> <a href="http://www.dianping.com/shop/9966067" target="_blank" rel="external">老北京前后涮羊肉(和平里店)</a><br>人物：<a href="http://weibo.com/downmv" target="_blank" rel="external">旭旭</a>、<a href="http://weibo.com/u/2280890141" target="_blank" rel="external">苗神</a>、<a href="http://weibo.com/u/1995035333" target="_blank" rel="external">教授</a> 和 <a href="http://weibo.com/444357767" target="_blank" rel="external">我</a><br>事件：周末约吗</p>
+<blockquote>
+<p>我们的扯淡小分队又聚会了；聚会目的是什么呢，说白了就是扯扯大家近况。旭旭刚从日本团建回来，给我们带来一些【Made in Japan】的小点心，然后我们就愉快的决定周六聚聚😄（吃货联盟）。</p>
+</blockquote>
+<p>先来张美图：</p>
+<p><img src="/images/posts/2016/05-22/02.jpg" alt="小点心"></p>
+<a id="more"></a>
+<hr>
+<h3 id="简单的JavaScript异步之setTimeout（ES5）"><a href="#简单的JavaScript异步之setTimeout（ES5）" class="headerlink" title="简单的JavaScript异步之setTimeout（ES5）"></a>简单的JavaScript异步之setTimeout（ES5）</h3><p>猜想下会打印什么东西来；</p>
+<blockquote>
+<p>代码:</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">for (var i = 0; i &lt; 10; i++) &#123;</div><div class="line">    setTimeout(function() &#123;</div><div class="line">        console.log(i);</div><div class="line">    &#125;, 0);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<blockquote>
+<p>预览：</p>
+</blockquote>
+<p><img src="/images/posts/2016/05-22/setTimeout_1.gif" alt="setTimeout预览"></p>
+<blockquote>
+<p>简单的解释：</p>
+</blockquote>
+<p><img src="/images/posts/2016/05-22/setTimeout_2.jpg" alt="setTimeout解释"></p>
+<p>嗯，就这些。</p>
+<h4 id="拓展-通过作用域来输出0-9"><a href="#拓展-通过作用域来输出0-9" class="headerlink" title="拓展 通过作用域来输出0-9"></a>拓展 通过作用域来输出0-9</h4><p>1） 可用ES5函数作用域；</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">for (var i = 0; i &lt; 10; i++) &#123;</div><div class="line">    (function (i) &#123; // 作用域</div><div class="line">        setTimeout(function() &#123;</div><div class="line">            console.log(i);</div><div class="line">        &#125;, 0);</div><div class="line">    &#125;)(i);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>2） <a href="http://es6.ruanyifeng.com/#docs/let#ES6的块级作用域" target="_blank" rel="external">ES6的块级作用域</a></p>
+<p>把<code>var</code>换成<code>let</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">for (let i = 0; i &lt; 10; i++) &#123;</div><div class="line">    setTimeout(function() &#123;</div><div class="line">        console.log(i);</div><div class="line">    &#125;, 0);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h4 id="图片集咯"><a href="#图片集咯" class="headerlink" title="图片集咯"></a>图片集咯</h4><blockquote>
+<p>七年咖啡Desk</p>
+</blockquote>
+<p><img src="/images/posts/2016/05-22/01.jpg" alt="七年咖啡Desk"></p>
+<blockquote>
+<p>小点心 （巧克力&amp;&amp;杏仁饼干）</p>
+</blockquote>
+<p><img src="/images/posts/2016/05-22/02.jpg" alt="七年咖啡desk"></p>
+<blockquote>
+<p>老北京前后涮羊肉的火锅</p>
+</blockquote>
+<p><img src="/images/posts/2016/05-22/03.jpg" alt="老北京前后涮羊肉的火锅"></p>
+<hr>
+<p>未完待续……</p>
+<hr>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;为什么是第N+回呢，因为之前有好几回了，记忆模糊（&lt;code&gt;好记忆不如烂笔头，所以就想记下来&lt;/code&gt;）&lt;/p&gt;
+&lt;h3 id=&quot;时间地点人物事件&quot;&gt;&lt;a href=&quot;#时间地点人物事件&quot; class=&quot;headerlink&quot; title=&quot;时间地点人物事件&quot;&gt;&lt;/a&gt;时间地点人物事件&lt;/h3&gt;&lt;p&gt;时间：&lt;code&gt;2016-05-23&lt;/code&gt;&lt;br&gt;地点：&lt;a href=&quot;http://www.dianping.com/shop/5338294&quot;&gt;七年咖啡&lt;/a&gt; &lt;a href=&quot;http://www.dianping.com/shop/9966067&quot;&gt;老北京前后涮羊肉(和平里店)&lt;/a&gt;&lt;br&gt;人物：&lt;a href=&quot;http://weibo.com/downmv&quot;&gt;旭旭&lt;/a&gt;、&lt;a href=&quot;http://weibo.com/u/2280890141&quot;&gt;苗神&lt;/a&gt;、&lt;a href=&quot;http://weibo.com/u/1995035333&quot;&gt;教授&lt;/a&gt; 和 &lt;a href=&quot;http://weibo.com/444357767&quot;&gt;我&lt;/a&gt;&lt;br&gt;事件：周末约吗&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;我们的扯淡小分队又聚会了；聚会目的是什么呢，说白了就是扯扯大家近况。旭旭刚从日本团建回来，给我们带来一些【Made in Japan】的小点心，然后我们就愉快的决定周六聚聚😄（吃货联盟）。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;先来张美图：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/posts/2016/05-22/02.jpg&quot; alt=&quot;小点心&quot;&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="扯淡小分队" scheme="http://blog.webclown.net/categories/%E6%89%AF%E6%B7%A1%E5%B0%8F%E5%88%86%E9%98%9F/"/>
+    
+    
+      <category term="Javascript" scheme="http://blog.webclown.net/tags/Javascript/"/>
+    
+      <category term="setTimeout" scheme="http://blog.webclown.net/tags/setTimeout/"/>
+    
+      <category term="setInterval" scheme="http://blog.webclown.net/tags/setInterval/"/>
+    
+      <category term="扯淡小分队" scheme="http://blog.webclown.net/tags/%E6%89%AF%E6%B7%A1%E5%B0%8F%E5%88%86%E9%98%9F/"/>
+    
+      <category term="let" scheme="http://blog.webclown.net/tags/let/"/>
+    
+      <category term="作用域" scheme="http://blog.webclown.net/tags/%E4%BD%9C%E7%94%A8%E5%9F%9F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>watch&amp;figlet</title>
+    <link href="http://blog.webclown.net/2016/05/13/watch-figlet/"/>
+    <id>http://blog.webclown.net/2016/05/13/watch-figlet/</id>
+    <published>2016-05-13T10:58:45.000Z</published>
+    <updated>2016-05-13T11:06:39.000Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="安装-watch"><a href="#安装-watch" class="headerlink" title="安装 watch"></a>安装 <code>watch</code></h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ sudo brew install watch</div></pre></td></tr></table></figure>
+<p><code>iTerm or Terminal（终端）</code></p>
+<p>示例代码</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ watch -t -n1 &quot;date&quot;</div><div class="line"></div><div class="line">2016    3 29        20  33 54   CST</div></pre></td></tr></table></figure>
+<p>watch &amp;&amp; <a href="/2016/05/13/figlet/">figlet</a></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">$ watch -t -n1 &quot;date +%T|figlet -f banner&quot;</div><div class="line"></div><div class="line"> #####    ###    #   #####  #        #  #        #####</div><div class="line">#     #  #   #  ### #     # #    #  ### #    #  #     #</div><div class="line">      # #     #  #        # #    #   #  #    #  #     #</div><div class="line"> #####  #     #      #####  #    #      #    #   ######</div><div class="line">#       #     #  #        # #######  #  #######       #</div><div class="line">#        #   #  ### #     #      #  ###      #  #     #</div><div class="line">#######   ###    #   #####       #   #       #   #####</div></pre></td></tr></table></figure>
+<a id="more"></a>
+<ul>
+<li><a href="http://brew.sh/" target="_blank" rel="external">Homebrew</a></li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h4 id=&quot;安装-watch&quot;&gt;&lt;a href=&quot;#安装-watch&quot; class=&quot;headerlink&quot; title=&quot;安装 watch&quot;&gt;&lt;/a&gt;安装 &lt;code&gt;watch&lt;/code&gt;&lt;/h4&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;$ sudo brew install watch&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;code&gt;iTerm or Terminal（终端）&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;示例代码&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;$ watch -t -n1 &amp;quot;date&amp;quot;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2016    3 29        20  33 54   CST&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;watch &amp;amp;&amp;amp; &lt;a href=&quot;/2016/05/13/figlet/&quot;&gt;figlet&lt;/a&gt;&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;8&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;9&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;$ watch -t -n1 &amp;quot;date +%T|figlet -f banner&amp;quot;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt; #####    ###    #   #####  #        #  #        #####&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;#     #  #   #  ### #     # #    #  ### #    #  #     #&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;      # #     #  #        # #    #   #  #    #  #     #&lt;/div&gt;&lt;div class=&quot;line&quot;&gt; #####  #     #      #####  #    #      #    #   ######&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;#       #     #  #        # #######  #  #######       #&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;#        #   #  ### #     #      #  ###      #  #     #&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;#######   ###    #   #####       #   #       #   #####&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+      <category term="工具&amp;平台" scheme="http://blog.webclown.net/categories/%E5%B7%A5%E5%85%B7-%E5%B9%B3%E5%8F%B0/"/>
+    
+    
+      <category term="figlet" scheme="http://blog.webclown.net/tags/figlet/"/>
+    
+      <category term="brew" scheme="http://blog.webclown.net/tags/brew/"/>
+    
+      <category term="watch" scheme="http://blog.webclown.net/tags/watch/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>figlet</title>
+    <link href="http://blog.webclown.net/2016/05/13/figlet/"/>
+    <id>http://blog.webclown.net/2016/05/13/figlet/</id>
+    <published>2016-05-13T10:39:43.000Z</published>
+    <updated>2016-05-13T10:59:14.000Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="安装-figlet"><a href="#安装-figlet" class="headerlink" title="安装 figlet"></a>安装 <code>figlet</code></h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ sudo brew install figlet</div></pre></td></tr></table></figure>
+<p><code>iTerm or Terminal（终端）</code></p>
+<p>示例代码</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">$ figlet &quot;webclown&quot;</div><div class="line"></div><div class="line">              _          _</div><div class="line">__      _____| |__   ___| | _____      ___ __</div><div class="line">\ \ /\ / / _ \ &apos;_ \ / __| |/ _ \ \ /\ / / &apos;_ \</div><div class="line"> \ V  V /  __/ |_) | (__| | (_) \ V  V /| | | |</div><div class="line">  \_/\_/ \___|_.__/ \___|_|\___/ \_/\_/ |_| |_|</div></pre></td></tr></table></figure>
+<p>设置字体</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">$ figlet -f tinker-toy &quot;W e b c l o w n&quot;</div><div class="line"></div><div class="line">o       o             o                 o</div><div class="line">|       |             |                 |</div><div class="line">o   o   o     o-o     O-o       o-o     |     o-o     o   o   o    o-o</div><div class="line"> \ / \ /      |-&apos;     |  |     |        |     | |      \ / \ /     |  |</div><div class="line">  o   o       o-o     o-o       o-o     o     o-o       o   o      o  o</div></pre></td></tr></table></figure>
+<a id="more"></a>
+<ul>
+<li><a href="http://brew.sh/" target="_blank" rel="external">Homebrew</a></li>
+</ul>
+<h4 id="Wiki"><a href="#Wiki" class="headerlink" title="Wiki"></a>Wiki</h4><ul>
+<li><a href="http://www.figlet.org/" target="_blank" rel="external">http://www.figlet.org/</a></li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h4 id=&quot;安装-figlet&quot;&gt;&lt;a href=&quot;#安装-figlet&quot; class=&quot;headerlink&quot; title=&quot;安装 figlet&quot;&gt;&lt;/a&gt;安装 &lt;code&gt;figlet&lt;/code&gt;&lt;/h4&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;$ sudo brew install figlet&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;code&gt;iTerm or Terminal（终端）&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;示例代码&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;$ figlet &amp;quot;webclown&amp;quot;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;              _          _&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;__      _____| |__   ___| | _____      ___ __&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;\ \ /\ / / _ \ &amp;apos;_ \ / __| |/ _ \ \ /\ / / &amp;apos;_ \&lt;/div&gt;&lt;div class=&quot;line&quot;&gt; \ V  V /  __/ |_) | (__| | (_) \ V  V /| | | |&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;  \_/\_/ \___|_.__/ \___|_|\___/ \_/\_/ |_| |_|&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;设置字体&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;$ figlet -f tinker-toy &amp;quot;W e b c l o w n&amp;quot;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;o       o             o                 o&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;|       |             |                 |&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;o   o   o     o-o     O-o       o-o     |     o-o     o   o   o    o-o&lt;/div&gt;&lt;div class=&quot;line&quot;&gt; \ / \ /      |-&amp;apos;     |  |     |        |     | |      \ / \ /     |  |&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;  o   o       o-o     o-o       o-o     o     o-o       o   o      o  o&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+      <category term="工具&amp;平台" scheme="http://blog.webclown.net/categories/%E5%B7%A5%E5%85%B7-%E5%B9%B3%E5%8F%B0/"/>
+    
+    
+      <category term="figlet" scheme="http://blog.webclown.net/tags/figlet/"/>
+    
+      <category term="brew" scheme="http://blog.webclown.net/tags/brew/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>通过wget下载网站</title>
+    <link href="http://blog.webclown.net/2016/05/13/%E9%80%9A%E8%BF%87wget%E4%B8%8B%E8%BD%BD%E7%BD%91%E7%AB%99/"/>
+    <id>http://blog.webclown.net/2016/05/13/通过wget下载网站/</id>
+    <published>2016-05-13T09:56:00.000Z</published>
+    <updated>2016-05-13T10:26:53.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="通过wget下载一个网站"><a href="#通过wget下载一个网站" class="headerlink" title="通过wget下载一个网站"></a>通过wget下载一个网站</h2><p>工具</p>
+<p><code>iTerm</code> or <code>Terminal（终端）</code></p>
+<p>示例代码</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">wget -r -p -np -k --restrict-file-names=nocontrol [url]</div></pre></td></tr></table></figure>
+<h4 id="如何在电脑上安装wget"><a href="#如何在电脑上安装wget" class="headerlink" title="如何在电脑上安装wget"></a>如何在电脑上安装wget</h4><ul>
+<li><a href="http://brew.sh/" target="_blank" rel="external">Homebrew</a></li>
+</ul>
+<a id="more"></a>
+<h4 id="简单的-shell-脚本"><a href="#简单的-shell-脚本" class="headerlink" title="简单的 shell 脚本"></a>简单的 shell 脚本</h4><p><a href="https://github.com/Keystion/littletool/blob/master/wget.sh" target="_blank" rel="external">wget.sh</a></p>
+<p>put it in <code>/Users/$user</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">chmod -x wget.sh // Writable</div><div class="line"></div><div class="line">./wget [url] // Any directory</div></pre></td></tr></table></figure>
+<h4 id="Wiki"><a href="#Wiki" class="headerlink" title="Wiki"></a>Wiki</h4><ul>
+<li><a href="https://en.wikipedia.org/wiki/Wget" target="_blank" rel="external">https://en.wikipedia.org/wiki/Wget</a></li>
+<li><a href="https://wiki.ubuntuusers.de/wget/" target="_blank" rel="external">https://wiki.ubuntuusers.de/wget/</a></li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;通过wget下载一个网站&quot;&gt;&lt;a href=&quot;#通过wget下载一个网站&quot; class=&quot;headerlink&quot; title=&quot;通过wget下载一个网站&quot;&gt;&lt;/a&gt;通过wget下载一个网站&lt;/h2&gt;&lt;p&gt;工具&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;iTerm&lt;/code&gt; or &lt;code&gt;Terminal（终端）&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;示例代码&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;wget -r -p -np -k --restrict-file-names=nocontrol [url]&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h4 id=&quot;如何在电脑上安装wget&quot;&gt;&lt;a href=&quot;#如何在电脑上安装wget&quot; class=&quot;headerlink&quot; title=&quot;如何在电脑上安装wget&quot;&gt;&lt;/a&gt;如何在电脑上安装wget&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://brew.sh/&quot;&gt;Homebrew&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="工具&amp;平台" scheme="http://blog.webclown.net/categories/%E5%B7%A5%E5%85%B7-%E5%B9%B3%E5%8F%B0/"/>
+    
+    
+      <category term="wget" scheme="http://blog.webclown.net/tags/wget/"/>
+    
+      <category term="shell" scheme="http://blog.webclown.net/tags/shell/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Git-常用命令</title>
+    <link href="http://blog.webclown.net/2015/04/14/Git-%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
+    <id>http://blog.webclown.net/2015/04/14/Git-常用命令/</id>
+    <published>2015-04-14T12:23:03.000Z</published>
+    <updated>2016-05-13T00:45:49.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="develop-via-a-single-branch"><a href="#develop-via-a-single-branch" class="headerlink" title="develop via a single branch"></a>develop via a single branch</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">t branch -m &#123;&#123;branch&#125;&#125;</div><div class="line">git fetch origin</div><div class="line">git rebase origin/master -i</div><div class="line">git push origin &#123;&#123;branch&#125;&#125;</div></pre></td></tr></table></figure>
+<h2 id="create-a-new-branch"><a href="#create-a-new-branch" class="headerlink" title="create a new branch"></a>create a new branch</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git checkout -b &#123;&#123;branch&#125;&#125;</div></pre></td></tr></table></figure>
+<h2 id="checkout-remote-branch"><a href="#checkout-remote-branch" class="headerlink" title="checkout remote branch"></a>checkout remote branch</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git checkout -b &#123;&#123;branch&#125;&#125; origin/&#123;&#123;branch&#125;&#125;</div></pre></td></tr></table></figure>
+<a id="more"></a>
+<h2 id="merge-branch-to-master"><a href="#merge-branch-to-master" class="headerlink" title="merge branch to master"></a>merge branch to master</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git checkout master</div><div class="line">git merge &#123;&#123;branch&#125;&#125;</div></pre></td></tr></table></figure>
+<h2 id="delete-branch"><a href="#delete-branch" class="headerlink" title="delete branch"></a>delete branch</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git branch -D &#123;&#123;localBranch&#125;&#125;</div><div class="line">git push --delete origin &#123;&#123;remoteBranch&#125;&#125;</div></pre></td></tr></table></figure>
+<h2 id="rename-repo"><a href="#rename-repo" class="headerlink" title="rename repo"></a>rename repo</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">git remote -v</div><div class="line">// View existing remotes</div><div class="line">// origin  https://github.com/user/repo.git (fetch)</div><div class="line">// origin  https://github.com/user/repo.git (push)</div><div class="line"></div><div class="line">git remote set-url origin https://github.com/user/repo2.git</div><div class="line">// Change the &apos;origin&apos; remote&apos;s URL</div></pre></td></tr></table></figure>
+<h2 id="add-tag"><a href="#add-tag" class="headerlink" title="add tag"></a>add tag</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git tag &#123;&#123;tag&#125;&#125;</div><div class="line">git push --tags</div></pre></td></tr></table></figure>
+<h2 id="add-tag-for-a-history-commit"><a href="#add-tag-for-a-history-commit" class="headerlink" title="add tag for a history commit"></a>add tag for a history commit</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">// Set the HEAD to the old commit that we want to tag</div><div class="line">git checkout &#123;&#123;leading 7 chars of commit&#125;&#125;</div><div class="line"></div><div class="line">// temporarily set the date to the date of the HEAD commit, and add the tag</div><div class="line">GIT_COMMITTER_DATE=&quot;$(git show --format=%aD | head -1)&quot; git tag -a &#123;&#123;tag&#125;&#125; -m &quot;&#123;&#123;commit message&#125;&#125;&quot;</div><div class="line"></div><div class="line">// set HEAD back to whatever you want it to be</div><div class="line">git checkout master</div><div class="line"></div><div class="line">git push --tags</div></pre></td></tr></table></figure>
+<h2 id="delete-tag"><a href="#delete-tag" class="headerlink" title="delete tag"></a>delete tag</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git tag --delete &#123;&#123;tag&#125;&#125;</div><div class="line">git push --delete origin &#123;&#123;tag&#125;&#125;</div></pre></td></tr></table></figure>
+<h2 id="gh-pages"><a href="#gh-pages" class="headerlink" title="gh-pages"></a>gh-pages</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">http://&#123;&#123;group&#125;&#125;.github.io/&#123;&#123;repo&#125;&#125;/</div></pre></td></tr></table></figure>
+<h2 id="npm-add-owner"><a href="#npm-add-owner" class="headerlink" title="npm add owner"></a>npm add owner</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm owner add &#123;&#123;name&#125;&#125;</div></pre></td></tr></table></figure>
+<p>Source：<a href="https://github.com/fool2fish/blog/issues/9" target="_blank" rel="external">fool2fish</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;develop-via-a-single-branch&quot;&gt;&lt;a href=&quot;#develop-via-a-single-branch&quot; class=&quot;headerlink&quot; title=&quot;develop via a single branch&quot;&gt;&lt;/a&gt;develop via a single branch&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;t branch -m &amp;#123;&amp;#123;branch&amp;#125;&amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;git fetch origin&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;git rebase origin/master -i&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;git push origin &amp;#123;&amp;#123;branch&amp;#125;&amp;#125;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&quot;create-a-new-branch&quot;&gt;&lt;a href=&quot;#create-a-new-branch&quot; class=&quot;headerlink&quot; title=&quot;create a new branch&quot;&gt;&lt;/a&gt;create a new branch&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;git checkout -b &amp;#123;&amp;#123;branch&amp;#125;&amp;#125;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&quot;checkout-remote-branch&quot;&gt;&lt;a href=&quot;#checkout-remote-branch&quot; class=&quot;headerlink&quot; title=&quot;checkout remote branch&quot;&gt;&lt;/a&gt;checkout remote branch&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;git checkout -b &amp;#123;&amp;#123;branch&amp;#125;&amp;#125; origin/&amp;#123;&amp;#123;branch&amp;#125;&amp;#125;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+      <category term="工具&amp;平台" scheme="http://blog.webclown.net/categories/%E5%B7%A5%E5%85%B7-%E5%B9%B3%E5%8F%B0/"/>
+    
+    
+      <category term="git" scheme="http://blog.webclown.net/tags/git/"/>
+    
+      <category term="gh-pages" scheme="http://blog.webclown.net/tags/gh-pages/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>PSD图层管理指南</title>
+    <link href="http://blog.webclown.net/2015/04/14/PSD%E5%9B%BE%E5%B1%82%E7%AE%A1%E7%90%86%E6%8C%87%E5%8D%97/"/>
+    <id>http://blog.webclown.net/2015/04/14/PSD图层管理指南/</id>
+    <published>2015-04-14T10:41:21.000Z</published>
+    <updated>2016-05-13T00:39:29.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>PS图层命名和分组看似麻烦，会打断设计的兴致，但是当图层多得自己都找不到时就知道好处了。科学有调理的管理你的PSD既是一名优秀设计师的必备技能，也是设计师跟上下游同事打交道的礼仪准则。和你的基友协同工作的过程中，可以说对PSD图层的命名和管理是最大的冲突所在，一堆不知所云的“新建图层”和“图层1副本”只会让基友抓狂！</p>
+<a id="more"></a>
+<ul>
+<li>图层管理的精髓在于：分组、链接和命名。</li>
+<li>合理使用图层分组（图层文件夹）。以UI组件、功能模块等为分组基准，图层分组可以更快地看清楚整个文件的架构，并且可以很快的找到想要的那一层。</li>
+<li>善用链接，把关联紧密的图层相互链接，这样能保持相对位置、大小不变。就像人的脖子和头是一个整体，相互连在一起的</li>
+<li>每个分组以及分组外的每个图层都必须命名，且是有意义的命名，像“图层1、副本、副本2、组3”这样的图层命名是严格禁止的，养成新建图层后第一件事就是命名的习惯。图层命名中英文均可。</li>
+<li>icon与按钮。icon命名以<code>icon-</code>为前缀，按钮命名以<code>btn-</code>，例如：<code>icon-close.png</code>, <code>btn-login.png</code> , <code>btn-login-hover.png</code>。</li>
+<li>删除不必要的图层。你是一个图层堆积狂吗？PSD在交付给前端之前，请删除不必要的图层。</li>
+<li>文本图层不要合并或格式化，方便修改及前端同事复制文本内容。</li>
+<li>纯色文本不要使用颜色叠加进行配色，请使用文字工具进行配色。</li>
+<li>字体的字号必须是整数，不要随意拉伸字体。除了会使字体变得难看模糊之外， HTML/CSS也无法实现这种效果。</li>
+<li>中大型、长期项目需要提供至少两份附件：1、所有icon与按钮（各种状态）的集合；2、设计稿配色标注，可使用“设计稿配色标注”工具。</li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;PS图层命名和分组看似麻烦，会打断设计的兴致，但是当图层多得自己都找不到时就知道好处了。科学有调理的管理你的PSD既是一名优秀设计师的必备技能，也是设计师跟上下游同事打交道的礼仪准则。和你的基友协同工作的过程中，可以说对PSD图层的命名和管理是最大的冲突所在，一堆不知所云的“新建图层”和“图层1副本”只会让基友抓狂！&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="交互设计" scheme="http://blog.webclown.net/categories/%E4%BA%A4%E4%BA%92%E8%AE%BE%E8%AE%A1/"/>
+    
+    
+      <category term="Photoshop" scheme="http://blog.webclown.net/tags/Photoshop/"/>
+    
+      <category term="图层" scheme="http://blog.webclown.net/tags/%E5%9B%BE%E5%B1%82/"/>
+    
+  </entry>
+  
+</feed>
