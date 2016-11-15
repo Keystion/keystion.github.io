@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.webclown.net/"/>
-  <updated>2016-11-13T13:25:42.000Z</updated>
+  <updated>2016-11-15T00:28:06.000Z</updated>
   <id>http://blog.webclown.net/</id>
   
   <author>
@@ -14,6 +14,110 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>CSS中的z-index的最大值</title>
+    <link href="http://blog.webclown.net/2016/11/15/CSS%E4%B8%AD%E7%9A%84z-index%E7%9A%84%E6%9C%80%E5%A4%A7%E5%80%BC/"/>
+    <id>http://blog.webclown.net/2016/11/15/CSS中的z-index的最大值/</id>
+    <published>2016-11-14T23:32:48.000Z</published>
+    <updated>2016-11-15T00:28:06.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/images/posts/2016/11-15/z-index.jpg" alt="z-index"><br>图片来自：<a href="http://www.annyhe.com/zindex/#3" target="_blank" rel="external">http://www.annyhe.com/zindex/#3</a></p>
+<blockquote>
+<p><code>z-index</code>属性指定了一个元素及其子元素的 z-order。 当元素之间重叠的时候，z-order 决定哪一个元素覆盖在其余元素的上方显示。 通常来说 z-index 较大的元素会覆盖较小的一个。  —<a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/z-index" target="_blank" rel="external">MDN z-index</a></p>
+</blockquote>
+<a id="more"></a>
+<p><img src="/images/posts/2016/11-15/z-index.01.jpg" alt="z-index sample"></p>
+<p>业务代码中看见了这样一段code，然后想都没有想，直接把另一个元素的<code>z-index</code>值设置为：<code>999999999999999 + 1</code>，就能把它覆盖掉吧，结果并没有那么理想。◻︎_-||</p>
+<p>然后就去查找z-index在各个浏览器中的最大值是多少呢，Google了一番找到了下面这个表格，</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Browser</th>
+<th style="text-align:center">Max z─index value</th>
+<th style="text-align:center">When exceeded, value changes to:</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">浏览器</td>
+<td style="text-align:center">最大值</td>
+<td style="text-align:center">超过时,值的变化：</td>
+</tr>
+<tr>
+<td style="text-align:center">Firefox 0-2</td>
+<td style="text-align:center">2147483647（length:10）</td>
+<td style="text-align:center">element disappears/元素消失</td>
+</tr>
+<tr>
+<td style="text-align:center">Firefox 3</td>
+<td style="text-align:center">2147483647（length:10）</td>
+<td style="text-align:center">0</td>
+</tr>
+<tr>
+<td style="text-align:center">Firefox 4+</td>
+<td style="text-align:center">2147483647（length:10）</td>
+<td style="text-align:center">2147483647（length:10）</td>
+</tr>
+<tr>
+<td style="text-align:center">Safari 0-3</td>
+<td style="text-align:center">16777271（length:8）</td>
+<td style="text-align:center">16777271（length:8）</td>
+</tr>
+<tr>
+<td style="text-align:center">Safari 4+</td>
+<td style="text-align:center">2147483647（length:10）</td>
+<td style="text-align:center">2147483647（length:10）</td>
+</tr>
+<tr>
+<td style="text-align:center">Internet Explorer 6+</td>
+<td style="text-align:center">2147483647（length:10）</td>
+<td style="text-align:center">2147483647（length:10）</td>
+</tr>
+<tr>
+<td style="text-align:center">Chrome 29+</td>
+<td style="text-align:center">2147483647（length:10）</td>
+<td style="text-align:center">2147483647（length:10）</td>
+</tr>
+<tr>
+<td style="text-align:center">Opera 9+</td>
+<td style="text-align:center">2147483647（length:10）</td>
+<td style="text-align:center">2147483647（length:10）</td>
+</tr>
+</tbody>
+</table>
+<p>举个栗子：</p>
+<p><iframe height="370" scrolling="no" title="z-index max value" src="//codepen.io/Keystion/embed/mOEBzO/?height=370&theme-id=0&default-tab=css,result&embed-version=2" frameborder="no" allowtransparency="true" allowfullscreen="true" style="width: 100%;">See the Pen <a href="http://codepen.io/Keystion/pen/mOEBzO/" target="_blank" rel="external">z-index max value</a> by Keystion (<a href="http://codepen.io/Keystion" target="_blank" rel="external">@Keystion</a>) on <a href="http://codepen.io" target="_blank" rel="external">CodePen</a></iframe></p>
+<p></p><p data-height="367" data-theme-id="dark" data-slug-hash="mOEBzO" data-default-tab="css,result" data-user="Keystion" data-embed-version="2" data-pen-title="z-index max value" class="codepen">See the Pen <a href="http://codepen.io/Keystion/pen/mOEBzO/" target="_blank" rel="external">z-index max value</a> by Keystion (<a href="http://codepen.io/Keystion" target="_blank" rel="external">@Keystion</a>) on <a href="http://codepen.io" target="_blank" rel="external">CodePen</a>.</p><p></p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+<p>特此而来Mark一下，没有辣么多浏览器，也就测试了下：</p>
+<ul>
+<li>chrome（<code>版本 54.0.2840.87 (64-bit)</code>）</li>
+<li>Safari（<code>版本 10.0.1 (12602.2.14.0.7)</code>）</li>
+<li>Firefox（<code>49.0.2</code>）</li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;/images/posts/2016/11-15/z-index.jpg&quot; alt=&quot;z-index&quot;&gt;&lt;br&gt;图片来自：&lt;a href=&quot;http://www.annyhe.com/zindex/#3&quot;&gt;http://www.annyhe.com/zindex/#3&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;z-index&lt;/code&gt;属性指定了一个元素及其子元素的 z-order。 当元素之间重叠的时候，z-order 决定哪一个元素覆盖在其余元素的上方显示。 通常来说 z-index 较大的元素会覆盖较小的一个。  —&lt;a href=&quot;https://developer.mozilla.org/zh-CN/docs/Web/CSS/z-index&quot;&gt;MDN z-index&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="HTML5和CSS3" scheme="http://blog.webclown.net/categories/HTML5%E5%92%8CCSS3/"/>
+    
+    
+      <category term="z-index" scheme="http://blog.webclown.net/tags/z-index/"/>
+    
+      <category term="css" scheme="http://blog.webclown.net/tags/css/"/>
+    
+      <category term="最大值" scheme="http://blog.webclown.net/tags/%E6%9C%80%E5%A4%A7%E5%80%BC/"/>
+    
+  </entry>
   
   <entry>
     <title>快速切图</title>
