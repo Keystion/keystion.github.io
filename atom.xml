@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.webclown.net/"/>
-  <updated>2016-11-15T00:33:48.000Z</updated>
+  <updated>2016-11-15T00:43:08.000Z</updated>
   <id>http://blog.webclown.net/</id>
   
   <author>
@@ -20,11 +20,11 @@
     <link href="http://blog.webclown.net/2016/11/15/CSS%E4%B8%AD%E7%9A%84z-index%E7%9A%84%E6%9C%80%E5%A4%A7%E5%80%BC/"/>
     <id>http://blog.webclown.net/2016/11/15/CSS中的z-index的最大值/</id>
     <published>2016-11-14T23:32:48.000Z</published>
-    <updated>2016-11-15T00:33:48.000Z</updated>
+    <updated>2016-11-15T00:43:08.000Z</updated>
     
     <content type="html"><![CDATA[<p><img src="/images/posts/2016/11-15/z-index.jpg" alt="z-index"><br>图片来自：www.annyhe.com/zindex/#3</p>
 <blockquote>
-<p><code>z-index</code>属性指定了一个元素及其子元素的 z-order。 当元素之间重叠的时候，z-order 决定哪一个元素覆盖在其余元素的上方显示。 通常来说 z-index 较大的元素会覆盖较小的一个。  —</p>
+<p><code>z-index</code>属性指定了一个元素及其子元素的 z-order。 当元素之间重叠的时候，z-order 决定哪一个元素覆盖在其余元素的上方显示。 通常来说 z-index 较大的元素会覆盖较小的一个。  —MDN z-index</p>
 </blockquote>
 <a id="more"></a>
 <p><img src="/images/posts/2016/11-15/z-index.01.jpg" alt="z-index sample"></p>
@@ -109,7 +109,7 @@
     
       &lt;p&gt;&lt;img src=&quot;/images/posts/2016/11-15/z-index.jpg&quot; alt=&quot;z-index&quot;&gt;&lt;br&gt;图片来自：www.annyhe.com/zindex/#3&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;code&gt;z-index&lt;/code&gt;属性指定了一个元素及其子元素的 z-order。 当元素之间重叠的时候，z-order 决定哪一个元素覆盖在其余元素的上方显示。 通常来说 z-index 较大的元素会覆盖较小的一个。  —&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;z-index&lt;/code&gt;属性指定了一个元素及其子元素的 z-order。 当元素之间重叠的时候，z-order 决定哪一个元素覆盖在其余元素的上方显示。 通常来说 z-index 较大的元素会覆盖较小的一个。  —MDN z-index&lt;/p&gt;
 &lt;/blockquote&gt;
     
     </summary>
