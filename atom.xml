@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.webclown.net/"/>
-  <updated>2016-11-15T00:43:08.000Z</updated>
+  <updated>2016-11-16T09:49:48.000Z</updated>
   <id>http://blog.webclown.net/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://blog.webclown.net/2016/11/15/CSS%E4%B8%AD%E7%9A%84z-index%E7%9A%84%E6%9C%80%E5%A4%A7%E5%80%BC/"/>
     <id>http://blog.webclown.net/2016/11/15/CSS中的z-index的最大值/</id>
     <published>2016-11-14T23:32:48.000Z</published>
-    <updated>2016-11-15T00:43:08.000Z</updated>
+    <updated>2016-11-16T09:49:48.000Z</updated>
     
     <content type="html"><![CDATA[<p><img src="/images/posts/2016/11-15/z-index.jpg" alt="z-index"><br>图片来自：www.annyhe.com/zindex/#3</p>
 <blockquote>
@@ -87,9 +87,7 @@
 </tbody>
 </table>
 <p>举个栗子：</p>
-<p><iframe height="370" scrolling="no" title="z-index max value" src="//codepen.io/Keystion/embed/mOEBzO/?height=370&theme-id=0&default-tab=css,result&embed-version=2" frameborder="no" allowtransparency="true" allowfullscreen="true" style="width: 100%;">See the Pen <a href="http://codepen.io/Keystion/pen/mOEBzO/" target="_blank" rel="external">z-index max value</a> by Keystion (<a href="http://codepen.io/Keystion" target="_blank" rel="external">@Keystion</a>) on <a href="http://codepen.io" target="_blank" rel="external">CodePen</a></iframe></p>
-<p></p><p data-height="367" data-theme-id="dark" data-slug-hash="mOEBzO" data-default-tab="css,result" data-user="Keystion" data-embed-version="2" data-pen-title="z-index max value" class="codepen">See the Pen <a href="http://codepen.io/Keystion/pen/mOEBzO/" target="_blank" rel="external">z-index max value</a> by Keystion (<a href="http://codepen.io/Keystion" target="_blank" rel="external">@Keystion</a>) on <a href="http://codepen.io" target="_blank" rel="external">CodePen</a>.</p><p></p>
-<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+<iframe height="365" scrolling="no" title="z-index max value" src="//codepen.io/Keystion/embed/mOEBzO/?height=365&theme-id=dark&default-tab=css,result&embed-version=2" frameborder="no" allowtransparency="true" allowfullscreen="true" style="width: 100%;">See the Pen <a href="http://codepen.io/Keystion/pen/mOEBzO/" target="_blank" rel="external">z-index max value</a> by Keystion (<a href="http://codepen.io/Keystion" target="_blank" rel="external">@Keystion</a>) on <a href="http://codepen.io" target="_blank" rel="external">CodePen</a>.<br></iframe>
 
 <p>特此而来Mark一下，没有辣么多浏览器，也就测试了下：</p>
 <ul>
