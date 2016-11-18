@@ -3,6 +3,13 @@
   
     
     <entry>
+      <title><![CDATA[wc: command not found]]></title>
+      <url>%2F2016%2F11%2F18%2Fwc-command-not-found%2F</url>
+      <content type="text"><![CDATA[环境：macOS Sierra 10.12.1 (16B2555) 今天在用户目录下面，编辑.bash_profile的时候把PATH的值写错了，结果就出现了小白心惶惶的现象； 解决方法： 把用户目录丢到sublime text3里面修改了正确的PATH值。]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[CSS中的z-index的最大值]]></title>
       <url>%2F2016%2F11%2F15%2FCSS%E4%B8%AD%E7%9A%84z-index%E7%9A%84%E6%9C%80%E5%A4%A7%E5%80%BC%2F</url>
       <content type="text"><![CDATA[图片来自：www.annyhe.com/zindex/#3 z-index属性指定了一个元素及其子元素的 z-order。 当元素之间重叠的时候，z-order 决定哪一个元素覆盖在其余元素的上方显示。 通常来说 z-index 较大的元素会覆盖较小的一个。 —MDN z-index 业务代码中看见了这样一段code，然后想都没有想，直接把另一个元素的z-index值设置为：999999999999999 + 1，就能把它覆盖掉吧，结果并没有那么理想。◻︎_-|| 然后就去查找z-index在各个浏览器中的最大值是多少呢，Google了一番找到了下面这个表格， Browser Max z─index value When exceeded, value changes to: 浏览器 最大值 超过时,值的变化： Firefox 0-2 2147483647（length:10） element disappears/元素消失 Firefox 3 2147483647（length:10） 0 Firefox 4+ 2147483647（length:10） 2147483647（length:10） Safari 0-3 16777271（length:8） 16777271（length:8） Safari 4+ 2147483647（length:10） 2147483647（length:10） Internet Explorer 6+ 2147483647（length:10） 2147483647（length:10） Chrome 29+ 2147483647（length:10） 2147483647（length:10） Opera 9+ 2147483647（length:10） 2147483647（length:10） 举个栗子： See the Pen z-index max value by Keystion (@Keystion) on CodePen. 特此而来Mark一下，没有辣么多浏览器，也就测试了下： chrome（版本 54.0.2840.87 (64-bit)） Safari（版本 10.0.1 (12602.2.14.0.7)） Firefox（49.0.2） 参考文献： MDN z-index Maximum value of z-index Z-index and Layering with CSS]]></content>

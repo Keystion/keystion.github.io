@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.webclown.net/"/>
-  <updated>2016-11-16T09:49:48.000Z</updated>
+  <updated>2016-11-17T23:55:09.000Z</updated>
   <id>http://blog.webclown.net/</id>
   
   <author>
@@ -14,6 +14,40 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>wc: command not found</title>
+    <link href="http://blog.webclown.net/2016/11/18/wc-command-not-found/"/>
+    <id>http://blog.webclown.net/2016/11/18/wc-command-not-found/</id>
+    <published>2016-11-17T23:41:55.000Z</published>
+    <updated>2016-11-17T23:55:09.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/images/posts/2016/11-18/wc_command_not_found.jpg" alt="wc: command not found"></p>
+<p>环境：<code>macOS Sierra 10.12.1 (16B2555)</code></p>
+<p>今天在用户目录下面，编辑<code>.bash_profile</code>的时候把<code>PATH</code>的值写错了，结果就出现了小白心惶惶的现象；</p>
+<p><img src="/images/posts/2016/11-18/wc_command_not_found_01.jpg" alt="wc: command not found 01.jpg"></p>
+<p><img src="/images/posts/2016/11-18/wc_command_not_found_02.jpg" alt="wc: command not found 02.jpg"></p>
+<p>解决方法：</p>
+<p>把用户目录丢到sublime text3里面修改了正确的<code>PATH</code>值。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;/images/posts/2016/11-18/wc_command_not_found.jpg&quot; alt=&quot;wc: command not found&quot;&gt;&lt;/p&gt;
+&lt;p&gt;环境：&lt;code&gt;macOS Sierra 10.12.1 (16B2555)&lt;
+    
+    </summary>
+    
+      <category term="工具&amp;平台" scheme="http://blog.webclown.net/categories/%E5%B7%A5%E5%85%B7-%E5%B9%B3%E5%8F%B0/"/>
+    
+    
+      <category term="PATH" scheme="http://blog.webclown.net/tags/PATH/"/>
+    
+      <category term="bash_profile" scheme="http://blog.webclown.net/tags/bash-profile/"/>
+    
+      <category term="prompt_status" scheme="http://blog.webclown.net/tags/prompt-status/"/>
+    
+  </entry>
   
   <entry>
     <title>CSS中的z-index的最大值</title>
@@ -498,11 +532,11 @@
       <category term="工具&amp;平台" scheme="http://blog.webclown.net/categories/%E5%B7%A5%E5%85%B7-%E5%B9%B3%E5%8F%B0/"/>
     
     
+      <category term="watch" scheme="http://blog.webclown.net/tags/watch/"/>
+    
       <category term="figlet" scheme="http://blog.webclown.net/tags/figlet/"/>
     
       <category term="brew" scheme="http://blog.webclown.net/tags/brew/"/>
-    
-      <category term="watch" scheme="http://blog.webclown.net/tags/watch/"/>
     
   </entry>
   
