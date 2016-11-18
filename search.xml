@@ -5,7 +5,7 @@
     <entry>
       <title><![CDATA[wc: command not found]]></title>
       <url>%2F2016%2F11%2F18%2Fwc-command-not-found%2F</url>
-      <content type="text"><![CDATA[环境：macOS Sierra 10.12.1 (16B2555) 今天在用户目录下面，编辑.bash_profile的时候把PATH的值写错了，结果就出现了小白心惶惶的现象； 解决方法： 把用户目录丢到sublime text3里面修改了正确的PATH值。]]></content>
+      <content type="text"><![CDATA[环境：macOS Sierra 10.12.1 (16B2555) 今天2016.11.17在用户目录下面，编辑.bash_profile的时候把PATH的值写错了，结果就出现了小白心惶惶的现象； 解决方法： 把用户目录丢到sublime text3里面修改了正确的PATH值。]]></content>
     </entry>
 
     
