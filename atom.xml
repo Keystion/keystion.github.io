@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.webclown.net/"/>
-  <updated>2016-11-18T00:12:09.000Z</updated>
+  <updated>2016-11-29T16:19:18.000Z</updated>
   <id>http://blog.webclown.net/</id>
   
   <author>
@@ -14,6 +14,90 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>【转】折腾了一下Terminal（终端）之iTerm2</title>
+    <link href="http://blog.webclown.net/2016/11/29/%E3%80%90%E8%BD%AC%E3%80%91%E6%8A%98%E8%85%BE%E4%BA%86%E4%B8%80%E4%B8%8BTerminal%EF%BC%88%E7%BB%88%E7%AB%AF%EF%BC%89%E4%B9%8BiTerm2/"/>
+    <id>http://blog.webclown.net/2016/11/29/【转】折腾了一下Terminal（终端）之iTerm2/</id>
+    <published>2016-11-29T14:03:03.000Z</published>
+    <updated>2016-11-29T16:19:18.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/images/posts/2016/11-29/iTerm2.png" alt="iTerm2.png"></p>
+<p>很早之前<a href="http://weibo.com/u/1991492964" target="_blank" rel="external">@GhostBoyZone</a>发给我一个关于iTerm 2的主题配置，收藏了，后来也分享给小伙伴们了，特此来Mark到自己的博客里面，顺便修复了字体的问题。</p>
+<p>或许别人会觉得这个主题过于花哨，萝卜白菜各有所爱。还有很多大神直接用<code>vim</code>（应该算个神器吧？）。</p>
+<p><img src="/images/posts/2016/11-29/iterm2-zsh-agnoster-git.png" alt="iterm2-zsh-agnoster-git.png"></p>
+<p>所以正文从这里开始咯…</p>
+<hr>
+<h2 id="终端应用：iTerm2"><a href="#终端应用：iTerm2" class="headerlink" title="终端应用：iTerm2"></a>终端应用：<code>iTerm2</code></h2><p>下载安装，这个你懂的。</p>
+<p>按<code>Command + ,</code> 打开偏好设定窗口：</p>
+<ol>
+<li><code>Profiles</code> / <code>Window</code>，把 <code>Settings for New Windows</code> 中的 <code>Style</code> 改成 <code>Left of Screen</code> 让它在屏幕左侧显示（在宽屏显示器上效果不错）</li>
+<li><code>Keys</code>，勾选 <code>Hotkey</code> 中的 <code>Show/hide iTerm2 with a system-wide hotkey</code>，然后设定一个热键。我个人偏爱 <code>Command + .</code>。<br>现在按 <code>Command + .</code> 就可以随时调出或者隐藏 <code>iTerm2</code> 了。</li>
+</ol>
+<a id="more"></a>
+<h2 id="配色方案：Solarized-Dark"><a href="#配色方案：Solarized-Dark" class="headerlink" title="配色方案：Solarized Dark"></a>配色方案：<a href="http://ethanschoonover.com/solarized" target="_blank" rel="external">Solarized Dark</a></h2><p>下载，解压，打开 <code>iTerm2</code> 的偏好设定，<code>Profiles / Colors</code>，最下面的 <code>Load Presets … / Import…</code> 加载 <code>iterm2-colors-solarized/Solarized Dark.itermcolors</code> 配色方案。</p>
+<h2 id="Z-Shell"><a href="#Z-Shell" class="headerlink" title="Z-Shell"></a>Z-Shell</h2><p>系统自带了 4.0 版的 zsh，但我们可以用 <code>brew install</code> 安装最新的 5.X。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">brew install zsh</div><div class="line">sudo rm /bin/zsh    # 替换系统自带 zsh</div><div class="line">sudo ln -s `brew --prefix zsh`/bin/zsh /bin/zsh</div><div class="line">chsh -s /bin/zsh  # 切换系统当前用户的默认 shell 为 zsh</div></pre></td></tr></table></figure>
+<p>安装完毕，<code>Command + W</code> 关闭 iTerm2 当前窗口，然后按 <code>Command + .</code> 重新打开，此时 shell 已经换成 <code>zsh</code> 了。</p>
+<h2 id="oh-my-zsh"><a href="#oh-my-zsh" class="headerlink" title="oh-my-zsh"></a><a href="https://github.com/robbyrussell/oh-my-zsh" target="_blank" rel="external">oh-my-zsh</a></h2><p>这是一套十分强大的 zsh 配置方案。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh</div></pre></td></tr></table></figure>
+<p><del>下载这个字体补丁并安装，给系统中的 Menlo 字体进行增补。</del></p>
+<p>安装字体<code>Monaco for Powerline</code>。（@GhostBoyZone）</p>
+<p>链接: <a href="https://pan.baidu.com/s/1bp7SfeR" target="_blank" rel="external">https://pan.baidu.com/s/1bp7SfeR</a> 密码: <code>tbbk</code></p>
+<p>打开 iTerm2 的偏好设定，Profiles / Text，把 Regular Font 和 Non-ASCII Font 都换成 Menlo，大小为 14pt Regular。</p>
+<p>编辑 <code>~/.zshrc</code> 文件：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">ZSH_THEME=&quot;agnoster&quot;          # 使用 agnoster 主题，很好很强大</div><div class="line"></div><div class="line">DEFAULT_USER=&quot;你的用户名&quot;     # 增加这一项，可以隐藏掉路径前面那串用户名</div><div class="line"></div><div class="line">plugins=(git brew node npm)   # 自己按需把要用的 plugin 写上</div></pre></td></tr></table></figure>
+<p>其中插件可以看这里<a href="https://github.com/robbyrussell/oh-my-zsh/wiki/Plugins" target="_blank" rel="external">https://github.com/robbyrussell/oh-my-zsh/wiki/Plugins</a>。</p>
+<p>另外，建议把末尾的 <code>export PATH</code> 稍微调整一下，比如 Homebrew 就建议 <code>/usr/local/bin</code> 应该优先于 <code>/usr/bin</code>；另外也可以自己加上比如 Ruby Gems 目录 <code>/usr/local/opt/ruby/bin</code>、<code>Node.js NPM</code> 目录 <code>~/bin</code> 等。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">export PATH=/usr/local/bin:/usr/local/sbin/:$HOME/bin:$PATH</div></pre></td></tr></table></figure>
+<p>关于 Homebrew 的路径，比如 zsh 这个包可以通过 <code>brew --prefix zsh</code> 知道它的目录是 <code>/usr/local/opt/zsh</code>，关于这些链接：</p>
+<ul>
+<li><code>/usr/local/opt/zsh</code> 目录 -&gt; <code>/usr/local/Cellar/zsh/版本号</code> 目录</li>
+<li><code>/usr/local/bin/zsh</code> 文件 -&gt; <code>/usr/local/Cellar/zsh/版本号/bin/zsh</code> 文件</li>
+</ul>
+<p>所以就有了上面那条 <code>chsh -s</code> 命令的写法。</p>
+<p>重新打开 iTerm2 窗口，配置完成。玩的愉快 😜</p>
+<p>原文：<a href="http://xingrz.me/2013/2013-06-19/terminal-zhuangbility.html" target="_blank" rel="external">折腾了一下 Terminal</a> By @XiNGRZ</p>
+<h2 id="一些链接"><a href="#一些链接" class="headerlink" title="一些链接"></a>一些链接</h2><ul>
+<li><a href="http://www.iterm2.com/" target="_blank" rel="external">iTerm2</a></li>
+<li><a href="http://ethanschoonover.com/solarized" target="_blank" rel="external">配色方案</a></li>
+<li><a href="https://github.com/robbyrussell/oh-my-zsh" target="_blank" rel="external">oh-my-zsh</a></li>
+<li>字体：<code>Monaco for Powerline</code>，链接: <a href="https://pan.baidu.com/s/1bp7SfeR" target="_blank" rel="external">https://pan.baidu.com/s/1bp7SfeR</a> 密码: <code>tbbk</code></li>
+<li><a href="https://github.com/robbyrussell/oh-my-zsh/wiki/Plugins" target="_blank" rel="external">oh-my-zsh Plugins插件</a></li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;/images/posts/2016/11-29/iTerm2.png&quot; alt=&quot;iTerm2.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;很早之前&lt;a href=&quot;http://weibo.com/u/1991492964&quot;&gt;@GhostBoyZone&lt;/a&gt;发给我一个关于iTerm 2的主题配置，收藏了，后来也分享给小伙伴们了，特此来Mark到自己的博客里面，顺便修复了字体的问题。&lt;/p&gt;
+&lt;p&gt;或许别人会觉得这个主题过于花哨，萝卜白菜各有所爱。还有很多大神直接用&lt;code&gt;vim&lt;/code&gt;（应该算个神器吧？）。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/posts/2016/11-29/iterm2-zsh-agnoster-git.png&quot; alt=&quot;iterm2-zsh-agnoster-git.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;所以正文从这里开始咯…&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;终端应用：iTerm2&quot;&gt;&lt;a href=&quot;#终端应用：iTerm2&quot; class=&quot;headerlink&quot; title=&quot;终端应用：iTerm2&quot;&gt;&lt;/a&gt;终端应用：&lt;code&gt;iTerm2&lt;/code&gt;&lt;/h2&gt;&lt;p&gt;下载安装，这个你懂的。&lt;/p&gt;
+&lt;p&gt;按&lt;code&gt;Command + ,&lt;/code&gt; 打开偏好设定窗口：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;Profiles&lt;/code&gt; / &lt;code&gt;Window&lt;/code&gt;，把 &lt;code&gt;Settings for New Windows&lt;/code&gt; 中的 &lt;code&gt;Style&lt;/code&gt; 改成 &lt;code&gt;Left of Screen&lt;/code&gt; 让它在屏幕左侧显示（在宽屏显示器上效果不错）&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Keys&lt;/code&gt;，勾选 &lt;code&gt;Hotkey&lt;/code&gt; 中的 &lt;code&gt;Show/hide iTerm2 with a system-wide hotkey&lt;/code&gt;，然后设定一个热键。我个人偏爱 &lt;code&gt;Command + .&lt;/code&gt;。&lt;br&gt;现在按 &lt;code&gt;Command + .&lt;/code&gt; 就可以随时调出或者隐藏 &lt;code&gt;iTerm2&lt;/code&gt; 了。&lt;/li&gt;
+&lt;/ol&gt;
+    
+    </summary>
+    
+      <category term="工具&amp;平台" scheme="http://blog.webclown.net/categories/%E5%B7%A5%E5%85%B7-%E5%B9%B3%E5%8F%B0/"/>
+    
+    
+      <category term="终端" scheme="http://blog.webclown.net/tags/%E7%BB%88%E7%AB%AF/"/>
+    
+      <category term="Terminal" scheme="http://blog.webclown.net/tags/Terminal/"/>
+    
+      <category term="iTerm2" scheme="http://blog.webclown.net/tags/iTerm2/"/>
+    
+      <category term="字体" scheme="http://blog.webclown.net/tags/%E5%AD%97%E4%BD%93/"/>
+    
+      <category term="Homebrew" scheme="http://blog.webclown.net/tags/Homebrew/"/>
+    
+  </entry>
   
   <entry>
     <title>wc: command not found</title>
@@ -164,14 +248,14 @@
     <link href="http://blog.webclown.net/2016/11/13/%E5%BF%AB%E9%80%9F%E5%88%87%E5%9B%BE/"/>
     <id>http://blog.webclown.net/2016/11/13/快速切图/</id>
     <published>2016-11-13T12:39:12.000Z</published>
-    <updated>2016-11-13T13:25:42.000Z</updated>
+    <updated>2016-11-29T16:14:16.000Z</updated>
     
     <content type="html"><![CDATA[<h3 id="第一种："><a href="#第一种：" class="headerlink" title="第一种："></a>第一种：</h3><p>按C用切片工具，然后随便框选你要的内容，F3（mac可能是Fn+F3），然后cmd+n，ctrl+v或者（F4）（mac可能是Fn+F4）<br>整个过程不用3s</p>
 <a id="more"></a>
 <h3 id="第二种："><a href="#第二种：" class="headerlink" title="第二种："></a>第二种：</h3><p>把你的要图层设置成组，然后命个名，比如xxx.png<br>然后菜单 &gt; 文件&gt; 生成 &gt; 生成xxx资源什么鬼的<br>然后保存</p>
 <h3 id="第三种："><a href="#第三种：" class="headerlink" title="第三种："></a>第三种：</h3><p>把你要的图层合并，M，cmd+c，cmd+n，cmd+v</p>
 <h3 id="其他："><a href="#其他：" class="headerlink" title="其他："></a>其他：</h3><p>第三方工具，一大堆</p>
-<p>By：Evan</p>
+<p>By：<a href="http://www.txtea.cc/" target="_blank" rel="external">Evan</a></p>
 ]]></content>
     
     <summary type="html">
@@ -317,8 +401,8 @@
   
   <entry>
     <title>Javascript 变量的寻址与传递</title>
-    <link href="http://blog.webclown.net/2016/05/29/Javascript-%E5%8F%98%E9%87%8F%E7%9A%84%E5%AF%BB%E5%9D%80%E4%B8%8E%E4%BC%A0%E9%80%92/"/>
-    <id>http://blog.webclown.net/2016/05/29/Javascript-变量的寻址与传递/</id>
+    <link href="http://blog.webclown.net/2016/05/29/%E3%80%90%E8%BD%AC%E3%80%91Javascript-%E5%8F%98%E9%87%8F%E7%9A%84%E5%AF%BB%E5%9D%80%E4%B8%8E%E4%BC%A0%E9%80%92/"/>
+    <id>http://blog.webclown.net/2016/05/29/【转】Javascript-变量的寻址与传递/</id>
     <published>2016-05-29T11:13:26.000Z</published>
     <updated>2016-05-29T12:11:45.000Z</updated>
     
@@ -534,11 +618,11 @@
       <category term="工具&amp;平台" scheme="http://blog.webclown.net/categories/%E5%B7%A5%E5%85%B7-%E5%B9%B3%E5%8F%B0/"/>
     
     
-      <category term="watch" scheme="http://blog.webclown.net/tags/watch/"/>
-    
       <category term="figlet" scheme="http://blog.webclown.net/tags/figlet/"/>
     
       <category term="brew" scheme="http://blog.webclown.net/tags/brew/"/>
+    
+      <category term="watch" scheme="http://blog.webclown.net/tags/watch/"/>
     
   </entry>
   
@@ -631,10 +715,10 @@
   
   <entry>
     <title>Git-常用命令</title>
-    <link href="http://blog.webclown.net/2015/04/14/Git-%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
-    <id>http://blog.webclown.net/2015/04/14/Git-常用命令/</id>
+    <link href="http://blog.webclown.net/2015/04/14/%E3%80%90%E8%BD%AC%E3%80%91Git-%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
+    <id>http://blog.webclown.net/2015/04/14/【转】Git-常用命令/</id>
     <published>2015-04-14T12:23:03.000Z</published>
-    <updated>2016-05-13T00:45:49.000Z</updated>
+    <updated>2016-11-29T16:16:04.000Z</updated>
     
     <content type="html"><![CDATA[<h2 id="develop-via-a-single-branch"><a href="#develop-via-a-single-branch" class="headerlink" title="develop via a single branch"></a>develop via a single branch</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">t branch -m &#123;&#123;branch&#125;&#125;</div><div class="line">git fetch origin</div><div class="line">git rebase origin/master -i</div><div class="line">git push origin &#123;&#123;branch&#125;&#125;</div></pre></td></tr></table></figure>
 <h2 id="create-a-new-branch"><a href="#create-a-new-branch" class="headerlink" title="create a new branch"></a>create a new branch</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git checkout -b &#123;&#123;branch&#125;&#125;</div></pre></td></tr></table></figure>
@@ -649,6 +733,9 @@
 <h2 id="gh-pages"><a href="#gh-pages" class="headerlink" title="gh-pages"></a>gh-pages</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">http://&#123;&#123;group&#125;&#125;.github.io/&#123;&#123;repo&#125;&#125;/</div></pre></td></tr></table></figure>
 <h2 id="npm-add-owner"><a href="#npm-add-owner" class="headerlink" title="npm add owner"></a>npm add owner</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm owner add &#123;&#123;name&#125;&#125;</div></pre></td></tr></table></figure>
 <p>Source：<a href="https://github.com/fool2fish/blog/issues/9" target="_blank" rel="external">fool2fish</a></p>
+<h2 id="一些链接"><a href="#一些链接" class="headerlink" title="一些链接"></a>一些链接</h2><ul>
+<li><a href="https://www.uis.cc/2016/06/21/List-of-commonly-used-Git-commands/" target="_blank" rel="external">常用 Git 命令清单</a></li>
+</ul>
 ]]></content>
     
     <summary type="html">

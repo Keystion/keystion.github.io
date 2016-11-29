@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.webclown.net/2016/11/29/%E3%80%90%E8%BD%AC%E3%80%91%E6%8A%98%E8%85%BE%E4%BA%86%E4%B8%80%E4%B8%8BTerminal%EF%BC%88%E7%BB%88%E7%AB%AF%EF%BC%89%E4%B9%8BiTerm2/</loc>
+    
+    <lastmod>2016-11-29T16:19:18.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.webclown.net/2015/04/14/%E3%80%90%E8%BD%AC%E3%80%91Git-%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</loc>
+    
+    <lastmod>2016-11-29T16:16:04.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.webclown.net/2016/11/13/%E5%BF%AB%E9%80%9F%E5%88%87%E5%9B%BE/</loc>
+    
+    <lastmod>2016-11-29T16:14:16.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://blog.webclown.net/2016/11/18/wc-command-not-found/</loc>
     
     <lastmod>2016-11-18T00:12:09.000Z</lastmod>
@@ -30,14 +51,7 @@
   </url>
   
   <url>
-    <loc>http://blog.webclown.net/2016/11/13/%E5%BF%AB%E9%80%9F%E5%88%87%E5%9B%BE/</loc>
-    
-    <lastmod>2016-11-13T13:25:42.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.webclown.net/2016/05/29/Javascript-%E5%8F%98%E9%87%8F%E7%9A%84%E5%AF%BB%E5%9D%80%E4%B8%8E%E4%BC%A0%E9%80%92/</loc>
+    <loc>http://blog.webclown.net/2016/05/29/%E3%80%90%E8%BD%AC%E3%80%91Javascript-%E5%8F%98%E9%87%8F%E7%9A%84%E5%AF%BB%E5%9D%80%E4%B8%8E%E4%BC%A0%E9%80%92/</loc>
     
     <lastmod>2016-05-29T12:11:45.000Z</lastmod>
     
@@ -75,13 +89,6 @@
     <loc>http://blog.webclown.net/2016/05/13/%E9%80%9A%E8%BF%87wget%E4%B8%8B%E8%BD%BD%E7%BD%91%E7%AB%99/</loc>
     
     <lastmod>2016-05-13T10:26:53.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.webclown.net/2015/04/14/Git-%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</loc>
-    
-    <lastmod>2016-05-13T00:45:49.000Z</lastmod>
     
   </url>
   
