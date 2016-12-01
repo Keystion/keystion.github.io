@@ -60,17 +60,17 @@
       <category term="工具&amp;平台" scheme="http://blog.webclown.net/categories/%E5%B7%A5%E5%85%B7-%E5%B9%B3%E5%8F%B0/"/>
     
     
-      <category term="linux" scheme="http://blog.webclown.net/tags/linux/"/>
-    
-      <category term="ssh-keygen" scheme="http://blog.webclown.net/tags/ssh-keygen/"/>
-    
       <category term="Nginx" scheme="http://blog.webclown.net/tags/Nginx/"/>
+    
+      <category term="linux" scheme="http://blog.webclown.net/tags/linux/"/>
     
       <category term="MySQL" scheme="http://blog.webclown.net/tags/MySQL/"/>
     
       <category term="skip-grant-tables" scheme="http://blog.webclown.net/tags/skip-grant-tables/"/>
     
       <category term="my.cnf" scheme="http://blog.webclown.net/tags/my-cnf/"/>
+    
+      <category term="ssh-keygen" scheme="http://blog.webclown.net/tags/ssh-keygen/"/>
     
   </entry>
   
@@ -130,17 +130,17 @@
       <category term="工具&amp;平台" scheme="http://blog.webclown.net/categories/%E5%B7%A5%E5%85%B7-%E5%B9%B3%E5%8F%B0/"/>
     
     
-      <category term="OS X" scheme="http://blog.webclown.net/tags/OS-X/"/>
-    
       <category term="linux" scheme="http://blog.webclown.net/tags/linux/"/>
+    
+      <category term="ssh-keygen" scheme="http://blog.webclown.net/tags/ssh-keygen/"/>
+    
+      <category term="OS X" scheme="http://blog.webclown.net/tags/OS-X/"/>
     
       <category term="SSH" scheme="http://blog.webclown.net/tags/SSH/"/>
     
       <category term="id_rsa" scheme="http://blog.webclown.net/tags/id-rsa/"/>
     
       <category term="authorized_keys" scheme="http://blog.webclown.net/tags/authorized-keys/"/>
-    
-      <category term="ssh-keygen" scheme="http://blog.webclown.net/tags/ssh-keygen/"/>
     
   </entry>
   
