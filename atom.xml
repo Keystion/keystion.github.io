@@ -17,8 +17,8 @@
   
   <entry>
     <title>Nginx修改MySQL root用户密码</title>
-    <link href="http://blog.webclown.net/2016/12/01/Nginx%E4%BF%AE%E6%94%B9MySQL%20root%E7%94%A8%E6%88%B7%E5%AF%86%E7%A0%81/"/>
-    <id>http://blog.webclown.net/2016/12/01/Nginx修改MySQL root用户密码/</id>
+    <link href="http://blog.webclown.net/2016/12/01/%E5%9C%A8Nginx%E4%B8%8A%E4%BF%AE%E6%94%B9MySQL%20root%E7%94%A8%E6%88%B7%E5%AF%86%E7%A0%81/"/>
+    <id>http://blog.webclown.net/2016/12/01/在Nginx上修改MySQL root用户密码/</id>
     <published>2016-11-30T23:43:38.000Z</published>
     <updated>2016-12-01T00:23:11.000Z</updated>
     
@@ -60,17 +60,17 @@
       <category term="工具&amp;平台" scheme="http://blog.webclown.net/categories/%E5%B7%A5%E5%85%B7-%E5%B9%B3%E5%8F%B0/"/>
     
     
-      <category term="Nginx" scheme="http://blog.webclown.net/tags/Nginx/"/>
-    
       <category term="linux" scheme="http://blog.webclown.net/tags/linux/"/>
+    
+      <category term="ssh-keygen" scheme="http://blog.webclown.net/tags/ssh-keygen/"/>
+    
+      <category term="Nginx" scheme="http://blog.webclown.net/tags/Nginx/"/>
     
       <category term="MySQL" scheme="http://blog.webclown.net/tags/MySQL/"/>
     
       <category term="skip-grant-tables" scheme="http://blog.webclown.net/tags/skip-grant-tables/"/>
     
       <category term="my.cnf" scheme="http://blog.webclown.net/tags/my-cnf/"/>
-    
-      <category term="ssh-keygen" scheme="http://blog.webclown.net/tags/ssh-keygen/"/>
     
   </entry>
   
@@ -79,11 +79,12 @@
     <link href="http://blog.webclown.net/2016/12/01/OS-X%E7%AE%A1%E7%90%86%E5%A4%9A%E4%B8%AAssh%E5%85%AC%E9%92%A5%E5%AF%86%E9%92%A5/"/>
     <id>http://blog.webclown.net/2016/12/01/OS-X管理多个ssh公钥密钥/</id>
     <published>2016-11-30T23:24:25.000Z</published>
-    <updated>2016-12-01T00:23:06.000Z</updated>
+    <updated>2016-12-01T02:25:59.000Z</updated>
     
     <content type="html"><![CDATA[<p><img src="/images/posts/2016/12-01/ssh-key.jpg" alt="ssh-key"></p>
 <p>最终结果文件<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">.</div><div class="line">├── authorized_keys</div><div class="line">├── config</div><div class="line">├── id_rsa.coding</div><div class="line">├── id_rsa.coding.company</div><div class="line">├── id_rsa.coding.company.pub</div><div class="line">├── id_rsa.coding.pub</div><div class="line">├── id_rsa.github</div><div class="line">├── id_rsa.github.pub</div><div class="line">└── known_hosts</div></pre></td></tr></table></figure></p>
 <a id="more"></a>
+<p>新建不同的密钥和Host去匹配。</p>
 <ol>
 <li><p>输入邮箱</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ssh-keygen -t rsa -b 4096 -C &quot;ytshang@gaoxiaobang.com&quot;</div></pre></td></tr></table></figure>
@@ -130,17 +131,17 @@
       <category term="工具&amp;平台" scheme="http://blog.webclown.net/categories/%E5%B7%A5%E5%85%B7-%E5%B9%B3%E5%8F%B0/"/>
     
     
-      <category term="linux" scheme="http://blog.webclown.net/tags/linux/"/>
-    
-      <category term="ssh-keygen" scheme="http://blog.webclown.net/tags/ssh-keygen/"/>
-    
       <category term="OS X" scheme="http://blog.webclown.net/tags/OS-X/"/>
+    
+      <category term="linux" scheme="http://blog.webclown.net/tags/linux/"/>
     
       <category term="SSH" scheme="http://blog.webclown.net/tags/SSH/"/>
     
       <category term="id_rsa" scheme="http://blog.webclown.net/tags/id-rsa/"/>
     
       <category term="authorized_keys" scheme="http://blog.webclown.net/tags/authorized-keys/"/>
+    
+      <category term="ssh-keygen" scheme="http://blog.webclown.net/tags/ssh-keygen/"/>
     
   </entry>
   
