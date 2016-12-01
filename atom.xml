@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.webclown.net/"/>
-  <updated>2016-11-29T18:17:12.000Z</updated>
+  <updated>2016-12-01T00:23:11.000Z</updated>
   <id>http://blog.webclown.net/</id>
   
   <author>
@@ -14,6 +14,135 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Nginx修改MySQL root用户密码</title>
+    <link href="http://blog.webclown.net/2016/12/01/Nginx%E4%BF%AE%E6%94%B9MySQL%20root%E7%94%A8%E6%88%B7%E5%AF%86%E7%A0%81/"/>
+    <id>http://blog.webclown.net/2016/12/01/Nginx修改MySQL root用户密码/</id>
+    <published>2016-11-30T23:43:38.000Z</published>
+    <updated>2016-12-01T00:23:11.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/images/posts/2016/12-01/phpmyadmin.jpg" alt="phpmyadmin"></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">vi /etc/my.cnf</div></pre></td></tr></table></figure>
+<p>在<code>/etc/my.cnf</code>文件的<code>[mysqld]</code>下面（换行）添加<code>skip-grant-tables</code>，保存并退出（<code>ESC</code>-&gt;<code>:</code>-&gt;<code>wq</code>-&gt;<code>回车</code>）。</p>
+<a id="more"></a>
+<p><strong>之前</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"># The MySQL server</div><div class="line">[mysqld]</div><div class="line">port            = 3306</div><div class="line">socket          = /tmp/mysql.sock</div></pre></td></tr></table></figure></p>
+<p><strong>之后</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"># The MySQL server</div><div class="line">[mysqld]</div><div class="line">skip-grant-tables</div><div class="line">port            = 3306</div><div class="line">socket          = /tmp/mysql.sock</div></pre></td></tr></table></figure></p>
+<p>重启MySQL：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">/etc/init.d/mysql restart</div></pre></td></tr></table></figure></p>
+<p>成功提示：</p>
+<p>Stopping MySQL: [ OK ] Starting MySQL: [ OK ]</p>
+<p>接下来继续输入：<code>mysql</code>；输入<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">mysql&gt; USE mysql ;</div><div class="line">mysql&gt; UPDATE user SET Password = password ( &apos;OHYnECf17EPdG6wb&apos; ) WHERE User = &apos;root&apos; ;</div><div class="line">mysql&gt; FLUSH PRIVILEGES; </div><div class="line">mysql&gt; quit -&gt;回车</div></pre></td></tr></table></figure></p>
+<p>完成</p>
+<p>重启MySQL</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">/etc/init.d/mysqld restart</div></pre></td></tr></table></figure>
+<p>输入<code>mysql -u root -p</code>就会提示输入新密码，输入刚才设置的秘密就可以进去，说明设置成功。</p>
+<p>此时你以为结束，并没有，记得把<code>skip-grant-tables</code>从<code>/etc/my.cnf</code>里面删除掉，不然即使你通过刚刚的过程修改了root用户的密码最后还是无法对数据库进行<code>增</code>、<code>删</code>、<code>改</code>。</p>
+<p><img src="/images/posts/2016/12-01/phpmyadmin.01.png" alt="phpmyadmin"></p>
+<p>正文结束了，其实下面还有一些文字👇</p>
+<hr>
+<p>一个漂亮的无纺布手提袋，不单单只是一个商品的包装袋。</p>
+<p>还能够印上贵公司的标志或者广告语，消费者在购物的同时既得到了一个精美的手提袋，而商家也得到了无形的广告宣传两全其美。</p>
+<p>适合任何公司、任何行业作为广告宣传、赠品以及外包装之用。</p>
+<p>海创以专业的设计和制作工艺，为您做出优质的手提袋，欢迎订购！</p>
+<p>联系一下子呗：<a href="tel:15003209070" target="_blank" rel="external">15003209070</a></p>
+<p><img src="/images/shoutidai.qrcode.jpg" alt="无纺布手提袋"></p>
+<hr>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;/images/posts/2016/12-01/phpmyadmin.jpg&quot; alt=&quot;phpmyadmin&quot;&gt;&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;vi /etc/my.cnf&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;在&lt;code&gt;/etc/my.cnf&lt;/code&gt;文件的&lt;code&gt;[mysqld]&lt;/code&gt;下面（换行）添加&lt;code&gt;skip-grant-tables&lt;/code&gt;，保存并退出（&lt;code&gt;ESC&lt;/code&gt;-&amp;gt;&lt;code&gt;:&lt;/code&gt;-&amp;gt;&lt;code&gt;wq&lt;/code&gt;-&amp;gt;&lt;code&gt;回车&lt;/code&gt;）。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="工具&amp;平台" scheme="http://blog.webclown.net/categories/%E5%B7%A5%E5%85%B7-%E5%B9%B3%E5%8F%B0/"/>
+    
+    
+      <category term="linux" scheme="http://blog.webclown.net/tags/linux/"/>
+    
+      <category term="ssh-keygen" scheme="http://blog.webclown.net/tags/ssh-keygen/"/>
+    
+      <category term="Nginx" scheme="http://blog.webclown.net/tags/Nginx/"/>
+    
+      <category term="MySQL" scheme="http://blog.webclown.net/tags/MySQL/"/>
+    
+      <category term="skip-grant-tables" scheme="http://blog.webclown.net/tags/skip-grant-tables/"/>
+    
+      <category term="my.cnf" scheme="http://blog.webclown.net/tags/my-cnf/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>OS X管理多个SSH公钥密钥</title>
+    <link href="http://blog.webclown.net/2016/12/01/OS-X%E7%AE%A1%E7%90%86%E5%A4%9A%E4%B8%AAssh%E5%85%AC%E9%92%A5%E5%AF%86%E9%92%A5/"/>
+    <id>http://blog.webclown.net/2016/12/01/OS-X管理多个ssh公钥密钥/</id>
+    <published>2016-11-30T23:24:25.000Z</published>
+    <updated>2016-12-01T00:23:06.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/images/posts/2016/12-01/ssh-key.jpg" alt="ssh-key"></p>
+<p>最终结果文件<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">.</div><div class="line">├── authorized_keys</div><div class="line">├── config</div><div class="line">├── id_rsa.coding</div><div class="line">├── id_rsa.coding.company</div><div class="line">├── id_rsa.coding.company.pub</div><div class="line">├── id_rsa.coding.pub</div><div class="line">├── id_rsa.github</div><div class="line">├── id_rsa.github.pub</div><div class="line">└── known_hosts</div></pre></td></tr></table></figure></p>
+<a id="more"></a>
+<ol>
+<li><p>输入邮箱</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ssh-keygen -t rsa -b 4096 -C &quot;ytshang@gaoxiaobang.com&quot;</div></pre></td></tr></table></figure>
+</li>
+<li><p>保存位置，一般就在默认的目录下即可</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">Enter file in which to save the key (/Users/key/.ssh/id_rsa):</div><div class="line">/Users/key/.ssh/id_rsa.coding.company</div></pre></td></tr></table></figure>
+</li>
+<li><p>输入密码两次确认输入，当然密码是不可见的，直接输入完，回车确认即可：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">Enter passphrase (empty for no passphrase):[输入密码]</div><div class="line">Enter same passphrase again:[再次输入密码]</div></pre></td></tr></table></figure>
+</li>
+<li><p>复制公钥：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">pbcopy &lt; ~/.ssh/id_rsa.coding.company.pub</div></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>把你需要单独的网站SSH公钥密钥，都用以上步骤都生成下。</p>
+<p>这是我最终生成的文件（Coding公司、Coding个人、Github个人）：</p>
+<p><img src="/images/posts/2016/12-01/ssh-key.01.png" alt="ssh-key"></p>
+<p>添加到<code>authorized_keys</code>文件里面：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">ssh-rsa AAAAB3NzaC1yc2EAAAADAQCAQCw******RQw== keystion@A.com</div><div class="line">ssh-rsa AAAAB3NzaC1yc2EAAAADAQAB*******inUtQ== keystion@B.com</div><div class="line">ssh-rsa AAAAB3Nz********ZCcvI1xZhBRWpZZdhv4Q== keystion@C.com</div></pre></td></tr></table></figure>
+<p><code>config</code>文件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">Host github.com</div><div class="line">    HostName github.com</div><div class="line">    IdentityFile ~/.ssh/id_rsa.github</div><div class="line">    User git</div><div class="line">Host git.coding.net</div><div class="line">    HostName git.coding.net</div><div class="line">    IdentityFile ~/.ssh/id_rsa.coding</div><div class="line">    User git</div><div class="line"></div><div class="line">Host company.git.coding.net</div><div class="line">    HostName git.coding.net</div><div class="line">    IdentityFile ~/.ssh/id_rsa.coding.company</div><div class="line">    User git</div></pre></td></tr></table></figure>
+<h2 id="测试是否连接成功"><a href="#测试是否连接成功" class="headerlink" title="测试是否连接成功"></a>测试是否连接成功</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">ssh -T git@github.com</div><div class="line">Hi Keystion! You&apos;ve successfully authenticated, but GitHub does not provide shell access.</div><div class="line"></div><div class="line">ssh -T git@git.coding.net</div><div class="line">Enter passphrase for key &apos;/Users/key/.ssh/id_rsa.coding&apos;:</div><div class="line">Hello keystion! You&apos;ve connected to Coding.net via SSH successfully!</div><div class="line"></div><div class="line">ssh -T git@company.git.coding.net</div><div class="line">Hello key_kaikeba! You&apos;ve connected to Coding.net via SSH successfully!</div></pre></td></tr></table></figure>
+<p>clone仓库时候多少有一点变化，<code>pull</code>、<code>push</code>等无变化。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git clone git@[Hose]:[UserName]/****.git</div></pre></td></tr></table></figure>
+<p><img src="/images/posts/2016/12-01/ssh-key.02.png" alt="ssh-key"></p>
+<p>嗯，正文到这里结束。</p>
+<hr>
+<p>一个漂亮的无纺布手提袋，不单单只是一个商品的包装袋。</p>
+<p>还能够印上贵公司的标志或者广告语，消费者在购物的同时既得到了一个精美的手提袋，而商家也得到了无形的广告宣传两全其美。</p>
+<p>适合任何公司、任何行业作为广告宣传、赠品以及外包装之用。</p>
+<p>海创以专业的设计和制作工艺，为您做出优质的手提袋，欢迎订购！</p>
+<p>联系一下子呗：<a href="tel:15003209070" target="_blank" rel="external">15003209070</a></p>
+<p><img src="/images/shoutidai.qrcode.jpg" alt="无纺布手提袋"></p>
+<hr>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;/images/posts/2016/12-01/ssh-key.jpg&quot; alt=&quot;ssh-key&quot;&gt;&lt;/p&gt;
+&lt;p&gt;最终结果文件&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;8&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;9&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;10&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;.&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;├── authorized_keys&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;├── config&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;├── id_rsa.coding&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;├── id_rsa.coding.company&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;├── id_rsa.coding.company.pub&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;├── id_rsa.coding.pub&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;├── id_rsa.github&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;├── id_rsa.github.pub&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;└── known_hosts&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="工具&amp;平台" scheme="http://blog.webclown.net/categories/%E5%B7%A5%E5%85%B7-%E5%B9%B3%E5%8F%B0/"/>
+    
+    
+      <category term="OS X" scheme="http://blog.webclown.net/tags/OS-X/"/>
+    
+      <category term="linux" scheme="http://blog.webclown.net/tags/linux/"/>
+    
+      <category term="SSH" scheme="http://blog.webclown.net/tags/SSH/"/>
+    
+      <category term="id_rsa" scheme="http://blog.webclown.net/tags/id-rsa/"/>
+    
+      <category term="authorized_keys" scheme="http://blog.webclown.net/tags/authorized-keys/"/>
+    
+      <category term="ssh-keygen" scheme="http://blog.webclown.net/tags/ssh-keygen/"/>
+    
+  </entry>
   
   <entry>
     <title>【转】折腾了一下Terminal（终端）之iTerm2</title>
