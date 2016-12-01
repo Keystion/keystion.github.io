@@ -79,12 +79,12 @@
     <link href="http://blog.webclown.net/2016/12/01/OS-X%E7%AE%A1%E7%90%86%E5%A4%9A%E4%B8%AAssh%E5%85%AC%E9%92%A5%E5%AF%86%E9%92%A5/"/>
     <id>http://blog.webclown.net/2016/12/01/OS-X管理多个ssh公钥密钥/</id>
     <published>2016-11-30T23:24:25.000Z</published>
-    <updated>2016-12-01T02:25:59.000Z</updated>
+    <updated>2016-12-01T02:44:02.000Z</updated>
     
     <content type="html"><![CDATA[<p><img src="/images/posts/2016/12-01/ssh-key.jpg" alt="ssh-key"></p>
 <p>最终结果文件<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">.</div><div class="line">├── authorized_keys</div><div class="line">├── config</div><div class="line">├── id_rsa.coding</div><div class="line">├── id_rsa.coding.company</div><div class="line">├── id_rsa.coding.company.pub</div><div class="line">├── id_rsa.coding.pub</div><div class="line">├── id_rsa.github</div><div class="line">├── id_rsa.github.pub</div><div class="line">└── known_hosts</div></pre></td></tr></table></figure></p>
 <a id="more"></a>
-<p>新建不同的密钥和Host去匹配。</p>
+<p>新建不同的密钥和Host去匹配(@wazi)。</p>
 <ol>
 <li><p>输入邮箱</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ssh-keygen -t rsa -b 4096 -C &quot;ytshang@gaoxiaobang.com&quot;</div></pre></td></tr></table></figure>
@@ -748,11 +748,11 @@
       <category term="工具&amp;平台" scheme="http://blog.webclown.net/categories/%E5%B7%A5%E5%85%B7-%E5%B9%B3%E5%8F%B0/"/>
     
     
+      <category term="watch" scheme="http://blog.webclown.net/tags/watch/"/>
+    
       <category term="figlet" scheme="http://blog.webclown.net/tags/figlet/"/>
     
       <category term="brew" scheme="http://blog.webclown.net/tags/brew/"/>
-    
-      <category term="watch" scheme="http://blog.webclown.net/tags/watch/"/>
     
   </entry>
   
