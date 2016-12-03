@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.webclown.net/"/>
-  <updated>2016-12-01T00:23:11.000Z</updated>
+  <updated>2016-12-03T12:35:09.000Z</updated>
   <id>http://blog.webclown.net/</id>
   
   <author>
@@ -16,11 +16,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Nginx修改MySQL root用户密码</title>
+    <title>在Nginx上修改MySQL root用户密码</title>
     <link href="http://blog.webclown.net/2016/12/01/%E5%9C%A8Nginx%E4%B8%8A%E4%BF%AE%E6%94%B9MySQL%20root%E7%94%A8%E6%88%B7%E5%AF%86%E7%A0%81/"/>
     <id>http://blog.webclown.net/2016/12/01/在Nginx上修改MySQL root用户密码/</id>
     <published>2016-11-30T23:43:38.000Z</published>
-    <updated>2016-12-01T00:23:11.000Z</updated>
+    <updated>2016-12-03T12:35:09.000Z</updated>
     
     <content type="html"><![CDATA[<p><img src="/images/posts/2016/12-01/phpmyadmin.jpg" alt="phpmyadmin"></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">vi /etc/my.cnf</div></pre></td></tr></table></figure>
