@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.webclown.net/"/>
-  <updated>2016-12-03T12:35:09.000Z</updated>
+  <updated>2016-12-21T06:27:57.000Z</updated>
   <id>http://blog.webclown.net/</id>
   
   <author>
@@ -14,6 +14,38 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Merry Christmas</title>
+    <link href="http://blog.webclown.net/2016/12/21/Merry-Christmas/"/>
+    <id>http://blog.webclown.net/2016/12/21/Merry-Christmas/</id>
+    <published>2016-12-21T00:11:39.000Z</published>
+    <updated>2016-12-21T06:27:57.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>Merry Christmas！</p>
+<p></p><p data-height="316" data-theme-id="light" data-slug-hash="oYVyLd" data-default-tab="result" data-user="Keystion" data-embed-version="2" data-pen-title="Google search result page christmas themes" class="codepen">See the Pen <a href="http://codepen.io/Keystion/pen/oYVyLd/" target="_blank" rel="external">Google search result page christmas themes</a> by Keystion (<a href="http://codepen.io/Keystion" target="_blank" rel="external">@Keystion</a>) on <a href="http://codepen.io" target="_blank" rel="external">CodePen</a>.</p><p></p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+<p>意外的发现了Google为搜索<code>Christmas</code>设定的主题，特此Mark一下！<br><a href="https://www.google.com/?gfe_rd=cr&ei=dx1aWLfxIKTz8AfF146oAg&gws_rd=cr&fg=1#newwindow=1&safe=active&q=christmas" target="_black">尝试搜索一下：christmas</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Merry Christmas！&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;&lt;p data-height=&quot;316&quot; data-theme-id=&quot;light&quot; data-slug-hash=&quot;oYVyLd&quot; data-default-tab=&quot;result&quot; data-user=&quot;Keyst
+    
+    </summary>
+    
+      <category term="Daily Life" scheme="http://blog.webclown.net/categories/Daily-Life/"/>
+    
+    
+      <category term="Christmas" scheme="http://blog.webclown.net/tags/Christmas/"/>
+    
+      <category term="圣诞节" scheme="http://blog.webclown.net/tags/%E5%9C%A3%E8%AF%9E%E8%8A%82/"/>
+    
+      <category term="Google" scheme="http://blog.webclown.net/tags/Google/"/>
+    
+  </entry>
   
   <entry>
     <title>在Nginx上修改MySQL root用户密码</title>
@@ -748,11 +780,11 @@
       <category term="工具&amp;平台" scheme="http://blog.webclown.net/categories/%E5%B7%A5%E5%85%B7-%E5%B9%B3%E5%8F%B0/"/>
     
     
-      <category term="watch" scheme="http://blog.webclown.net/tags/watch/"/>
-    
       <category term="figlet" scheme="http://blog.webclown.net/tags/figlet/"/>
     
       <category term="brew" scheme="http://blog.webclown.net/tags/brew/"/>
+    
+      <category term="watch" scheme="http://blog.webclown.net/tags/watch/"/>
     
   </entry>
   

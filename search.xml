@@ -3,6 +3,13 @@
   
     
     <entry>
+      <title><![CDATA[Merry Christmas]]></title>
+      <url>%2F2016%2F12%2F21%2FMerry-Christmas%2F</url>
+      <content type="text"><![CDATA[Merry Christmas！ See the Pen Google search result page christmas themes by Keystion (@Keystion) on CodePen. 意外的发现了Google为搜索Christmas设定的主题，特此Mark一下！尝试搜索一下：christmas]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[在Nginx上修改MySQL root用户密码]]></title>
       <url>%2F2016%2F12%2F01%2F%E5%9C%A8Nginx%E4%B8%8A%E4%BF%AE%E6%94%B9MySQL%20root%E7%94%A8%E6%88%B7%E5%AF%86%E7%A0%81%2F</url>
       <content type="text"><![CDATA[1vi /etc/my.cnf 在/etc/my.cnf文件的[mysqld]下面（换行）添加skip-grant-tables，保存并退出（ESC-&gt;:-&gt;wq-&gt;回车）。 之前1234# The MySQL server[mysqld]port = 3306socket = /tmp/mysql.sock 之后12345# The MySQL server[mysqld]skip-grant-tablesport = 3306socket = /tmp/mysql.sock 重启MySQL：1/etc/init.d/mysql restart 成功提示： Stopping MySQL: [ OK ] Starting MySQL: [ OK ] 接下来继续输入：mysql；输入1234mysql&gt; USE mysql ;mysql&gt; UPDATE user SET Password = password ( &apos;OHYnECf17EPdG6wb&apos; ) WHERE User = &apos;root&apos; ;mysql&gt; FLUSH PRIVILEGES; mysql&gt; quit -&gt;回车 完成 重启MySQL 1/etc/init.d/mysqld restart 输入mysql -u root -p就会提示输入新密码，输入刚才设置的秘密就可以进去，说明设置成功。 此时你以为结束，并没有，记得把skip-grant-tables从/etc/my.cnf里面删除掉，不然即使你通过刚刚的过程修改了root用户的密码最后还是无法对数据库进行增、删、改。 正文结束了，其实下面还有一些文字👇 一个漂亮的无纺布手提袋，不单单只是一个商品的包装袋。 还能够印上贵公司的标志或者广告语，消费者在购物的同时既得到了一个精美的手提袋，而商家也得到了无形的广告宣传两全其美。 适合任何公司、任何行业作为广告宣传、赠品以及外包装之用。 海创以专业的设计和制作工艺，为您做出优质的手提袋，欢迎订购！ 联系一下子呗：15003209070]]></content>
