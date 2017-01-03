@@ -3,6 +3,13 @@
   
     
     <entry>
+      <title><![CDATA[web录制音频文件大小问题]]></title>
+      <url>%2F2016%2F12%2F26%2FAudioContext-%E5%BD%95%E9%9F%B3%E6%96%87%E4%BB%B6%E5%A4%A7%E5%B0%8F%E9%97%AE%E9%A2%98%2F</url>
+      <content type="text"><![CDATA[首先普及相关知识：一个小公式： 采样频率（Hz） 采样位数（bit） 声道数 / 8 = 数据量（字节/秒） 采样频率：http://baike.baidu.com/item/采样频率 采样位数：http://baike.baidu.com/item/采样位数 声道数：http://baike.baidu.com/item/声道数 数据量：http://baike.baidu.com/item/字节 采样测试没有整过Audio相关的业务，就一个测试，通过navigator.getUserMedia、AudioContext启动web录音取样得到的数据，只能做参考。 音频类型 时间 采样位数 采样频率 声道数 大小(字节) 音色 audio/ogg 60s 8 8000 1 535800 变粗 audio/ogg 60s 8 8000 2 537439 变细变快 时间减半 audio/ogg 60s 16 8000 1 1071556 变粗 audio/ogg 60s 16 8000 2 1071556 变细变快 时间减半 audio/ogg 60s 8 11025 1 669740 ok audio/ogg 60s 8 11025 2 669740 变细变快 时间减半 audio/ogg 60s 16 11025 1 1339436 ok audio/ogg 60s 16 11025 2 1341484 变细变快 时间减半 audio/ogg 60s 8 44100 1 2662444 ok audio/ogg 60s 8 44100 2 2674732 变细变快 时间减半 audio/ogg 60s 16 44100 1 5349420 ok audio/ogg 60s 16 44100 2 5316652 变细变快 时间减半 音频类型 时间 采样位数 采样频率 声道数 大小(字节) 音色 audio/wav 60s 8 8000 1 534981 变粗 audio/wav 60s 8 8000 2 534981 变细变快 时间减半 audio/wav 60s 16 8000 1 1071556 变粗 audio/wav 60s 16 8000 2 1074834 变细变快 时间减半 audio/wav 60s 8 11025 1 669740 ok audio/wav 60s 8 11025 2 670764 变细变快 时间减半 audio/wav 60s 16 11025 1 1335340 ok audio/wav 60s 16 11025 2 1341484 变细变快 时间减半 audio/wav 60s 8 44100 1 2674732 ok audio/wav 60s 8 44100 2 2682924 变细变快 时间减半 audio/wav 60s 16 44100 1 5349420 ok audio/wav 60s 16 44100 2 5357612 变细变快 时间减半 音频类型 时间 采样位数 采样频率 声道数 大小(字节) 音色 audio/mp3 60s 8 44100 1 2666540 ok audio/mp3 60s 16 44100 1 5349420 ok audio/mp3 60s 8 11025 1 668716 ok 得出结论测试得到想要的结果： audio/ogg：11025（Hz）* 8（bit）* 1 * 60s ≈ 669740 audio/wav：11025（Hz）* 8（bit）* 1 * 60s ≈ 669740 audio/mp3：11025（Hz）* 8（bit）* 1 * 60s ≈ 668716 1分钟 0.67M左右 文件大小和采样位数、采样频率及声道数有关系直接关系，和文件类型关系不大。 相关文档 MDN上的navigator.getUserMedia文档 MDN上的AudioContext文档 MDN上的MediaStream文档]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[Merry Christmas]]></title>
       <url>%2F2016%2F12%2F21%2FMerry-Christmas%2F</url>
       <content type="text"><![CDATA[Merry Christmas！ See the Pen Google search result page christmas themes by Keystion (@Keystion) on CodePen. 意外的发现了Google为搜索Christmas设定的主题，特此Mark一下！尝试搜索一下：christmas]]></content>

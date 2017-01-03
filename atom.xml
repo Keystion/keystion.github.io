@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.webclown.net/"/>
-  <updated>2016-12-21T06:27:57.000Z</updated>
+  <updated>2017-01-03T16:42:55.000Z</updated>
   <id>http://blog.webclown.net/</id>
   
   <author>
@@ -14,6 +14,362 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>web录制音频文件大小问题</title>
+    <link href="http://blog.webclown.net/2016/12/26/AudioContext-%E5%BD%95%E9%9F%B3%E6%96%87%E4%BB%B6%E5%A4%A7%E5%B0%8F%E9%97%AE%E9%A2%98/"/>
+    <id>http://blog.webclown.net/2016/12/26/AudioContext-录音文件大小问题/</id>
+    <published>2016-12-26T06:17:41.000Z</published>
+    <updated>2017-01-03T16:42:55.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="首先普及相关知识："><a href="#首先普及相关知识：" class="headerlink" title="首先普及相关知识："></a>首先普及相关知识：</h1><p>一个小公式：</p>
+<blockquote>
+<p><code>采样频率（Hz）</code> <em> <code>采样位数（bit）</code> </em> <code>声道数</code>  / <code>8</code> = <code>数据量（字节/秒）</code></p>
+</blockquote>
+<ul>
+<li><a href="http://baike.baidu.com/item/采样频率" target="_blank" rel="external">采样频率：http://baike.baidu.com/item/采样频率</a></li>
+<li><a href="http://baike.baidu.com/item/采样位数" target="_blank" rel="external">采样位数：http://baike.baidu.com/item/采样位数</a></li>
+<li><a href="http://baike.baidu.com/item/声道数" target="_blank" rel="external">声道数：http://baike.baidu.com/item/声道数</a></li>
+<li><a href="http://baike.baidu.com/item/字节" target="_blank" rel="external">数据量：http://baike.baidu.com/item/字节</a></li>
+</ul>
+<a id="more"></a>
+<h1 id="采样测试"><a href="#采样测试" class="headerlink" title="采样测试"></a>采样测试</h1><p>没有整过Audio相关的业务，就一个测试，通过<code>navigator.getUserMedia</code>、<code>AudioContext</code>启动web录音取样得到的数据，只能做参考。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">音频类型</th>
+<th style="text-align:center">时间</th>
+<th style="text-align:center">采样位数</th>
+<th style="text-align:center">采样频率</th>
+<th style="text-align:center">声道数</th>
+<th style="text-align:left">大小(字节)</th>
+<th style="text-align:center">音色</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">audio/ogg</td>
+<td style="text-align:center">60s</td>
+<td style="text-align:center">8</td>
+<td style="text-align:center">8000</td>
+<td style="text-align:center">1</td>
+<td style="text-align:left">535800</td>
+<td style="text-align:center">变粗</td>
+</tr>
+<tr>
+<td style="text-align:center">audio/ogg</td>
+<td style="text-align:center">60s</td>
+<td style="text-align:center">8</td>
+<td style="text-align:center">8000</td>
+<td style="text-align:center">2</td>
+<td style="text-align:left">537439</td>
+<td style="text-align:center">变细变快 时间减半</td>
+</tr>
+<tr>
+<td style="text-align:center">audio/ogg</td>
+<td style="text-align:center">60s</td>
+<td style="text-align:center">16</td>
+<td style="text-align:center">8000</td>
+<td style="text-align:center">1</td>
+<td style="text-align:left">1071556</td>
+<td style="text-align:center">变粗</td>
+</tr>
+<tr>
+<td style="text-align:center">audio/ogg</td>
+<td style="text-align:center">60s</td>
+<td style="text-align:center">16</td>
+<td style="text-align:center">8000</td>
+<td style="text-align:center">2</td>
+<td style="text-align:left">1071556</td>
+<td style="text-align:center">变细变快 时间减半</td>
+</tr>
+<tr>
+<td style="text-align:center">audio/ogg</td>
+<td style="text-align:center">60s</td>
+<td style="text-align:center">8</td>
+<td style="text-align:center">11025</td>
+<td style="text-align:center">1</td>
+<td style="text-align:left">669740</td>
+<td style="text-align:center">ok</td>
+</tr>
+<tr>
+<td style="text-align:center">audio/ogg</td>
+<td style="text-align:center">60s</td>
+<td style="text-align:center">8</td>
+<td style="text-align:center">11025</td>
+<td style="text-align:center">2</td>
+<td style="text-align:left">669740</td>
+<td style="text-align:center">变细变快 时间减半</td>
+</tr>
+<tr>
+<td style="text-align:center">audio/ogg</td>
+<td style="text-align:center">60s</td>
+<td style="text-align:center">16</td>
+<td style="text-align:center">11025</td>
+<td style="text-align:center">1</td>
+<td style="text-align:left">1339436</td>
+<td style="text-align:center">ok</td>
+</tr>
+<tr>
+<td style="text-align:center">audio/ogg</td>
+<td style="text-align:center">60s</td>
+<td style="text-align:center">16</td>
+<td style="text-align:center">11025</td>
+<td style="text-align:center">2</td>
+<td style="text-align:left">1341484</td>
+<td style="text-align:center">变细变快 时间减半</td>
+</tr>
+<tr>
+<td style="text-align:center">audio/ogg</td>
+<td style="text-align:center">60s</td>
+<td style="text-align:center">8</td>
+<td style="text-align:center">44100</td>
+<td style="text-align:center">1</td>
+<td style="text-align:left">2662444</td>
+<td style="text-align:center">ok</td>
+</tr>
+<tr>
+<td style="text-align:center">audio/ogg</td>
+<td style="text-align:center">60s</td>
+<td style="text-align:center">8</td>
+<td style="text-align:center">44100</td>
+<td style="text-align:center">2</td>
+<td style="text-align:left">2674732</td>
+<td style="text-align:center">变细变快 时间减半</td>
+</tr>
+<tr>
+<td style="text-align:center">audio/ogg</td>
+<td style="text-align:center">60s</td>
+<td style="text-align:center">16</td>
+<td style="text-align:center">44100</td>
+<td style="text-align:center">1</td>
+<td style="text-align:left">5349420</td>
+<td style="text-align:center">ok</td>
+</tr>
+<tr>
+<td style="text-align:center">audio/ogg</td>
+<td style="text-align:center">60s</td>
+<td style="text-align:center">16</td>
+<td style="text-align:center">44100</td>
+<td style="text-align:center">2</td>
+<td style="text-align:left">5316652</td>
+<td style="text-align:center">变细变快 时间减半</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">音频类型</th>
+<th style="text-align:center">时间</th>
+<th style="text-align:center">采样位数</th>
+<th style="text-align:center">采样频率</th>
+<th style="text-align:center">声道数</th>
+<th style="text-align:left">大小(字节)</th>
+<th style="text-align:center">音色</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">audio/wav</td>
+<td style="text-align:center">60s</td>
+<td style="text-align:center">8</td>
+<td style="text-align:center">8000</td>
+<td style="text-align:center">1</td>
+<td style="text-align:left">534981</td>
+<td style="text-align:center">变粗</td>
+</tr>
+<tr>
+<td style="text-align:center">audio/wav</td>
+<td style="text-align:center">60s</td>
+<td style="text-align:center">8</td>
+<td style="text-align:center">8000</td>
+<td style="text-align:center">2</td>
+<td style="text-align:left">534981</td>
+<td style="text-align:center">变细变快 时间减半</td>
+</tr>
+<tr>
+<td style="text-align:center">audio/wav</td>
+<td style="text-align:center">60s</td>
+<td style="text-align:center">16</td>
+<td style="text-align:center">8000</td>
+<td style="text-align:center">1</td>
+<td style="text-align:left">1071556</td>
+<td style="text-align:center">变粗</td>
+</tr>
+<tr>
+<td style="text-align:center">audio/wav</td>
+<td style="text-align:center">60s</td>
+<td style="text-align:center">16</td>
+<td style="text-align:center">8000</td>
+<td style="text-align:center">2</td>
+<td style="text-align:left">1074834</td>
+<td style="text-align:center">变细变快 时间减半</td>
+</tr>
+<tr>
+<td style="text-align:center">audio/wav</td>
+<td style="text-align:center">60s</td>
+<td style="text-align:center">8</td>
+<td style="text-align:center">11025</td>
+<td style="text-align:center">1</td>
+<td style="text-align:left">669740</td>
+<td style="text-align:center">ok</td>
+</tr>
+<tr>
+<td style="text-align:center">audio/wav</td>
+<td style="text-align:center">60s</td>
+<td style="text-align:center">8</td>
+<td style="text-align:center">11025</td>
+<td style="text-align:center">2</td>
+<td style="text-align:left">670764</td>
+<td style="text-align:center">变细变快 时间减半</td>
+</tr>
+<tr>
+<td style="text-align:center">audio/wav</td>
+<td style="text-align:center">60s</td>
+<td style="text-align:center">16</td>
+<td style="text-align:center">11025</td>
+<td style="text-align:center">1</td>
+<td style="text-align:left">1335340</td>
+<td style="text-align:center">ok</td>
+</tr>
+<tr>
+<td style="text-align:center">audio/wav</td>
+<td style="text-align:center">60s</td>
+<td style="text-align:center">16</td>
+<td style="text-align:center">11025</td>
+<td style="text-align:center">2</td>
+<td style="text-align:left">1341484</td>
+<td style="text-align:center">变细变快 时间减半</td>
+</tr>
+<tr>
+<td style="text-align:center">audio/wav</td>
+<td style="text-align:center">60s</td>
+<td style="text-align:center">8</td>
+<td style="text-align:center">44100</td>
+<td style="text-align:center">1</td>
+<td style="text-align:left">2674732</td>
+<td style="text-align:center">ok</td>
+</tr>
+<tr>
+<td style="text-align:center">audio/wav</td>
+<td style="text-align:center">60s</td>
+<td style="text-align:center">8</td>
+<td style="text-align:center">44100</td>
+<td style="text-align:center">2</td>
+<td style="text-align:left">2682924</td>
+<td style="text-align:center">变细变快 时间减半</td>
+</tr>
+<tr>
+<td style="text-align:center">audio/wav</td>
+<td style="text-align:center">60s</td>
+<td style="text-align:center">16</td>
+<td style="text-align:center">44100</td>
+<td style="text-align:center">1</td>
+<td style="text-align:left">5349420</td>
+<td style="text-align:center">ok</td>
+</tr>
+<tr>
+<td style="text-align:center">audio/wav</td>
+<td style="text-align:center">60s</td>
+<td style="text-align:center">16</td>
+<td style="text-align:center">44100</td>
+<td style="text-align:center">2</td>
+<td style="text-align:left">5357612</td>
+<td style="text-align:center">变细变快 时间减半</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">音频类型</th>
+<th style="text-align:center">时间</th>
+<th style="text-align:center">采样位数</th>
+<th style="text-align:center">采样频率</th>
+<th style="text-align:center">声道数</th>
+<th style="text-align:left">大小(字节)</th>
+<th style="text-align:center">音色</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">audio/mp3</td>
+<td style="text-align:center">60s</td>
+<td style="text-align:center">8</td>
+<td style="text-align:center">44100</td>
+<td style="text-align:center">1</td>
+<td style="text-align:left">2666540</td>
+<td style="text-align:center">ok</td>
+</tr>
+<tr>
+<td style="text-align:center">audio/mp3</td>
+<td style="text-align:center">60s</td>
+<td style="text-align:center">16</td>
+<td style="text-align:center">44100</td>
+<td style="text-align:center">1</td>
+<td style="text-align:left">5349420</td>
+<td style="text-align:center">ok</td>
+</tr>
+<tr>
+<td style="text-align:center">audio/mp3</td>
+<td style="text-align:center">60s</td>
+<td style="text-align:center">8</td>
+<td style="text-align:center">11025</td>
+<td style="text-align:center">1</td>
+<td style="text-align:left">668716</td>
+<td style="text-align:center">ok</td>
+</tr>
+</tbody>
+</table>
+<h1 id="得出结论"><a href="#得出结论" class="headerlink" title="得出结论"></a>得出结论</h1><p>测试得到想要的结果：</p>
+<ul>
+<li>audio/ogg：<code>11025（Hz）* 8（bit）* 1 * 60s ≈ 669740</code></li>
+<li>audio/wav：<code>11025（Hz）* 8（bit）* 1 * 60s ≈ 669740</code></li>
+<li>audio/mp3：<code>11025（Hz）* 8（bit）* 1 * 60s ≈ 668716</code></li>
+</ul>
+<p><strong>1分钟 0.67M左右</strong></p>
+<p>文件大小和采样位数、采样频率及声道数有关系直接关系，和文件类型关系不大。</p>
+<h1 id="相关文档"><a href="#相关文档" class="headerlink" title="相关文档"></a>相关文档</h1><ul>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Navigator/getUserMedia" target="_blank" rel="external">MDN上的navigator.getUserMedia文档</a></li>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/API/AudioContext" target="_blank" rel="external">MDN上的AudioContext文档</a></li>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/API/MediaStream" target="_blank" rel="external">MDN上的MediaStream文档</a></li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;首先普及相关知识：&quot;&gt;&lt;a href=&quot;#首先普及相关知识：&quot; class=&quot;headerlink&quot; title=&quot;首先普及相关知识：&quot;&gt;&lt;/a&gt;首先普及相关知识：&lt;/h1&gt;&lt;p&gt;一个小公式：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;采样频率（Hz）&lt;/code&gt; &lt;em&gt; &lt;code&gt;采样位数（bit）&lt;/code&gt; &lt;/em&gt; &lt;code&gt;声道数&lt;/code&gt;  / &lt;code&gt;8&lt;/code&gt; = &lt;code&gt;数据量（字节/秒）&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://baike.baidu.com/item/采样频率&quot;&gt;采样频率：http://baike.baidu.com/item/采样频率&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://baike.baidu.com/item/采样位数&quot;&gt;采样位数：http://baike.baidu.com/item/采样位数&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://baike.baidu.com/item/声道数&quot;&gt;声道数：http://baike.baidu.com/item/声道数&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://baike.baidu.com/item/字节&quot;&gt;数据量：http://baike.baidu.com/item/字节&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="HTML5和CSS3" scheme="http://blog.webclown.net/categories/HTML5%E5%92%8CCSS3/"/>
+    
+      <category term="JavaScript" scheme="http://blog.webclown.net/categories/HTML5%E5%92%8CCSS3/JavaScript/"/>
+    
+    
+      <category term="AudioContext" scheme="http://blog.webclown.net/tags/AudioContext/"/>
+    
+      <category term="getUserMedia" scheme="http://blog.webclown.net/tags/getUserMedia/"/>
+    
+      <category term="采样频率" scheme="http://blog.webclown.net/tags/%E9%87%87%E6%A0%B7%E9%A2%91%E7%8E%87/"/>
+    
+      <category term="采样位数" scheme="http://blog.webclown.net/tags/%E9%87%87%E6%A0%B7%E4%BD%8D%E6%95%B0/"/>
+    
+      <category term="声道数" scheme="http://blog.webclown.net/tags/%E5%A3%B0%E9%81%93%E6%95%B0/"/>
+    
+      <category term="MediaStream" scheme="http://blog.webclown.net/tags/MediaStream/"/>
+    
+  </entry>
   
   <entry>
     <title>Merry Christmas</title>
