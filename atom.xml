@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.webclown.net/"/>
-  <updated>2017-01-03T16:42:55.000Z</updated>
+  <updated>2017-01-04T04:39:10.000Z</updated>
   <id>http://blog.webclown.net/</id>
   
   <author>
@@ -14,6 +14,51 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>如何清除Google Chrome控制台的历史记录（consoleHistory commandLine）</title>
+    <link href="http://blog.webclown.net/2017/01/03/%E5%A6%82%E4%BD%95%E6%B8%85%E9%99%A4Google-Chrome%E6%8E%A7%E5%88%B6%E5%8F%B0%E7%9A%84%E5%8E%86%E5%8F%B2%E8%AE%B0%E5%BD%95%EF%BC%88consoleHistory-commandLine%EF%BC%89/"/>
+    <id>http://blog.webclown.net/2017/01/03/如何清除Google-Chrome控制台的历史记录（consoleHistory-commandLine）/</id>
+    <published>2017-01-03T11:27:21.000Z</published>
+    <updated>2017-01-04T04:39:10.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="问题出现"><a href="#问题出现" class="headerlink" title="问题出现"></a>问题出现</h1><p><img src="/images/posts/2017/01-03/1.png" alt="console history"></p>
+<p>如何清除掉这些繁琐的历史记录呢：</p>
+<ul>
+<li><code>clear();</code></li>
+<li><code>console.clear();</code></li>
+<li><code>Ctrl/control+L</code></li>
+</ul>
+<p>然而执行完并没有什么用，历史记录还是会存在。<br><a id="more"></a></p>
+<h1 id="找到问题解决方法"><a href="#找到问题解决方法" class="headerlink" title="找到问题解决方法"></a>找到问题解决方法</h1><p>然后就去<a href="http://stackoverflow.com/questions/18885409/how-do-i-clear-google-chrome-console-suggessions" target="_blank" rel="external">stackoverflow</a>上面找到一个解决方案特简单：</p>
+<p><img src="/images/posts/2017/01-03/2.png" alt="clear console history"></p>
+<blockquote>
+<p>从Chrome 50起，您可以从控制台上下文菜单中使用“Clear console history(清除控制台历史记录)”。</p>
+</blockquote>
+<h1 id="测试是否OK"><a href="#测试是否OK" class="headerlink" title="测试是否OK"></a>测试是否OK</h1><p><img src="/images/posts/2017/01-03/3.gif" alt="test console history"></p>
+<h1 id="why"><a href="#why" class="headerlink" title="why"></a>why</h1><p>咦，上图怎么会有两个控制台呢:</p>
+<p>1 打开控制台（<code>command</code> + <code>option</code> + <code>i</code>）,控制台右上角的三个点（<code>Customize and control DevTools</code>\定制和控制DevTools）<br><img src="/images/posts/2017/01-03/4.png" alt="console"></p>
+<p>2 光标定位到弹出来的控制台，然后按快捷键 <code>command</code> + <code>option</code> + <code>i</code> 定制和控制DevTools的DevTools。<br><img src="/images/posts/2017/01-03/5.png" alt="console"></p>
+<p>3 恩，就酱紫，两个都出现了。<br><img src="/images/posts/2017/01-03/6.png" alt="console"><br><img src="/images/posts/2017/01-03/7.gif" alt="console"></p>
+<p>4 然后你找到 <code>Application tab</code> -&gt; <code>Storage</code> -&gt; <code>Local Storage</code> -&gt; <code>chrome-devtools://devtools</code> -&gt; <code>consoleHistory</code> 这个数组里面就是所有commandLine历史记录</p>
+<p>搞定，玩的愉快🤣，Happy New Year!</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;问题出现&quot;&gt;&lt;a href=&quot;#问题出现&quot; class=&quot;headerlink&quot; title=&quot;问题出现&quot;&gt;&lt;/a&gt;问题出现&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;/images/posts/2017/01-03/1.png&quot; alt=&quot;console history&quot;&gt;&lt;/p&gt;
+&lt;p&gt;如何清除掉这些繁琐的历史记录呢：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;clear();&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;console.clear();&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Ctrl/control+L&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;然而执行完并没有什么用，历史记录还是会存在。&lt;br&gt;
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>web录制音频文件大小问题</title>
@@ -361,13 +406,13 @@
     
       <category term="getUserMedia" scheme="http://blog.webclown.net/tags/getUserMedia/"/>
     
+      <category term="MediaStream" scheme="http://blog.webclown.net/tags/MediaStream/"/>
+    
       <category term="采样频率" scheme="http://blog.webclown.net/tags/%E9%87%87%E6%A0%B7%E9%A2%91%E7%8E%87/"/>
     
       <category term="采样位数" scheme="http://blog.webclown.net/tags/%E9%87%87%E6%A0%B7%E4%BD%8D%E6%95%B0/"/>
     
       <category term="声道数" scheme="http://blog.webclown.net/tags/%E5%A3%B0%E9%81%93%E6%95%B0/"/>
-    
-      <category term="MediaStream" scheme="http://blog.webclown.net/tags/MediaStream/"/>
     
   </entry>
   
@@ -1136,11 +1181,11 @@
       <category term="工具&amp;平台" scheme="http://blog.webclown.net/categories/%E5%B7%A5%E5%85%B7-%E5%B9%B3%E5%8F%B0/"/>
     
     
+      <category term="watch" scheme="http://blog.webclown.net/tags/watch/"/>
+    
       <category term="figlet" scheme="http://blog.webclown.net/tags/figlet/"/>
     
       <category term="brew" scheme="http://blog.webclown.net/tags/brew/"/>
-    
-      <category term="watch" scheme="http://blog.webclown.net/tags/watch/"/>
     
   </entry>
   
