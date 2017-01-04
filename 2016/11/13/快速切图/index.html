@@ -462,6 +462,9 @@
     <div>
       
         
+<div class="clipboardjs">
+    <span style="width: 7em;">本文链接：</span><a href="javascript:;" class="example-value" data-tooltip="点击复制" data-clipboard-text="http://blog.webclown.net/2016/11/13/快速切图/">http://blog.webclown.net/2016/11/13/快速切图/</a>
+</div>
 <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
     <img id="wechat_subscriber_qcode" src="/images/wechat-qcode.jpg" alt="Keystion wechat" style="width: 200px; max-width: 100%;"/>
     <div>欢迎您扫一扫上面的微信公众号，订阅我的博客！</div>
@@ -850,6 +853,25 @@
 
 
 
+<script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function() {
+        // Property: Copy to clipboard
+        var clipboard = new Clipboard('.example-value');
+
+        Array.prototype.forEach.call(document.querySelectorAll('.example-value'), function($el) {
+            $el.addEventListener('mouseenter', function(e) {
+                e.target.classList.remove('is-copied');
+            });
+        });
+
+        clipboard.on('success', function(e) {
+            e.clearSelection();
+            e.trigger.classList.add('is-copied');
+        });
+    });
+</script>
+
+
 
 
   
@@ -866,6 +888,9 @@
 
   
   <script type="text/javascript" src="//cdn.jsdelivr.net/velocity/1.2.3/velocity.ui.min.js"></script>
+
+  
+  <script type="text/javascript" src="//cdn.jsdelivr.net/clipboard.js/1.5.16/clipboard.min.js"></script>
 
 
   

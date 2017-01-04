@@ -1009,6 +1009,25 @@
 
 
 
+<script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function() {
+        // Property: Copy to clipboard
+        var clipboard = new Clipboard('.example-value');
+
+        Array.prototype.forEach.call(document.querySelectorAll('.example-value'), function($el) {
+            $el.addEventListener('mouseenter', function(e) {
+                e.target.classList.remove('is-copied');
+            });
+        });
+
+        clipboard.on('success', function(e) {
+            e.clearSelection();
+            e.trigger.classList.add('is-copied');
+        });
+    });
+</script>
+
+
 
 
   
@@ -1025,6 +1044,9 @@
 
   
   <script type="text/javascript" src="//cdn.jsdelivr.net/velocity/1.2.3/velocity.ui.min.js"></script>
+
+  
+  <script type="text/javascript" src="//cdn.jsdelivr.net/clipboard.js/1.5.16/clipboard.min.js"></script>
 
 
   
