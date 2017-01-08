@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.webclown.net/"/>
-  <updated>2017-01-04T06:25:24.000Z</updated>
+  <updated>2017-01-08T11:44:50.000Z</updated>
   <id>http://blog.webclown.net/</id>
   
   <author>
@@ -14,6 +14,45 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>咖啡馆的下午时光</title>
+    <link href="http://blog.webclown.net/2017/01/08/%E5%92%96%E5%95%A1%E9%A6%86%E7%9A%84%E4%B8%8B%E5%8D%88%E6%97%B6%E5%85%89/"/>
+    <id>http://blog.webclown.net/2017/01/08/咖啡馆的下午时光/</id>
+    <published>2017-01-08T11:27:27.000Z</published>
+    <updated>2017-01-08T11:44:50.000Z</updated>
+    
+    <content type="html"><![CDATA[<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="298" height="52" src="//music.163.com/outchain/player?type=2&id=27676089&auto=0&height=32"></iframe>
+
+<p>写了一些东西，安静了许多，还是需要阶段性的去一个人独处下，瞻前顾后，给自己一些动力。</p>
+<p><img src="/images/posts/2017/01-08/1.jpg" alt="photo"></p>
+<ul>
+<li>一杯咖啡</li>
+<li>一个下午</li>
+<li>一件事情</li>
+<li>一张照片</li>
+<li>一首歌循环一下午</li>
+<li>一篇博文</li>
+<li>给自己一点动力</li>
+</ul>
+<p>还是喜欢那句话：</p>
+<blockquote>
+<p>文艺不足，二逼有余，三十郎当 - 熊小明（51as.com站长 ）</p>
+</blockquote>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=&quot;298&quot; height=&quot;52&quot; src=&quot;//music.163.com/outchain/player?type=2&amp;id=
+    
+    </summary>
+    
+      <category term="Daily Life" scheme="http://blog.webclown.net/categories/Daily-Life/"/>
+    
+    
+      <category term="咖啡馆" scheme="http://blog.webclown.net/tags/%E5%92%96%E5%95%A1%E9%A6%86/"/>
+    
+  </entry>
   
   <entry>
     <title>如何清除Google Chrome控制台的历史记录（consoleHistory commandLine）</title>
@@ -1181,11 +1220,11 @@
       <category term="工具&amp;平台" scheme="http://blog.webclown.net/categories/%E5%B7%A5%E5%85%B7-%E5%B9%B3%E5%8F%B0/"/>
     
     
-      <category term="watch" scheme="http://blog.webclown.net/tags/watch/"/>
-    
       <category term="figlet" scheme="http://blog.webclown.net/tags/figlet/"/>
     
       <category term="brew" scheme="http://blog.webclown.net/tags/brew/"/>
+    
+      <category term="watch" scheme="http://blog.webclown.net/tags/watch/"/>
     
   </entry>
   
