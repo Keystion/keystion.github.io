@@ -1,0 +1,1142 @@
+<!doctype html>
+
+
+
+
+<html class="theme-next pisces" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+  <meta name="google-site-verification" content="t18M_w9FQBZc_PeVYI5z5hMlKsxB0MG-sXhoKuIlIwQ" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Myriad Set Pro:300,300italic,400,400italic,700,700italic|Myriad Set Pro:300,300italic,400,400italic,700,700italic|Myriad Set Pro:300,300italic,400,400italic,700,700italic|Source Code Pro:300,300italic,400,400italic,700,700italic|Source Code Pro:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+  
+
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="CSS,SCSS," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Keystion" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.0" />
+
+
+
+
+
+
+<meta name="description" content="Sass - CSS 预处理器简介CSS 预处理器：定义一种新的语言，为CSS增加了一些编程的特性，将CSS作为目标生成文件，开发者可以使用这种语言进行编码工作
+Sass背景Sass是对CSS的语法的一种扩充，诞生于2007年，最早也是最成熟的一款CSS预处理器语言，它可以使用变量、常量、嵌套、混入、函数等功能，可以更有效有弹性的写出CSS。
+Sass已经有了两套语法规则：
+一个依旧是用缩进作为分">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Some Sass writing standards">
+<meta property="og:url" content="http://blog.webclown.net/2015/02/05/Some-Sass-writing-standards/index.html">
+<meta property="og:site_name" content="Keystion">
+<meta property="og:description" content="Sass - CSS 预处理器简介CSS 预处理器：定义一种新的语言，为CSS增加了一些编程的特性，将CSS作为目标生成文件，开发者可以使用这种语言进行编码工作
+Sass背景Sass是对CSS的语法的一种扩充，诞生于2007年，最早也是最成熟的一款CSS预处理器语言，它可以使用变量、常量、嵌套、混入、函数等功能，可以更有效有弹性的写出CSS。
+Sass已经有了两套语法规则：
+一个依旧是用缩进作为分">
+<meta property="og:updated_time" content="2017-03-18T04:23:33.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Some Sass writing standards">
+<meta name="twitter:description" content="Sass - CSS 预处理器简介CSS 预处理器：定义一种新的语言，为CSS增加了一些编程的特性，将CSS作为目标生成文件，开发者可以使用这种语言进行编码工作
+Sass背景Sass是对CSS的语法的一种扩充，诞生于2007年，最早也是最成熟的一款CSS预处理器语言，它可以使用变量、常量、嵌套、混入、函数等功能，可以更有效有弹性的写出CSS。
+Sass已经有了两套语法规则：
+一个依旧是用缩进作为分">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    sidebar: {"position":"left"},
+    fancybox: false,
+    motion: false,
+    duoshuo: {
+      userId: '0',
+      author: '调皮的博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://blog.webclown.net/2015/02/05/Some-Sass-writing-standards/"/>
+
+
+
+
+
+  <title> Some Sass writing standards | Keystion </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?f2606e6bf6807053fa7cb649a5245969";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">Keystion</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle">来自乡村的小小web前端</p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-project">
+          <a href="/project" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-code"></i> <br />
+            
+            案例
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="https://about.me/syantao" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-sitemap">
+          <a href="/sitemap.xml" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-sitemap"></i> <br />
+            
+            网站地图
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-commonweal">
+          <a href="/404.html" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br />
+            
+            公益404
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup">
+ <span class="search-icon fa fa-search"></span>
+ <input type="text" id="local-search-input">
+ <div id="local-search-result"></div>
+ <span class="popup-btn-close">close</span>
+</div>
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="http://blog.webclown.net/2015/02/05/Some-Sass-writing-standards/">
+
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Keystion">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="http://tva1.sinaimg.cn/crop.0.0.506.506.180/69326123jw1ejgi1tfurjj20e30e3jrz.jpg">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="Keystion">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="Keystion" src="">
+    </span>
+  </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                Some Sass writing standards
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time title="Post created" itemprop="dateCreated datePublished" datetime="2015-02-05T12:00:00+08:00">
+              2015-02-05
+            </time>
+
+            &nbsp;|&nbsp;
+
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-check-o"></i>
+            </span>
+            <span class="post-meta-item-text">修改于</span>
+            <time title="修改于" itemprop="dateModified" datetime="2017-03-18T12:23:33+08:00">
+              2017-03-18
+            </time>
+            
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/HTML5和CSS3/" itemprop="url" rel="index">
+                    <span itemprop="name">HTML5和CSS3</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2015/02/05/Some-Sass-writing-standards/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/02/05/Some-Sass-writing-standards/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+          
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="Sass-CSS-预处理器"><a href="#Sass-CSS-预处理器" class="headerlink" title="Sass - CSS 预处理器"></a>Sass - CSS 预处理器</h1><h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><h3 id="CSS-预处理器："><a href="#CSS-预处理器：" class="headerlink" title="CSS 预处理器："></a>CSS 预处理器：</h3><p>定义一种新的语言，为<code>CSS</code>增加了一些编程的特性，将CSS作为目标生成文件，开发者可以使用这种语言进行编码工作</p>
+<h3 id="Sass背景"><a href="#Sass背景" class="headerlink" title="Sass背景"></a>Sass背景</h3><p>Sass是对CSS的语法的一种扩充，诞生于2007年，最早也是最成熟的一款CSS预处理器语言，它可以使用变量、常量、嵌套、混入、函数等功能，可以更有效有弹性的写出<code>CSS</code>。</p>
+<h3 id="Sass已经有了两套语法规则："><a href="#Sass已经有了两套语法规则：" class="headerlink" title="Sass已经有了两套语法规则："></a>Sass已经有了两套语法规则：</h3><ul>
+<li>一个依旧是用缩进作为分隔符来区分代码块的；</li>
+<li>另一套规则和<code>CSS</code>一样采用了大括号作为分隔符。<br>后一种语法规则又名<code>Scss</code>。（<code>Scss</code>更常用，以下说得Sass在没有特别指出得情况下，指的都是<code>Scss</code>）。</li>
+</ul>
+<h2 id="书写规范"><a href="#书写规范" class="headerlink" title="书写规范"></a>书写规范</h2><ol>
+<li>声明文档的字符编码</li>
+<li>导入引用 <code>@mixin</code> 和 <code>function</code> 等等</li>
+<li>文档的简要概述</li>
+<li>嵌套层级不要太深，适当的时候使用 <code>@at-root</code></li>
+<li>不要忘记写<code>;</code><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">@charset &quot;UTF-8&quot;;</div><div class="line">@import &quot;mixin.scss&quot;; //导入其他文件 </div><div class="line">@import &quot;mixin&quot;;      //导入其他文件 </div><div class="line">/**</div><div class="line"> * @fileoverview &lt;%= projectName %&gt;.</div><div class="line"> * @author &lt;%= author %&gt; &lt;&lt;%= email %&gt;&gt;</div><div class="line"> * @version &lt;+DATE+&gt;</div><div class="line"> */</div></pre></td></tr></table></figure>
+</li>
+</ol>
+<h3 id="局部文件"><a href="#局部文件" class="headerlink" title="局部文件"></a>局部文件</h3><p>名字以下划线开头比如 <code>_reset.scss</code>. 下划线让Sass知道这个文件是一个分部文件，不会为它单独产生一个CSS文件。可以使用@import导入分部文件.</p>
+<p>———–_reset.scss———–<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">html,body,ul,ol &#123;</div><div class="line">   margin: 0;</div><div class="line">  padding: 0;</div><div class="line">&#125;</div><div class="line">``` </div><div class="line">---------base.scss-----------</div></pre></td></tr></table></figure></p>
+<p>/<em> base.scss </em>/<br>@import ‘reset’; // 可忽略下划线<br>body {<br>  font: 100% Helvetica, sans-serif;<br>  background-color: #efefef;<br>}<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">---------编译后-----------</div></pre></td></tr></table></figure></p>
+<p>/<em> base.scss </em>/<br>html, body, ul, ol {<br>  margin: 0;<br>  padding: 0;<br>}</p>
+<p>body {<br>  font: 100% Helvetica, sans-serif;<br>  background-color: #efefef;<br>}<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">### 常见错误</div><div class="line"></div><div class="line">#### 1. 编译后css文件中出现  `@at-root`</div><div class="line">- @at-root 是Sass3.3版本的新特性</div><div class="line">- 解决方法：升级你的sass版本</div><div class="line">    - gem update sass</div><div class="line">    - sass -v</div><div class="line">    - Ps：升级过程中可能需要当前生产环境下的某个文件夹的读写权限;</div><div class="line">    - ERROR: While executing gem ... (Gem::FilePermissionError) You don&apos;t have write permissions into the /usr/local/bin directory.</div><div class="line">    - 执行命令：sudo chmod -R 777 &lt;-filepath-&gt;</div><div class="line">    - 关于”chmod“的更多信息，请百度或google学习</div><div class="line">#### 2. 忘记设置编码</div></pre></td></tr></table></figure></p>
+<p>Error: Invalid US-ASCII character “<code>\xE4</code>“<br>on line 4 of app/assets/scss/_web/topdeals-web.scss<br>Use –trace for backtrace.<br>Warning: Exited with error code 65 Use –force to continue.<br>Syntax error: Invalid GBK character “<code>\xE5</code>“<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">原因：文档没有设置 编码格式</div><div class="line">解决方法：文档第一行`@charset &quot;UTF-8&quot;;`     &quot;UTF-8&quot;大写</div><div class="line">#### 3. 句末忘记写 “;&quot; 也会报错</div></pre></td></tr></table></figure></p>
+<p>@charset “UTF-8”<br>/**</p>
+<ul>
+<li>@fileoverview Home Paga Stylesheet</li>
+<li>@author shang.yantao shang.yantao@topka.cn</li>
+<li>@copyRight topka.cn</li>
+<li>@versioon v1.0<br>*/<br>body{<br> font-family: “Helvetica Neue”,Helvetica,Arial,sans-serif;<br>}<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">第一行  @charset 句末忘记写 “;”。报错会出现在第8行（也就是错误本身的下一个css主体处，找错应该向上找；）：</div><div class="line">![](/images/posts/2015/02-05/image2014-12-12 15-41-32.png)</div><div class="line">#### gulp-ruby-sass 相关</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>gulp-ruby-sass: stderr: OptionParser::InvalidOption: invalid option: –sourcemap=none<br>Use –trace for backtrace.<br><code>``
+升级sass&gt;</code>gem update sass`</p>
+<p><a href="http://sass-lang.com/guide" target="_blank" rel="external">http://sass-lang.com/guide</a> 官方文档</p>
+<ul>
+<li>Preprocessing（预处理）</li>
+<li>Variables（变量）</li>
+<li>Nesting（嵌套）</li>
+<li>Partials（局部文件）</li>
+<li>Import（导入文件）</li>
+<li>Mixins（混合变量）</li>
+<li>Extend/Inheritance（扩展/继承）</li>
+<li>Operators（运算符）</li>
+</ul>
+
+      
+    </div>
+
+    <div>
+      
+        
+<div class="clipboardjs">
+    <span style="width: 7em;">本文链接：</span><a href="javascript:;" class="example-value" data-tooltip="点击复制" data-clipboard-text="http://blog.webclown.net/2015/02/05/Some-Sass-writing-standards/">http://blog.webclown.net/2015/02/05/Some-Sass-writing-standards/</a>
+</div>
+<div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="/images/wechat-qcode.jpg" alt="Keystion wechat" style="width: 200px; max-width: 100%;"/>
+    <div>欢迎您扫一扫上面的微信公众号，订阅我的博客！</div>
+</div>
+
+
+      
+    </div>
+
+    <div>
+      
+        
+  <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+    <div>恬不知耻的放上一个打赏按钮😂</div>
+    <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+      <span>赏</span>
+    </button>
+    <div id="QR" style="display: none;">
+      
+        <div id="wechat" style="display: inline-block">
+          <img id="wechat_qr" src="/images/wechat.jpg" alt="Keystion WeChat Pay"/>
+          <p>微信打赏</p>
+        </div>
+      
+      
+        <div id="alipay" style="display: inline-block">
+          <img id="alipay_qr" src="/images/alipay.jpg" alt="Keystion Alipay"/>
+          <p>支付宝打赏</p>
+        </div>
+      
+    </div>
+  </div>
+
+
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/CSS/" rel="tag"># CSS</a>
+          
+            <a href="/tags/SCSS/" rel="tag"># SCSS</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2015/01/25/bootstrap-scss-source-code-parsing/" rel="next" title="Bootstrap Scss 源码解析">
+                <i class="fa fa-chevron-left"></i> Bootstrap Scss 源码解析
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2015/04/14/PSD图层管理指南/" rel="prev" title="PSD图层管理指南">
+                PSD图层管理指南 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2015/02/05/Some-Sass-writing-standards/"
+           data-title="Some Sass writing standards" data-url="http://blog.webclown.net/2015/02/05/Some-Sass-writing-standards/">
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="http://tva1.sinaimg.cn/crop.0.0.506.506.180/69326123jw1ejgi1tfurjj20e30e3jrz.jpg"
+               alt="Keystion" />
+          <p class="site-author-name" itemprop="name">Keystion</p>
+          <p class="site-description motion-element" itemprop="description">前端技术博客</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">22</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">10</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">67</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/Keystion" target="_blank" title="github">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                  github
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://twitter.com/Keystion" target="_blank" title="twitter">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                  twitter
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/1764909347" target="_blank" title="weibo">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                  weibo
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://www.zhihu.com/people/Keystion" target="_blank" title="zhihu">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                  zhihu
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+          <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+            <div class="links-of-blogroll-title">
+              <i class="fa  fa-fw fa-link"></i>
+              Links
+            </div>
+            <ul class="links-of-blogroll-list">
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://f2er.info/?source=blog.webclown.net" title="前端百科" target="_blank">前端百科</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://www.zaoduke.net/?source=blog.webclown.net" title="前端De早读课" target="_blank">前端De早读课</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://f2er.club/?source=blog.webclown.net" title="醉牛前端" target="_blank">醉牛前端</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://www.toobug.net/?source=blog.webclown.net" title="TooBug的博客" target="_blank">TooBug的博客</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://www.basecss.net/?source=blog.webclown.net" title="Basecss的博客" target="_blank">Basecss的博客</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://www.uselessblog.cn/?source=blog.webclown.net" title="UseLess的博客" target="_blank">UseLess的博客</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="https://www.uis.cc/?source=blog.webclown.net" title="前端技术博客" target="_blank">前端技术博客</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://jianjia.de/?source=blog.webclown.net" title="蒹葭从风的博客" target="_blank">蒹葭从风的博客</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://vingo.cc/?source=blog.webclown.net" title="vingo的博客" target="_blank">vingo的博客</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://ihacklog.com/?source=blog.webclown.net" title="荒野无灯weblog" target="_blank">荒野无灯weblog</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://linxz.github.io/blog/?source=blog.webclown.net" title="linxz的博客" target="_blank">linxz的博客</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://linxz.github.io/tianyizone/?source=blog.webclown.net" title="CSS小工具集合" target="_blank">CSS小工具集合</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://66e.in/?source=blog.webclown.net" title="ghostboyzone" target="_blank">ghostboyzone</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://www.txtea.cc/?source=blog.webclown.net" title="Evan的博客" target="_blank">Evan的博客</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://lexiaoxi.github.io/?source=blog.webclown.net" title="乐希的博客" target="_blank">乐希的博客</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://i.wanz.im/?source=blog.webclown.net" title="Hi,丸子" target="_blank">Hi,丸子</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://ideazhao.com/?source=blog.webclown.net" title="灵感的小窝" target="_blank">灵感的小窝</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://mingdy.github.io/?source=blog.webclown.net" title="Mingdy的博客" target="_blank">Mingdy的博客</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="https://www.edlad.com/?source=blog.webclown.net" title="ED少年" target="_blank">ED少年</a>
+                </li>
+              
+            </ul>
+          </div>
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Sass-CSS-预处理器"><span class="nav-number">1.</span> <span class="nav-text">Sass - CSS 预处理器</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#简介"><span class="nav-number">1.1.</span> <span class="nav-text">简介</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#CSS-预处理器："><span class="nav-number">1.1.1.</span> <span class="nav-text">CSS 预处理器：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Sass背景"><span class="nav-number">1.1.2.</span> <span class="nav-text">Sass背景</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Sass已经有了两套语法规则："><span class="nav-number">1.1.3.</span> <span class="nav-text">Sass已经有了两套语法规则：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#书写规范"><span class="nav-number">1.2.</span> <span class="nav-text">书写规范</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#局部文件"><span class="nav-number">1.2.1.</span> <span class="nav-text">局部文件</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy;  2015 - 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Keystion</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function() {
+        // Property: Copy to clipboard
+        var clipboard = new Clipboard('.example-value');
+
+        Array.prototype.forEach.call(document.querySelectorAll('.example-value'), function($el) {
+            $el.addEventListener('mouseenter', function(e) {
+                e.target.classList.remove('is-copied');
+            });
+        });
+
+        clipboard.on('success', function(e) {
+            e.clearSelection();
+            e.trigger.classList.add('is-copied');
+        });
+    });
+</script>
+
+
+
+
+  
+  <script type="text/javascript" src="//cdn.jsdelivr.net/jquery/2.1.3/jquery.min.js"></script>
+
+  
+  <script type="text/javascript" src="//cdn.jsdelivr.net/fastclick/1.0.6/fastclick.min.js"></script>
+
+  
+  <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.lazyload/1.9.3/jquery.lazyload.min.js"></script>
+
+  
+  <script type="text/javascript" src="//cdn.jsdelivr.net/velocity/1.2.3/velocity.min.js"></script>
+
+  
+  <script type="text/javascript" src="//cdn.jsdelivr.net/velocity/1.2.3/velocity.ui.min.js"></script>
+
+  
+  <script type="text/javascript" src="//cdn.jsdelivr.net/clipboard.js/1.5.16/clipboard.min.js"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.0"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
+
+
+
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"blogwebclown"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+    
+    
+    <script src="//cdn.jsdelivr.net/ua-parser.js/0.7.10/ua-parser.min.js"></script>
+    <script src="/js/src/hook-duoshuo.js"></script>
+  
+
+
+
+
+
+
+
+
+  
+  
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length == 0) {
+      search_path = "search.xml";
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    function proceedsearch() {
+      $("body").append('<div class="popoverlay">').css('overflow', 'hidden');
+      $('.popup').toggle();
+    }
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+      $.ajax({
+        url: path,
+        dataType: "xml",
+        async: true,
+        success: function( xmlResponse ) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = $( "entry", xmlResponse ).map(function() {
+            return {
+              title: $( "title", this ).text(),
+              content: $("content",this).text(),
+              url: $( "url" , this).text()
+            };
+          }).get();
+          var $input = document.getElementById(search_id);
+          var $resultContent = document.getElementById(content_id);
+          $input.addEventListener('input', function(){
+            var matchcounts = 0;
+            var str='<ul class=\"search-result-list\">';
+            var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+            $resultContent.innerHTML = "";
+            if (this.value.trim().length > 1) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var content_index = [];
+                var data_title = data.title.trim().toLowerCase();
+                var data_content = data.content.trim().replace(/<[^>]+>/g,"").toLowerCase();
+                var data_url = decodeURIComponent(data.url);
+                var index_title = -1;
+                var index_content = -1;
+                var first_occur = -1;
+                // only match artiles with not empty titles and contents
+                if(data_title != '') {
+                  keywords.forEach(function(keyword, i) {
+                    index_title = data_title.indexOf(keyword);
+                    index_content = data_content.indexOf(keyword);
+                    if( index_title >= 0 || index_content >= 0 ){
+                      isMatch = true;
+                      if (i == 0) {
+                        first_occur = index_content;
+                      }
+                    }
+
+                  });
+                }
+                // show search results
+                if (isMatch) {
+                  matchcounts += 1;
+                  str += "<li><a href='"+ data_url +"' class='search-result-title'>"+ data_title +"</a>";
+                  var content = data.content.trim().replace(/<[^>]+>/g,"");
+                  if (first_occur >= 0) {
+                    // cut out 100 characters
+                    var start = first_occur - 20;
+                    var end = first_occur + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if(start == 0){
+                      end = 50;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    var match_content = content.substring(start, end);
+                    // highlight all keywords
+                    keywords.forEach(function(keyword){
+                      var regS = new RegExp(keyword, "gi");
+                      match_content = match_content.replace(regS, "<b class=\"search-keyword\">"+keyword+"</b>");
+                    });
+
+                    str += "<p class=\"search-result\">" + match_content +"...</p>"
+                  }
+                  str += "</li>";
+                }
+              })};
+            str += "</ul>";
+            if (matchcounts == 0) { str = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>' }
+            if (keywords == "") { str = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>' }
+            $resultContent.innerHTML = str;
+          });
+          proceedsearch();
+        }
+      });}
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched == false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(function(e){
+      $('.popup').hide();
+      $(".popoverlay").remove();
+      $('body').css('overflow', '');
+    });
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+  </script>
+
+
+  
+
+  
+
+  
+
+  
+
+
+</body>
+</html>
