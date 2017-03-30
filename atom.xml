@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.webclown.net/"/>
-  <updated>2017-01-08T11:44:50.000Z</updated>
+  <updated>2017-03-30T09:27:06.000Z</updated>
   <id>http://blog.webclown.net/</id>
   
   <author>
@@ -14,6 +14,39 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Mac office 2016 word 出现隐藏模块中出现编译错误: link</title>
+    <link href="http://blog.webclown.net/2017/03/30/Mac-office-2016-word-%E5%87%BA%E7%8E%B0%E9%9A%90%E8%97%8F%E6%A8%A1%E5%9D%97%E4%B8%AD%E5%87%BA%E7%8E%B0%E7%BC%96%E8%AF%91%E9%94%99%E8%AF%AF-link/"/>
+    <id>http://blog.webclown.net/2017/03/30/Mac-office-2016-word-出现隐藏模块中出现编译错误-link/</id>
+    <published>2017-03-30T09:19:24.000Z</published>
+    <updated>2017-03-30T09:27:06.000Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h3><p>删除这个文件 <code>~/Library/Group\ Containers/UBF8T346G9.Office/User\ Content.localized/Startup.localized/Word/linkCreation.dotm</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">rm -rf ~/Library/Group\ Containers/UBF8T346G9.Office/User\ Content.localized/Startup.localized/Word/linkCreation.dotm</div></pre></td></tr></table></figure>
+<p><a href="http://bbs.feng.com/forum.php?mod=redirect&amp;goto=findpost&amp;ptid=10644840&amp;pid=164290024" target="_blank" rel="external">出处: 威锋论坛</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;解决方案&quot;&gt;&lt;a href=&quot;#解决方案&quot; class=&quot;headerlink&quot; title=&quot;解决方案&quot;&gt;&lt;/a&gt;解决方案&lt;/h3&gt;&lt;p&gt;删除这个文件 &lt;code&gt;~/Library/Group\ Containers/UBF8T346G9.Office/Use
+    
+    </summary>
+    
+      <category term="工具&amp;平台" scheme="http://blog.webclown.net/categories/%E5%B7%A5%E5%85%B7-%E5%B9%B3%E5%8F%B0/"/>
+    
+    
+      <category term="OS X" scheme="http://blog.webclown.net/tags/OS-X/"/>
+    
+      <category term="Mac" scheme="http://blog.webclown.net/tags/Mac/"/>
+    
+      <category term="Word" scheme="http://blog.webclown.net/tags/Word/"/>
+    
+      <category term="office" scheme="http://blog.webclown.net/tags/office/"/>
+    
+      <category term="linkCreation.dotm" scheme="http://blog.webclown.net/tags/linkCreation-dotm/"/>
+    
+  </entry>
   
   <entry>
     <title>咖啡馆的下午时光</title>
@@ -1220,11 +1253,11 @@
       <category term="工具&amp;平台" scheme="http://blog.webclown.net/categories/%E5%B7%A5%E5%85%B7-%E5%B9%B3%E5%8F%B0/"/>
     
     
-      <category term="watch" scheme="http://blog.webclown.net/tags/watch/"/>
-    
       <category term="figlet" scheme="http://blog.webclown.net/tags/figlet/"/>
     
       <category term="brew" scheme="http://blog.webclown.net/tags/brew/"/>
+    
+      <category term="watch" scheme="http://blog.webclown.net/tags/watch/"/>
     
   </entry>
   
@@ -1354,44 +1387,6 @@
       <category term="git" scheme="http://blog.webclown.net/tags/git/"/>
     
       <category term="gh-pages" scheme="http://blog.webclown.net/tags/gh-pages/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>PSD图层管理指南</title>
-    <link href="http://blog.webclown.net/2015/04/14/PSD%E5%9B%BE%E5%B1%82%E7%AE%A1%E7%90%86%E6%8C%87%E5%8D%97/"/>
-    <id>http://blog.webclown.net/2015/04/14/PSD图层管理指南/</id>
-    <published>2015-04-14T10:41:21.000Z</published>
-    <updated>2016-05-13T00:39:29.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>PS图层命名和分组看似麻烦，会打断设计的兴致，但是当图层多得自己都找不到时就知道好处了。科学有调理的管理你的PSD既是一名优秀设计师的必备技能，也是设计师跟上下游同事打交道的礼仪准则。和你的基友协同工作的过程中，可以说对PSD图层的命名和管理是最大的冲突所在，一堆不知所云的“新建图层”和“图层1副本”只会让基友抓狂！</p>
-<a id="more"></a>
-<ul>
-<li>图层管理的精髓在于：分组、链接和命名。</li>
-<li>合理使用图层分组（图层文件夹）。以UI组件、功能模块等为分组基准，图层分组可以更快地看清楚整个文件的架构，并且可以很快的找到想要的那一层。</li>
-<li>善用链接，把关联紧密的图层相互链接，这样能保持相对位置、大小不变。就像人的脖子和头是一个整体，相互连在一起的</li>
-<li>每个分组以及分组外的每个图层都必须命名，且是有意义的命名，像“图层1、副本、副本2、组3”这样的图层命名是严格禁止的，养成新建图层后第一件事就是命名的习惯。图层命名中英文均可。</li>
-<li>icon与按钮。icon命名以<code>icon-</code>为前缀，按钮命名以<code>btn-</code>，例如：<code>icon-close.png</code>, <code>btn-login.png</code> , <code>btn-login-hover.png</code>。</li>
-<li>删除不必要的图层。你是一个图层堆积狂吗？PSD在交付给前端之前，请删除不必要的图层。</li>
-<li>文本图层不要合并或格式化，方便修改及前端同事复制文本内容。</li>
-<li>纯色文本不要使用颜色叠加进行配色，请使用文字工具进行配色。</li>
-<li>字体的字号必须是整数，不要随意拉伸字体。除了会使字体变得难看模糊之外， HTML/CSS也无法实现这种效果。</li>
-<li>中大型、长期项目需要提供至少两份附件：1、所有icon与按钮（各种状态）的集合；2、设计稿配色标注，可使用“设计稿配色标注”工具。</li>
-</ul>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;PS图层命名和分组看似麻烦，会打断设计的兴致，但是当图层多得自己都找不到时就知道好处了。科学有调理的管理你的PSD既是一名优秀设计师的必备技能，也是设计师跟上下游同事打交道的礼仪准则。和你的基友协同工作的过程中，可以说对PSD图层的命名和管理是最大的冲突所在，一堆不知所云的“新建图层”和“图层1副本”只会让基友抓狂！&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="交互设计" scheme="http://blog.webclown.net/categories/%E4%BA%A4%E4%BA%92%E8%AE%BE%E8%AE%A1/"/>
-    
-    
-      <category term="Photoshop" scheme="http://blog.webclown.net/tags/Photoshop/"/>
-    
-      <category term="图层" scheme="http://blog.webclown.net/tags/%E5%9B%BE%E5%B1%82/"/>
     
   </entry>
   

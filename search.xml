@@ -3,6 +3,13 @@
   
     
     <entry>
+      <title><![CDATA[Mac office 2016 word 出现隐藏模块中出现编译错误: link]]></title>
+      <url>%2F2017%2F03%2F30%2FMac-office-2016-word-%E5%87%BA%E7%8E%B0%E9%9A%90%E8%97%8F%E6%A8%A1%E5%9D%97%E4%B8%AD%E5%87%BA%E7%8E%B0%E7%BC%96%E8%AF%91%E9%94%99%E8%AF%AF-link%2F</url>
+      <content type="text"><![CDATA[解决方案删除这个文件 ~/Library/Group\ Containers/UBF8T346G9.Office/User\ Content.localized/Startup.localized/Word/linkCreation.dotm 1rm -rf ~/Library/Group\ Containers/UBF8T346G9.Office/User\ Content.localized/Startup.localized/Word/linkCreation.dotm 出处: 威锋论坛]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[咖啡馆的下午时光]]></title>
       <url>%2F2017%2F01%2F08%2F%E5%92%96%E5%95%A1%E9%A6%86%E7%9A%84%E4%B8%8B%E5%8D%88%E6%97%B6%E5%85%89%2F</url>
       <content type="text"><![CDATA[写了一些东西，安静了许多，还是需要阶段性的去一个人独处下，瞻前顾后，给自己一些动力。 一杯咖啡 一个下午 一件事情 一张照片 一首歌循环一下午 一篇博文 给自己一点动力 还是喜欢那句话： 文艺不足，二逼有余，三十郎当 - 熊小明（51as.com站长 ）]]></content>
