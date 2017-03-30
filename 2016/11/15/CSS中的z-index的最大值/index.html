@@ -547,6 +547,13 @@ z-index属性指定了一个元素及其子元素的 z-order。 当元素之间�
 <div class="clipboardjs">
     <span style="width: 7em;">本文链接：</span><a href="javascript:;" class="example-value" data-tooltip="点击复制" data-clipboard-text="http://blog.webclown.net/2016/11/15/CSS中的z-index的最大值/">http://blog.webclown.net/2016/11/15/CSS中的z-index的最大值/</a>
 </div>
+<style>
+[data-tooltip] { position: relative; cursor: pointer;}
+[data-tooltip]:before { background-color: #333; border-radius: 2px; bottom: 100%; color: #fff; content: attr(data-tooltip); font-family: "Source Sans Pro",-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue","Helvetica","Arial",sans-serif; font-size: 0.6rem; left: 50%; line-height: 1.2; opacity: 0; padding: 0.5em 0.6em; pointer-events: none; position: absolute; text-align: center; -webkit-transform: translateX(-50%) translateY(0); transform: translateX(-50%) translateY(0); -webkit-transition-duration: 300ms; transition-duration: 300ms; -webkit-transition-property: opacity, -webkit-transform; transition-property: opacity, -webkit-transform; transition-property: opacity, transform; transition-property: opacity, transform, -webkit-transform; visibility: hidden; white-space: nowrap}
+[data-tooltip]:hover:before { opacity: 1; -webkit-transform: translateX(-50%) translateY(-4px); transform: translateX(-50%) translateY(-4px); visibility: visible}
+[data-tooltip].is-copied:before { background: #23d160; content: "已复制！"}
+.clipboardjs { -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; display: -webkit-box; display: -ms-flexbox; display: flex; padding: 2rem 0;}
+</style>
 <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
     <img id="wechat_subscriber_qcode" src="/images/wechat-qcode.jpg" alt="Keystion wechat" style="width: 200px; max-width: 100%;"/>
     <div>欢迎您扫一扫上面的微信公众号，订阅我的博客！</div>
