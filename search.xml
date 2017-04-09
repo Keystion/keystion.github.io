@@ -3,6 +3,13 @@
   
     
     <entry>
+      <title><![CDATA[【转】解决mac环境下mysql出现only_full_group_by的错误]]></title>
+      <url>%2F2017%2F04%2F09%2F%E3%80%90%E8%BD%AC%E3%80%91%E8%A7%A3%E5%86%B3mac%E7%8E%AF%E5%A2%83%E4%B8%8Bmysql%E5%87%BA%E7%8E%B0only-full-group-by%E7%9A%84%E9%94%99%E8%AF%AF%2F</url>
+      <content type="text"><![CDATA[系统：macOS Sierra 10.12.2 (16C67) 1. 先查看本地 MySQL 的安装目录12345cd /usr/local/# 列出目录文件lslrwxr-xr-x 1 root wheel 30B 4 9 12:41 mysql -&gt; mysql-5.7.17-macos10.12-x86_64drwxr-xr-x 12 root wheel 408B 4 9 12:41 mysql-5.7.17-macos10.12-x86_64 PS： mysql -&gt; mysql-5.7.17-macos10.12-x86_64 是电脑目前使用的MySQL版本。 2. 复制 MySQL 下的 my-default.cnf 到 etc 下1sudo cp /usr/local/mysql-5.7.17-macos10.12-x86_64/support-files/my-default.cnf /etc/my.cnf 3. 编辑 etc/my.cnf1sudo vi /etc/my.cnf 4. 设置 sql_model找到 sql_model 并修改值： 1sql_mode=STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION 5. 重启 mysql重启 mysql 即可。 出处: fenfenguai的专栏]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[Mac office 2016 word 出现隐藏模块中出现编译错误: link]]></title>
       <url>%2F2017%2F03%2F30%2FMac-office-2016-word-%E5%87%BA%E7%8E%B0%E9%9A%90%E8%97%8F%E6%A8%A1%E5%9D%97%E4%B8%AD%E5%87%BA%E7%8E%B0%E7%BC%96%E8%AF%91%E9%94%99%E8%AF%AF-link%2F</url>
       <content type="text"><![CDATA[解决方案删除这个文件 ~/Library/Group\ Containers/UBF8T346G9.Office/User\ Content.localized/Startup.localized/Word/linkCreation.dotm 1rm -rf ~/Library/Group\ Containers/UBF8T346G9.Office/User\ Content.localized/Startup.localized/Word/linkCreation.dotm 出处: 威锋论坛]]></content>

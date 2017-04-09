@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.webclown.net/"/>
-  <updated>2017-03-30T09:27:06.000Z</updated>
+  <updated>2017-04-09T16:32:55.000Z</updated>
   <id>http://blog.webclown.net/</id>
   
   <author>
@@ -16,14 +16,58 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>【转】解决mac环境下mysql出现only_full_group_by的错误</title>
+    <link href="http://blog.webclown.net/2017/04/09/%E3%80%90%E8%BD%AC%E3%80%91%E8%A7%A3%E5%86%B3mac%E7%8E%AF%E5%A2%83%E4%B8%8Bmysql%E5%87%BA%E7%8E%B0only-full-group-by%E7%9A%84%E9%94%99%E8%AF%AF/"/>
+    <id>http://blog.webclown.net/2017/04/09/【转】解决mac环境下mysql出现only-full-group-by的错误/</id>
+    <published>2017-04-09T13:26:08.000Z</published>
+    <updated>2017-04-09T16:32:55.000Z</updated>
+    
+    <content type="html"><![CDATA[<ul>
+<li>系统：<code>macOS Sierra 10.12.2 (16C67)</code></li>
+</ul>
+<h3 id="1-先查看本地-MySQL-的安装目录"><a href="#1-先查看本地-MySQL-的安装目录" class="headerlink" title="1. 先查看本地 MySQL 的安装目录"></a>1. 先查看本地 MySQL 的安装目录</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">cd /usr/local/</div><div class="line"># 列出目录文件</div><div class="line">ls</div><div class="line">lrwxr-xr-x   1 root  wheel    30B  4  9 12:41 mysql -&gt; mysql-5.7.17-macos10.12-x86_64</div><div class="line">drwxr-xr-x  12 root  wheel   408B  4  9 12:41 mysql-5.7.17-macos10.12-x86_64</div></pre></td></tr></table></figure>
+<p>PS：</p>
+<p><code>mysql -&gt; mysql-5.7.17-macos10.12-x86_64</code> 是电脑目前使用的MySQL版本。</p>
+<p><img src="/images/posts/2017/04-09/01.png" alt="先查看本地 MySQL 的安装目录"></p>
+<h3 id="2-复制-MySQL-下的-my-default-cnf-到-etc-下"><a href="#2-复制-MySQL-下的-my-default-cnf-到-etc-下" class="headerlink" title="2. 复制 MySQL 下的 my-default.cnf 到 etc 下"></a>2. 复制 MySQL 下的 <code>my-default.cnf</code> 到 <code>etc</code> 下</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo cp /usr/local/mysql-5.7.17-macos10.12-x86_64/support-files/my-default.cnf /etc/my.cnf</div></pre></td></tr></table></figure>
+<h3 id="3-编辑-etc-my-cnf"><a href="#3-编辑-etc-my-cnf" class="headerlink" title="3. 编辑 etc/my.cnf"></a>3. 编辑 <code>etc/my.cnf</code></h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo vi /etc/my.cnf</div></pre></td></tr></table></figure>
+<h3 id="4-设置-sql-model"><a href="#4-设置-sql-model" class="headerlink" title="4. 设置 sql_model"></a>4. 设置 <code>sql_model</code></h3><p>找到 sql_model 并修改值：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sql_mode=STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION</div></pre></td></tr></table></figure>
+<h3 id="5-重启-mysql"><a href="#5-重启-mysql" class="headerlink" title="5. 重启 mysql"></a>5. 重启 <code>mysql</code></h3><p>重启 <code>mysql</code> 即可。</p>
+<hr>
+<p><a href="http://blog.csdn.net/fenfenguai/article/details/53941379" target="_blank" rel="external">出处: fenfenguai的专栏</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;ul&gt;
+&lt;li&gt;系统：&lt;code&gt;macOS Sierra 10.12.2 (16C67)&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;1-先查看本地-MySQL-的安装目录&quot;&gt;&lt;a href=&quot;#1-先查看本地-MySQL-的安装目录&quot; class=&quot;headerli
+    
+    </summary>
+    
+      <category term="工具&amp;平台" scheme="http://blog.webclown.net/categories/%E5%B7%A5%E5%85%B7-%E5%B9%B3%E5%8F%B0/"/>
+    
+    
+      <category term="mac" scheme="http://blog.webclown.net/tags/mac/"/>
+    
+      <category term="mysql" scheme="http://blog.webclown.net/tags/mysql/"/>
+    
+      <category term="only_full_group_by" scheme="http://blog.webclown.net/tags/only-full-group-by/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Mac office 2016 word 出现隐藏模块中出现编译错误: link</title>
     <link href="http://blog.webclown.net/2017/03/30/Mac-office-2016-word-%E5%87%BA%E7%8E%B0%E9%9A%90%E8%97%8F%E6%A8%A1%E5%9D%97%E4%B8%AD%E5%87%BA%E7%8E%B0%E7%BC%96%E8%AF%91%E9%94%99%E8%AF%AF-link/"/>
     <id>http://blog.webclown.net/2017/03/30/Mac-office-2016-word-出现隐藏模块中出现编译错误-link/</id>
     <published>2017-03-30T09:19:24.000Z</published>
-    <updated>2017-03-30T09:27:06.000Z</updated>
+    <updated>2017-04-09T16:32:15.000Z</updated>
     
     <content type="html"><![CDATA[<h3 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h3><p>删除这个文件 <code>~/Library/Group\ Containers/UBF8T346G9.Office/User\ Content.localized/Startup.localized/Word/linkCreation.dotm</code></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">rm -rf ~/Library/Group\ Containers/UBF8T346G9.Office/User\ Content.localized/Startup.localized/Word/linkCreation.dotm</div></pre></td></tr></table></figure>
+<hr>
 <p><a href="http://bbs.feng.com/forum.php?mod=redirect&amp;goto=findpost&amp;ptid=10644840&amp;pid=164290024" target="_blank" rel="external">出处: 威锋论坛</a></p>
 ]]></content>
     
@@ -655,7 +699,7 @@
     <link href="http://blog.webclown.net/2016/11/29/%E3%80%90%E8%BD%AC%E3%80%91%E6%8A%98%E8%85%BE%E4%BA%86%E4%B8%80%E4%B8%8BTerminal%EF%BC%88%E7%BB%88%E7%AB%AF%EF%BC%89%E4%B9%8BiTerm2/"/>
     <id>http://blog.webclown.net/2016/11/29/【转】折腾了一下Terminal（终端）之iTerm2/</id>
     <published>2016-11-29T14:03:03.000Z</published>
-    <updated>2016-11-29T18:17:12.000Z</updated>
+    <updated>2017-04-09T16:32:27.000Z</updated>
     
     <content type="html"><![CDATA[<p><img src="/images/posts/2016/11-29/iTerm2.png" alt="iTerm2.png"></p>
 <p>很早之前<a href="http://weibo.com/u/1991492964" target="_blank" rel="external">@GhostBoyZone</a>发给我一个关于iTerm 2的主题配置，收藏了，后来也分享给小伙伴们了，特此来Mark到自己的博客里面，顺便修复了字体的问题。</p>
@@ -692,6 +736,7 @@
 </ul>
 <p>所以就有了上面那条 <code>chsh -s</code> 命令的写法。</p>
 <p>重新打开 iTerm2 窗口，配置完成。玩的愉快 😜</p>
+<hr>
 <p>原文：<a href="http://xingrz.me/2013/2013-06-19/terminal-zhuangbility.html" target="_blank" rel="external">折腾了一下 Terminal</a> By <a href="http://weibo.com/xingrz" target="_blank" rel="external">@XiNGRZ</a></p>
 <h2 id="一些链接"><a href="#一些链接" class="headerlink" title="一些链接"></a>一些链接</h2><ul>
 <li><a href="http://www.iterm2.com/" target="_blank" rel="external">iTerm2</a></li>
@@ -1345,48 +1390,6 @@
       <category term="wget" scheme="http://blog.webclown.net/tags/wget/"/>
     
       <category term="shell" scheme="http://blog.webclown.net/tags/shell/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Git-常用命令</title>
-    <link href="http://blog.webclown.net/2015/04/14/%E3%80%90%E8%BD%AC%E3%80%91Git-%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
-    <id>http://blog.webclown.net/2015/04/14/【转】Git-常用命令/</id>
-    <published>2015-04-14T12:23:03.000Z</published>
-    <updated>2016-11-29T16:16:04.000Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="develop-via-a-single-branch"><a href="#develop-via-a-single-branch" class="headerlink" title="develop via a single branch"></a>develop via a single branch</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">t branch -m &#123;&#123;branch&#125;&#125;</div><div class="line">git fetch origin</div><div class="line">git rebase origin/master -i</div><div class="line">git push origin &#123;&#123;branch&#125;&#125;</div></pre></td></tr></table></figure>
-<h2 id="create-a-new-branch"><a href="#create-a-new-branch" class="headerlink" title="create a new branch"></a>create a new branch</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git checkout -b &#123;&#123;branch&#125;&#125;</div></pre></td></tr></table></figure>
-<h2 id="checkout-remote-branch"><a href="#checkout-remote-branch" class="headerlink" title="checkout remote branch"></a>checkout remote branch</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git checkout -b &#123;&#123;branch&#125;&#125; origin/&#123;&#123;branch&#125;&#125;</div></pre></td></tr></table></figure>
-<a id="more"></a>
-<h2 id="merge-branch-to-master"><a href="#merge-branch-to-master" class="headerlink" title="merge branch to master"></a>merge branch to master</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git checkout master</div><div class="line">git merge &#123;&#123;branch&#125;&#125;</div></pre></td></tr></table></figure>
-<h2 id="delete-branch"><a href="#delete-branch" class="headerlink" title="delete branch"></a>delete branch</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git branch -D &#123;&#123;localBranch&#125;&#125;</div><div class="line">git push --delete origin &#123;&#123;remoteBranch&#125;&#125;</div></pre></td></tr></table></figure>
-<h2 id="rename-repo"><a href="#rename-repo" class="headerlink" title="rename repo"></a>rename repo</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">git remote -v</div><div class="line">// View existing remotes</div><div class="line">// origin  https://github.com/user/repo.git (fetch)</div><div class="line">// origin  https://github.com/user/repo.git (push)</div><div class="line"></div><div class="line">git remote set-url origin https://github.com/user/repo2.git</div><div class="line">// Change the &apos;origin&apos; remote&apos;s URL</div></pre></td></tr></table></figure>
-<h2 id="add-tag"><a href="#add-tag" class="headerlink" title="add tag"></a>add tag</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git tag &#123;&#123;tag&#125;&#125;</div><div class="line">git push --tags</div></pre></td></tr></table></figure>
-<h2 id="add-tag-for-a-history-commit"><a href="#add-tag-for-a-history-commit" class="headerlink" title="add tag for a history commit"></a>add tag for a history commit</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">// Set the HEAD to the old commit that we want to tag</div><div class="line">git checkout &#123;&#123;leading 7 chars of commit&#125;&#125;</div><div class="line"></div><div class="line">// temporarily set the date to the date of the HEAD commit, and add the tag</div><div class="line">GIT_COMMITTER_DATE=&quot;$(git show --format=%aD | head -1)&quot; git tag -a &#123;&#123;tag&#125;&#125; -m &quot;&#123;&#123;commit message&#125;&#125;&quot;</div><div class="line"></div><div class="line">// set HEAD back to whatever you want it to be</div><div class="line">git checkout master</div><div class="line"></div><div class="line">git push --tags</div></pre></td></tr></table></figure>
-<h2 id="delete-tag"><a href="#delete-tag" class="headerlink" title="delete tag"></a>delete tag</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git tag --delete &#123;&#123;tag&#125;&#125;</div><div class="line">git push --delete origin &#123;&#123;tag&#125;&#125;</div></pre></td></tr></table></figure>
-<h2 id="gh-pages"><a href="#gh-pages" class="headerlink" title="gh-pages"></a>gh-pages</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">http://&#123;&#123;group&#125;&#125;.github.io/&#123;&#123;repo&#125;&#125;/</div></pre></td></tr></table></figure>
-<h2 id="npm-add-owner"><a href="#npm-add-owner" class="headerlink" title="npm add owner"></a>npm add owner</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm owner add &#123;&#123;name&#125;&#125;</div></pre></td></tr></table></figure>
-<p>Source：<a href="https://github.com/fool2fish/blog/issues/9" target="_blank" rel="external">fool2fish</a></p>
-<h2 id="一些链接"><a href="#一些链接" class="headerlink" title="一些链接"></a>一些链接</h2><ul>
-<li><a href="https://www.uis.cc/2016/06/21/List-of-commonly-used-Git-commands/" target="_blank" rel="external">常用 Git 命令清单</a></li>
-</ul>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;develop-via-a-single-branch&quot;&gt;&lt;a href=&quot;#develop-via-a-single-branch&quot; class=&quot;headerlink&quot; title=&quot;develop via a single branch&quot;&gt;&lt;/a&gt;develop via a single branch&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;t branch -m &amp;#123;&amp;#123;branch&amp;#125;&amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;git fetch origin&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;git rebase origin/master -i&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;git push origin &amp;#123;&amp;#123;branch&amp;#125;&amp;#125;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h2 id=&quot;create-a-new-branch&quot;&gt;&lt;a href=&quot;#create-a-new-branch&quot; class=&quot;headerlink&quot; title=&quot;create a new branch&quot;&gt;&lt;/a&gt;create a new branch&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;git checkout -b &amp;#123;&amp;#123;branch&amp;#125;&amp;#125;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h2 id=&quot;checkout-remote-branch&quot;&gt;&lt;a href=&quot;#checkout-remote-branch&quot; class=&quot;headerlink&quot; title=&quot;checkout remote branch&quot;&gt;&lt;/a&gt;checkout remote branch&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;git checkout -b &amp;#123;&amp;#123;branch&amp;#125;&amp;#125; origin/&amp;#123;&amp;#123;branch&amp;#125;&amp;#125;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-    
-    </summary>
-    
-      <category term="工具&amp;平台" scheme="http://blog.webclown.net/categories/%E5%B7%A5%E5%85%B7-%E5%B9%B3%E5%8F%B0/"/>
-    
-    
-      <category term="git" scheme="http://blog.webclown.net/tags/git/"/>
-    
-      <category term="gh-pages" scheme="http://blog.webclown.net/tags/gh-pages/"/>
     
   </entry>
   
