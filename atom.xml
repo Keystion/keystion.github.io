@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.webclown.net/"/>
-  <updated>2017-04-09T16:32:55.000Z</updated>
+  <updated>2017-05-25T06:37:15.000Z</updated>
   <id>http://blog.webclown.net/</id>
   
   <author>
@@ -14,6 +14,53 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>七牛云对象存储图片无法预览</title>
+    <link href="http://blog.webclown.net/2017/05/25/%E4%B8%83%E7%89%9B%E4%BA%91%E5%AF%B9%E8%B1%A1%E5%AD%98%E5%82%A8%E5%9B%BE%E7%89%87%E6%97%A0%E6%B3%95%E9%A2%84%E8%A7%88/"/>
+    <id>http://blog.webclown.net/2017/05/25/七牛云对象存储图片无法预览/</id>
+    <published>2017-05-25T06:23:57.000Z</published>
+    <updated>2017-05-25T06:37:15.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>使用了七牛云对象存储，可能是自己当时误操作，导致上传的图片无法正常语言出现以下错误:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">    &quot;error&quot;: &quot;bucket is protected&quot;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p><img src="http://images.webclown.net/20170525142738_T6wGOn_Screenshot.jpeg" alt=""></p>
+<p>原因是因为开启了【原图保护】，关闭即可。</p>
+<hr>
+<p>wtf，这是什么鬼错误，搜索了许久无法定位错误信息是什么导致的，无奈🤷 之余，只好走了以下七牛云的工单系统。很快（2小时）就解决了问题。特此Mark一下。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;使用了七牛云对象存储，可能是自己当时误操作，导致上传的图片无法正常语言出现以下错误:&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div
+    
+    </summary>
+    
+      <category term="工具&amp;平台" scheme="http://blog.webclown.net/categories/%E5%B7%A5%E5%85%B7-%E5%B9%B3%E5%8F%B0/"/>
+    
+    
+      <category term="only_full_group_by" scheme="http://blog.webclown.net/tags/only-full-group-by/"/>
+    
+      <category term="七牛云" scheme="http://blog.webclown.net/tags/%E4%B8%83%E7%89%9B%E4%BA%91/"/>
+    
+      <category term="对象存储" scheme="http://blog.webclown.net/tags/%E5%AF%B9%E8%B1%A1%E5%AD%98%E5%82%A8/"/>
+    
+      <category term="bucket is protected" scheme="http://blog.webclown.net/tags/bucket-is-protected/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>时间管理：三八原则</title>
+    <link href="http://blog.webclown.net/2017/05/11/%E6%97%B6%E9%97%B4%E7%AE%A1%E7%90%86%EF%BC%9A%E4%B8%89%E5%85%AB%E5%8E%9F%E5%88%99/"/>
+    <id>http://blog.webclown.net/2017/05/11/时间管理：三八原则/</id>
+    <published>2017-05-11T02:37:10.000Z</published>
+    <updated>2017-05-11T02:37:10.000Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>【转】解决mac环境下mysql出现only_full_group_by的错误</title>
@@ -1303,93 +1350,6 @@
       <category term="brew" scheme="http://blog.webclown.net/tags/brew/"/>
     
       <category term="watch" scheme="http://blog.webclown.net/tags/watch/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>figlet</title>
-    <link href="http://blog.webclown.net/2016/05/13/figlet/"/>
-    <id>http://blog.webclown.net/2016/05/13/figlet/</id>
-    <published>2016-05-13T10:39:43.000Z</published>
-    <updated>2016-05-13T10:59:14.000Z</updated>
-    
-    <content type="html"><![CDATA[<h4 id="安装-figlet"><a href="#安装-figlet" class="headerlink" title="安装 figlet"></a>安装 <code>figlet</code></h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ sudo brew install figlet</div></pre></td></tr></table></figure>
-<p><code>iTerm or Terminal（终端）</code></p>
-<p>示例代码</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">$ figlet &quot;webclown&quot;</div><div class="line"></div><div class="line">              _          _</div><div class="line">__      _____| |__   ___| | _____      ___ __</div><div class="line">\ \ /\ / / _ \ &apos;_ \ / __| |/ _ \ \ /\ / / &apos;_ \</div><div class="line"> \ V  V /  __/ |_) | (__| | (_) \ V  V /| | | |</div><div class="line">  \_/\_/ \___|_.__/ \___|_|\___/ \_/\_/ |_| |_|</div></pre></td></tr></table></figure>
-<p>设置字体</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">$ figlet -f tinker-toy &quot;W e b c l o w n&quot;</div><div class="line"></div><div class="line">o       o             o                 o</div><div class="line">|       |             |                 |</div><div class="line">o   o   o     o-o     O-o       o-o     |     o-o     o   o   o    o-o</div><div class="line"> \ / \ /      |-&apos;     |  |     |        |     | |      \ / \ /     |  |</div><div class="line">  o   o       o-o     o-o       o-o     o     o-o       o   o      o  o</div></pre></td></tr></table></figure>
-<a id="more"></a>
-<ul>
-<li><a href="http://brew.sh/" target="_blank" rel="external">Homebrew</a></li>
-</ul>
-<h4 id="Wiki"><a href="#Wiki" class="headerlink" title="Wiki"></a>Wiki</h4><ul>
-<li><a href="http://www.figlet.org/" target="_blank" rel="external">http://www.figlet.org/</a></li>
-</ul>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;h4 id=&quot;安装-figlet&quot;&gt;&lt;a href=&quot;#安装-figlet&quot; class=&quot;headerlink&quot; title=&quot;安装 figlet&quot;&gt;&lt;/a&gt;安装 &lt;code&gt;figlet&lt;/code&gt;&lt;/h4&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;$ sudo brew install figlet&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;&lt;code&gt;iTerm or Terminal（终端）&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;示例代码&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;$ figlet &amp;quot;webclown&amp;quot;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;              _          _&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;__      _____| |__   ___| | _____      ___ __&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;\ \ /\ / / _ \ &amp;apos;_ \ / __| |/ _ \ \ /\ / / &amp;apos;_ \&lt;/div&gt;&lt;div class=&quot;line&quot;&gt; \ V  V /  __/ |_) | (__| | (_) \ V  V /| | | |&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;  \_/\_/ \___|_.__/ \___|_|\___/ \_/\_/ |_| |_|&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;设置字体&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;$ figlet -f tinker-toy &amp;quot;W e b c l o w n&amp;quot;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;o       o             o                 o&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;|       |             |                 |&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;o   o   o     o-o     O-o       o-o     |     o-o     o   o   o    o-o&lt;/div&gt;&lt;div class=&quot;line&quot;&gt; \ / \ /      |-&amp;apos;     |  |     |        |     | |      \ / \ /     |  |&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;  o   o       o-o     o-o       o-o     o     o-o       o   o      o  o&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-    
-    </summary>
-    
-      <category term="工具&amp;平台" scheme="http://blog.webclown.net/categories/%E5%B7%A5%E5%85%B7-%E5%B9%B3%E5%8F%B0/"/>
-    
-    
-      <category term="figlet" scheme="http://blog.webclown.net/tags/figlet/"/>
-    
-      <category term="brew" scheme="http://blog.webclown.net/tags/brew/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>通过wget下载网站</title>
-    <link href="http://blog.webclown.net/2016/05/13/%E9%80%9A%E8%BF%87wget%E4%B8%8B%E8%BD%BD%E7%BD%91%E7%AB%99/"/>
-    <id>http://blog.webclown.net/2016/05/13/通过wget下载网站/</id>
-    <published>2016-05-13T09:56:00.000Z</published>
-    <updated>2016-05-13T10:26:53.000Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="通过wget下载一个网站"><a href="#通过wget下载一个网站" class="headerlink" title="通过wget下载一个网站"></a>通过wget下载一个网站</h2><p>工具</p>
-<p><code>iTerm</code> or <code>Terminal（终端）</code></p>
-<p>示例代码</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">wget -r -p -np -k --restrict-file-names=nocontrol [url]</div></pre></td></tr></table></figure>
-<h4 id="如何在电脑上安装wget"><a href="#如何在电脑上安装wget" class="headerlink" title="如何在电脑上安装wget"></a>如何在电脑上安装wget</h4><ul>
-<li><a href="http://brew.sh/" target="_blank" rel="external">Homebrew</a></li>
-</ul>
-<a id="more"></a>
-<h4 id="简单的-shell-脚本"><a href="#简单的-shell-脚本" class="headerlink" title="简单的 shell 脚本"></a>简单的 shell 脚本</h4><p><a href="https://github.com/Keystion/littletool/blob/master/wget.sh" target="_blank" rel="external">wget.sh</a></p>
-<p>put it in <code>/Users/$user</code></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">chmod -x wget.sh // Writable</div><div class="line"></div><div class="line">./wget [url] // Any directory</div></pre></td></tr></table></figure>
-<h4 id="Wiki"><a href="#Wiki" class="headerlink" title="Wiki"></a>Wiki</h4><ul>
-<li><a href="https://en.wikipedia.org/wiki/Wget" target="_blank" rel="external">https://en.wikipedia.org/wiki/Wget</a></li>
-<li><a href="https://wiki.ubuntuusers.de/wget/" target="_blank" rel="external">https://wiki.ubuntuusers.de/wget/</a></li>
-</ul>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;通过wget下载一个网站&quot;&gt;&lt;a href=&quot;#通过wget下载一个网站&quot; class=&quot;headerlink&quot; title=&quot;通过wget下载一个网站&quot;&gt;&lt;/a&gt;通过wget下载一个网站&lt;/h2&gt;&lt;p&gt;工具&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;iTerm&lt;/code&gt; or &lt;code&gt;Terminal（终端）&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;示例代码&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;wget -r -p -np -k --restrict-file-names=nocontrol [url]&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h4 id=&quot;如何在电脑上安装wget&quot;&gt;&lt;a href=&quot;#如何在电脑上安装wget&quot; class=&quot;headerlink&quot; title=&quot;如何在电脑上安装wget&quot;&gt;&lt;/a&gt;如何在电脑上安装wget&lt;/h4&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://brew.sh/&quot;&gt;Homebrew&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-    
-    </summary>
-    
-      <category term="工具&amp;平台" scheme="http://blog.webclown.net/categories/%E5%B7%A5%E5%85%B7-%E5%B9%B3%E5%8F%B0/"/>
-    
-    
-      <category term="wget" scheme="http://blog.webclown.net/tags/wget/"/>
-    
-      <category term="shell" scheme="http://blog.webclown.net/tags/shell/"/>
     
   </entry>
   
