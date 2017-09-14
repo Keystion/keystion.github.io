@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.webclown.net/"/>
-  <updated>2017-05-25T07:22:19.000Z</updated>
+  <updated>2017-09-14T09:32:49.000Z</updated>
   <id>http://blog.webclown.net/</id>
   
   <author>
@@ -20,20 +20,20 @@
     <link href="http://blog.webclown.net/2017/05/25/%E4%B8%80%E4%BA%9B%E4%B8%8D%E9%94%99%E7%9A%84console-log/"/>
     <id>http://blog.webclown.net/2017/05/25/一些不错的console-log/</id>
     <published>2017-05-25T06:43:58.000Z</published>
-    <updated>2017-05-25T07:22:19.000Z</updated>
+    <updated>2017-09-14T09:32:49.000Z</updated>
     
     <content type="html"><![CDATA[<h4 id="1、http-www-pixijs-com"><a href="#1、http-www-pixijs-com" class="headerlink" title="1、http://www.pixijs.com/"></a>1、<a href="http://www.pixijs.com/" target="_blank" rel="external">http://www.pixijs.com/</a></h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> e = [</div><div class="line">    <span class="string">"\n %c %c %c Pixi.js 4.1.0 - ✰ WebGL ✰  %c  %c  http://www.pixijs.com/  %c %c ♥%c♥%c♥ \n\n"</span>, </div><div class="line">    <span class="string">"background: #ff66a5; padding:5px 0;"</span>, </div><div class="line">    <span class="string">"background: #ff66a5; padding:5px 0;"</span>, </div><div class="line">    <span class="string">"color: #ff66a5; background: #030307; padding:5px 0;"</span>, </div><div class="line">    <span class="string">"background: #ff66a5; padding:5px 0;"</span>, </div><div class="line">    <span class="string">"background: #ffc3dc; padding:5px 0;"</span>, </div><div class="line">    <span class="string">"background: #ff66a5; padding:5px 0;"</span>, </div><div class="line">    <span class="string">"color: #ff2424; background: #fff; padding:5px 0;"</span>, </div><div class="line">    <span class="string">"color: #ff2424; background: #fff; padding:5px 0;"</span>, </div><div class="line">    <span class="string">"color: #ff2424; background: #fff; padding:5px 0;"</span></div><div class="line">];</div><div class="line"><span class="built_in">window</span>.console.log.apply(<span class="built_in">console</span>, e)</div></pre></td></tr></table></figure>
-<p><img src="http://images.webclown.net/20170525151127_eVvj2W_Screenshot.jpeg" alt=""></p>
+<p><amp-img layout="responsive" width="800" height="500" src="http://images.webclown.net/20170525151127_eVvj2W_Screenshot.jpeg" alt=""></amp-img></p>
 <h4 id="2、https-www-baidu-com"><a href="#2、https-www-baidu-com" class="headerlink" title="2、https://www.baidu.com/"></a>2、<a href="https://www.baidu.com/" target="_blank" rel="external">https://www.baidu.com/</a></h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">window</span>.console &amp;&amp; <span class="built_in">window</span>.console.log &amp;&amp; (<span class="built_in">console</span>.log(<span class="string">"一张网页，要经历怎样的过程，才能抵达用户面前？\n一位新人，要经历怎样的成长，才能站在技术之巅？\n探寻这里的秘密；\n体验这里的挑战；\n成为这里的主人；\n加入百度，加入网页搜索，你，可以影响世界。\n"</span>),</div><div class="line">    <span class="built_in">console</span>.log(<span class="string">"请将简历发送至 %c ps_recruiter@baidu.com（ 邮件标题请以“姓名-应聘XX职位-来自console”命名）"</span>, <span class="string">"color:red"</span>),</div><div class="line">    <span class="built_in">console</span>.log(<span class="string">"职位介绍：http://dwz.cn/hr2013"</span>))</div></pre></td></tr></table></figure>
-<p><img src="http://images.webclown.net/20170525151219_ucqMc5_Screenshot.jpeg" alt=""></p>
+<p><amp-img layout="responsive" width="800" height="500" src="http://images.webclown.net/20170525151219_ucqMc5_Screenshot.jpeg" alt=""></amp-img></p>
 <h4 id="3、https-www-tmall-com"><a href="#3、https-www-tmall-com" class="headerlink" title="3、https://www.tmall.com/"></a>3、<a href="https://www.tmall.com/" target="_blank" rel="external">https://www.tmall.com/</a></h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> e = &#123;</div><div class="line">    <span class="string">"info"</span>: <span class="string">"\u55b5~ \u52a0\u5165\u6211\u4eec\u5427 http://tb.cn/iS8NBOy"</span>,</div><div class="line">    <span class="string">"logo"</span>: <span class="string">"   :::                                :::  \n :::::::                             ::::: \n:::::::::                          ::::::::\n:::::::::::::::::::::::::::::::::::::::::::\n::::    :::    ::::::::::::::::   :::  ::::\n:::    Smart    :::::cool::::    Crazy  :::\n:::::   :::    :::::::::::::::    :::   :::\n:::::::::::::::::::::::::::::::::::::::::::"</span></div><div class="line">&#125;;</div><div class="line"><span class="built_in">window</span>.console &amp;&amp; <span class="built_in">console</span>.info &amp;&amp; <span class="built_in">console</span>.info(e.logo + <span class="string">"\n\n"</span> + e.info)</div></pre></td></tr></table></figure>
-<p><img src="http://images.webclown.net/20170525151255_DS4Xbu_Screenshot.jpeg" alt=""></p>
+<p><amp-img layout="responsive" width="800" height="500" src="http://images.webclown.net/20170525151255_DS4Xbu_Screenshot.jpeg" alt=""></amp-img></p>
 <h4 id="4、https-www-alipay-com"><a href="#4、https-www-alipay-com" class="headerlink" title="4、https://www.alipay.com/"></a>4、<a href="https://www.alipay.com/" target="_blank" rel="external">https://www.alipay.com/</a></h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> t = <span class="string">"\u6e29\u99a8\u63d0\u793a\uff1a\u8bf7\u4e0d\u8981\u8c03\u76ae\u5730\u5728\u6b64\u7c98\u8d34\u6267\u884c\u4efb\u4f55\u5185\u5bb9\uff0c\u8fd9\u53ef\u80fd\u4f1a\u5bfc\u81f4\u60a8\u7684\u8d26\u6237\u53d7\u5230\u653b\u51fb\uff0c\u7ed9\u60a8\u5e26\u6765\u635f\u5931 \uff01^_^"</span>, </div><div class="line">    s = <span class="string">"\u505a\u5730\u7403\u4e0a\u6700\u5177\u4e92\u8054\u7f51\u6027\u3001\u521b\u65b0\u6027\u3001\u4e13\u4e1a\u6709\u7231\u7684\u56e2\u961f\u3002"</span>, </div><div class="line">    n = <span class="string">"https://github.com/alipay/x"</span>, </div><div class="line">    i = [s, <span class="string">" "</span>, n].join(<span class="string">""</span>);</div><div class="line"><span class="built_in">console</span>.log(<span class="string">"%c AliPay %c Copyright \xa9 2004-%s"</span>, <span class="string">'font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;font-size:64px;color:#00bbee;-webkit-text-fill-color:#00bbee;-webkit-text-stroke: 1px #00bbee;'</span>, <span class="string">"font-size:12px;color:#999999;"</span>, (<span class="keyword">new</span> <span class="built_in">Date</span>).getFullYear()),</div><div class="line"><span class="built_in">console</span>.log(<span class="string">"%c "</span> + t, <span class="string">"color:#333;font-size:16px;"</span>), </div><div class="line"><span class="built_in">console</span>.log(<span class="string">"\n "</span> + i)</div></pre></td></tr></table></figure>
-<p><img src="http://images.webclown.net/20170525151322_iZ6ovr_Screenshot.jpeg" alt=""></p>
+<p><amp-img layout="responsive" width="800" height="500" src="http://images.webclown.net/20170525151322_iZ6ovr_Screenshot.jpeg" alt=""></amp-img></p>
 <h4 id="5、http-www-alloyteam-com"><a href="#5、http-www-alloyteam-com" class="headerlink" title="5、http://www.alloyteam.com/"></a>5、<a href="http://www.alloyteam.com/" target="_blank" rel="external">http://www.alloyteam.com/</a></h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">window</span>.console &amp;&amp; <span class="built_in">console</span>.log &amp;&amp; <span class="built_in">console</span>.log(<span class="string">"\n"</span> + <span class="string">"   _    _  _                _____                         \n  \/_\\  | || |  ___   _   _ \/__   \\  ___   __ _  _ __ ___  \n \/\/_\\\\ | || | \/ _ \\ | | | |  \/ \/\\\/ \/ _ \\ \/ _` || '_ ` _ \\ \n\/  _  \\| || || (_) || |_| | \/ \/   |  __\/| (_| || | | | | |\n\\_\/ \\_\/|_||_| \\___\/  \\__, | \\\/     \\___| \\__,_||_| |_| |_|\n                     |___\/\n\n 欢迎加入AlloyTeam：请将简历(邮件标题后面再加上'from console')发送至 %c Kinvix@QQ.com \n"</span>, <span class="string">"color:red"</span>);</div></pre></td></tr></table></figure>
-<p><img src="http://images.webclown.net/20170525151355_xS0mfu_Screenshot.jpeg" alt=""></p>
+<p><amp-img layout="responsive" width="800" height="500" src="http://images.webclown.net/20170525151355_xS0mfu_Screenshot.jpeg" alt=""></amp-img></p>
 <h4 id="0、本屌站-略略略"><a href="#0、本屌站-略略略" class="headerlink" title="0、本屌站 略略略"></a>0、本屌站 略略略</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">window</span>.console &amp;&amp; <span class="built_in">console</span>.log &amp;&amp; <span class="built_in">console</span>.log(<span class="string">"%c\n\\                 \/ \n \\       _       \/   |        | \n  \\     \/ \\     \/ __ |__   __ |  __ \n   \\   \/   \\   \/ |_  |  \\ \/   | \/  \\ \\  \/\\  \/ \n    \\_\/     \\_\/  |__ |__\/ \\__ | \\__\/  \\\/  \\\/ \n\n"</span>, <span class="string">"color:blue"</span>)</div></pre></td></tr></table></figure>
-<p><img src="http://images.webclown.net/20170525151438_dGuClH_Screenshot.jpeg" alt=""></p>
+<p><amp-img layout="responsive" width="800" height="500" src="http://images.webclown.net/20170525151438_dGuClH_Screenshot.jpeg" alt=""></amp-img></p>
 <p>本来想好好写写的，结果败在懒上。应该是2、3月之前的日记了。</p>
 ]]></content>
     
@@ -62,7 +62,7 @@
     <updated>2017-05-25T06:37:15.000Z</updated>
     
     <content type="html"><![CDATA[<p>使用了七牛云对象存储，可能是自己当时误操作，导致上传的图片无法正常语言出现以下错误:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">    &quot;error&quot;: &quot;bucket is protected&quot;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<p><img src="http://images.webclown.net/20170525142738_T6wGOn_Screenshot.jpeg" alt=""></p>
+<p><amp-img layout="responsive" width="800" height="500" src="http://images.webclown.net/20170525142738_T6wGOn_Screenshot.jpeg" alt=""></amp-img></p>
 <p>原因是因为开启了【原图保护】，关闭即可。</p>
 <hr>
 <p>wtf，这是什么鬼错误，搜索了许久无法定位错误信息是什么导致的，无奈🤷 之余，只好走了以下七牛云的工单系统。很快（2小时）就解决了问题。特此Mark一下。</p>
@@ -77,11 +77,11 @@
       <category term="工具&amp;平台" scheme="http://blog.webclown.net/categories/%E5%B7%A5%E5%85%B7-%E5%B9%B3%E5%8F%B0/"/>
     
     
-      <category term="only_full_group_by" scheme="http://blog.webclown.net/tags/only-full-group-by/"/>
-    
       <category term="七牛云" scheme="http://blog.webclown.net/tags/%E4%B8%83%E7%89%9B%E4%BA%91/"/>
     
       <category term="对象存储" scheme="http://blog.webclown.net/tags/%E5%AF%B9%E8%B1%A1%E5%AD%98%E5%82%A8/"/>
+    
+      <category term="only_full_group_by" scheme="http://blog.webclown.net/tags/only-full-group-by/"/>
     
       <category term="bucket is protected" scheme="http://blog.webclown.net/tags/bucket-is-protected/"/>
     
@@ -114,7 +114,7 @@
 <h3 id="1-先查看本地-MySQL-的安装目录"><a href="#1-先查看本地-MySQL-的安装目录" class="headerlink" title="1. 先查看本地 MySQL 的安装目录"></a>1. 先查看本地 MySQL 的安装目录</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">cd /usr/local/</div><div class="line"># 列出目录文件</div><div class="line">ls</div><div class="line">lrwxr-xr-x   1 root  wheel    30B  4  9 12:41 mysql -&gt; mysql-5.7.17-macos10.12-x86_64</div><div class="line">drwxr-xr-x  12 root  wheel   408B  4  9 12:41 mysql-5.7.17-macos10.12-x86_64</div></pre></td></tr></table></figure>
 <p>PS：</p>
 <p><code>mysql -&gt; mysql-5.7.17-macos10.12-x86_64</code> 是电脑目前使用的MySQL版本。</p>
-<p><img src="/images/posts/2017/04-09/01.png" alt="先查看本地 MySQL 的安装目录"></p>
+<p><amp-img layout="responsive" width="1398" height="1012" src="/images/posts/2017/04-09/01.png" alt="先查看本地 MySQL 的安装目录"></amp-img></p>
 <h3 id="2-复制-MySQL-下的-my-default-cnf-到-etc-下"><a href="#2-复制-MySQL-下的-my-default-cnf-到-etc-下" class="headerlink" title="2. 复制 MySQL 下的 my-default.cnf 到 etc 下"></a>2. 复制 MySQL 下的 <code>my-default.cnf</code> 到 <code>etc</code> 下</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo cp /usr/local/mysql-5.7.17-macos10.12-x86_64/support-files/my-default.cnf /etc/my.cnf</div></pre></td></tr></table></figure>
 <h3 id="3-编辑-etc-my-cnf"><a href="#3-编辑-etc-my-cnf" class="headerlink" title="3. 编辑 etc/my.cnf"></a>3. 编辑 <code>etc/my.cnf</code></h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo vi /etc/my.cnf</div></pre></td></tr></table></figure>
 <h3 id="4-设置-sql-model"><a href="#4-设置-sql-model" class="headerlink" title="4. 设置 sql_model"></a>4. 设置 <code>sql_model</code></h3><p>找到 sql_model 并修改值：</p>
@@ -136,11 +136,11 @@
       <category term="工具&amp;平台" scheme="http://blog.webclown.net/categories/%E5%B7%A5%E5%85%B7-%E5%B9%B3%E5%8F%B0/"/>
     
     
+      <category term="only_full_group_by" scheme="http://blog.webclown.net/tags/only-full-group-by/"/>
+    
       <category term="mac" scheme="http://blog.webclown.net/tags/mac/"/>
     
       <category term="mysql" scheme="http://blog.webclown.net/tags/mysql/"/>
-    
-      <category term="only_full_group_by" scheme="http://blog.webclown.net/tags/only-full-group-by/"/>
     
   </entry>
   
@@ -188,7 +188,7 @@
     <content type="html"><![CDATA[<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="298" height="52" src="//music.163.com/outchain/player?type=2&id=27676089&auto=0&height=32"></iframe>
 
 <p>写了一些东西，安静了许多，还是需要阶段性的去一个人独处下，瞻前顾后，给自己一些动力。</p>
-<p><img src="/images/posts/2017/01-08/1.jpg" alt="photo"></p>
+<p><amp-img layout="responsive" width="4032" height="3024" src="/images/posts/2017/01-08/1.jpg" alt="photo"></amp-img></p>
 <ul>
 <li>一杯咖啡</li>
 <li>一个下午</li>
@@ -224,7 +224,7 @@
     <published>2017-01-03T11:27:21.000Z</published>
     <updated>2017-01-04T06:25:24.000Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="问题出现"><a href="#问题出现" class="headerlink" title="问题出现"></a>问题出现</h1><p><img src="/images/posts/2017/01-03/1.png" alt="console history"></p>
+    <content type="html"><![CDATA[<h1 id="问题出现"><a href="#问题出现" class="headerlink" title="问题出现"></a>问题出现</h1><p><amp-img layout="responsive" width="413" height="324" src="/images/posts/2017/01-03/1.png" alt="console history"></amp-img></p>
 <p>如何清除掉这些繁琐的历史记录呢：</p>
 <ul>
 <li><code>clear();</code></li>
@@ -233,22 +233,22 @@
 </ul>
 <p>然而执行完并没有什么用，历史记录还是会存在。<br><a id="more"></a></p>
 <h1 id="找到问题解决方法"><a href="#找到问题解决方法" class="headerlink" title="找到问题解决方法"></a>找到问题解决方法</h1><p>然后就去<a href="http://stackoverflow.com/questions/18885409/how-do-i-clear-google-chrome-console-suggessions" target="_blank" rel="external">stackoverflow</a>上面找到一个解决方案特简单：</p>
-<p><img src="/images/posts/2017/01-03/2.png" alt="clear console history"></p>
+<p><amp-img layout="responsive" width="286" height="212" src="/images/posts/2017/01-03/2.png" alt="clear console history"></amp-img></p>
 <blockquote>
 <p>从Chrome 50起，您可以从控制台上下文菜单中使用“Clear console history(清除控制台历史记录)”。</p>
 </blockquote>
-<h1 id="测试是否OK"><a href="#测试是否OK" class="headerlink" title="测试是否OK"></a>测试是否OK</h1><p><img src="/images/posts/2017/01-03/3.gif" alt="test console history"></p>
+<h1 id="测试是否OK"><a href="#测试是否OK" class="headerlink" title="测试是否OK"></a>测试是否OK</h1><p><amp-img layout="responsive" width="764" height="637" src="/images/posts/2017/01-03/3.gif" alt="test console history"></amp-img></p>
 <h1 id="why"><a href="#why" class="headerlink" title="why"></a>why</h1><p>咦，上图怎么会有两个控制台呢:</p>
-<p>1 打开控制台（<code>command</code> + <code>option</code> + <code>i</code>）,控制台右上角的三个点（<code>Customize and control DevTools</code>\定制和控制DevTools）<br><img src="/images/posts/2017/01-03/4.png" alt="console"></p>
-<p>2 光标定位到弹出来的控制台，然后按快捷键 <code>command</code> + <code>option</code> + <code>i</code> 定制和控制DevTools的DevTools。<br><img src="/images/posts/2017/01-03/5.png" alt="console"></p>
-<p>3 恩，就酱紫，两个都出现了。<br><img src="/images/posts/2017/01-03/6.png" alt="console"><br><img src="/images/posts/2017/01-03/7.gif" alt="console"></p>
+<p>1 打开控制台（<code>command</code> + <code>option</code> + <code>i</code>）,控制台右上角的三个点（<code>Customize and control DevTools</code>\定制和控制DevTools）<br><amp-img layout="responsive" width="840" height="832" src="/images/posts/2017/01-03/4.png" alt="console"></amp-img></p>
+<p>2 光标定位到弹出来的控制台，然后按快捷键 <code>command</code> + <code>option</code> + <code>i</code> 定制和控制DevTools的DevTools。<br><amp-img layout="responsive" width="1654" height="888" src="/images/posts/2017/01-03/5.png" alt="console"></amp-img></p>
+<p>3 恩，就酱紫，两个都出现了。<br><amp-img layout="responsive" width="1652" height="886" src="/images/posts/2017/01-03/6.png" alt="console"><br><amp-img layout="responsive" width="853" height="462" src="/images/posts/2017/01-03/7.gif" alt="console"></amp-img></amp-img></p>
 <p>4 然后你找到 <code>Application tab</code> -&gt; <code>Storage</code> -&gt; <code>Local Storage</code> -&gt; <code>chrome-devtools://devtools</code> -&gt; <code>consoleHistory</code> 这个数组里面就是所有commandLine历史记录</p>
 <p>搞定，玩的愉快🤣，Happy New Year!</p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;问题出现&quot;&gt;&lt;a href=&quot;#问题出现&quot; class=&quot;headerlink&quot; title=&quot;问题出现&quot;&gt;&lt;/a&gt;问题出现&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;/images/posts/2017/01-03/1.png&quot; alt=&quot;console history&quot;&gt;&lt;/p&gt;
+      &lt;h1 id=&quot;问题出现&quot;&gt;&lt;a href=&quot;#问题出现&quot; class=&quot;headerlink&quot; title=&quot;问题出现&quot;&gt;&lt;/a&gt;问题出现&lt;/h1&gt;&lt;p&gt;&lt;amp-img layout=&quot;responsive&quot; width=&quot;413&quot; height=&quot;324&quot; src=&quot;/images/posts/2017/01-03/1.png&quot; alt=&quot;console history&quot;&gt;&lt;/p&gt;
 &lt;p&gt;如何清除掉这些繁琐的历史记录呢：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;clear();&lt;/code&gt;&lt;/li&gt;
@@ -623,13 +623,13 @@
     <link href="http://blog.webclown.net/2016/12/21/Merry-Christmas/"/>
     <id>http://blog.webclown.net/2016/12/21/Merry-Christmas/</id>
     <published>2016-12-21T00:11:39.000Z</published>
-    <updated>2016-12-21T06:27:57.000Z</updated>
+    <updated>2017-09-14T02:07:32.000Z</updated>
     
     <content type="html"><![CDATA[<p>Merry Christmas！</p>
 <p></p><p data-height="316" data-theme-id="light" data-slug-hash="oYVyLd" data-default-tab="result" data-user="Keystion" data-embed-version="2" data-pen-title="Google search result page christmas themes" class="codepen">See the Pen <a href="http://codepen.io/Keystion/pen/oYVyLd/" target="_blank" rel="external">Google search result page christmas themes</a> by Keystion (<a href="http://codepen.io/Keystion" target="_blank" rel="external">@Keystion</a>) on <a href="http://codepen.io" target="_blank" rel="external">CodePen</a>.</p><p></p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
-<p>意外的发现了Google为搜索<code>Christmas</code>设定的主题，特此Mark一下！<br><a href="https://www.google.com/?gfe_rd=cr&ei=dx1aWLfxIKTz8AfF146oAg&gws_rd=cr&fg=1#newwindow=1&safe=active&q=christmas" target="_black">尝试搜索一下：christmas</a></p>
+<p>意外的发现了Google为搜索<code>Christmas</code>设定的主题，特此Mark一下！<br><a href="https://www.google.com/?gfe_rd=cr&ei=dx1aWLfxIKTz8AfF146oAg&gws_rd=cr&fg=1#newwindow=1&safe=active&q=christmas" target="_blank" rel="external">尝试搜索一下：christmas</a></p>
 ]]></content>
     
     <summary type="html">
@@ -657,7 +657,7 @@
     <published>2016-11-30T23:43:38.000Z</published>
     <updated>2016-12-03T12:35:09.000Z</updated>
     
-    <content type="html"><![CDATA[<p><img src="/images/posts/2016/12-01/phpmyadmin.jpg" alt="phpmyadmin"></p>
+    <content type="html"><![CDATA[<p><amp-img layout="responsive" width="900" height="499" src="/images/posts/2016/12-01/phpmyadmin.jpg" alt="phpmyadmin"></amp-img></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">vi /etc/my.cnf</div></pre></td></tr></table></figure>
 <p>在<code>/etc/my.cnf</code>文件的<code>[mysqld]</code>下面（换行）添加<code>skip-grant-tables</code>，保存并退出（<code>ESC</code>-&gt;<code>:</code>-&gt;<code>wq</code>-&gt;<code>回车</code>）。</p>
 <a id="more"></a>
@@ -672,7 +672,7 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">/etc/init.d/mysqld restart</div></pre></td></tr></table></figure>
 <p>输入<code>mysql -u root -p</code>就会提示输入新密码，输入刚才设置的秘密就可以进去，说明设置成功。</p>
 <p>此时你以为结束，并没有，记得把<code>skip-grant-tables</code>从<code>/etc/my.cnf</code>里面删除掉，不然即使你通过刚刚的过程修改了root用户的密码最后还是无法对数据库进行<code>增</code>、<code>删</code>、<code>改</code>。</p>
-<p><img src="/images/posts/2016/12-01/phpmyadmin.01.png" alt="phpmyadmin"></p>
+<p><amp-img layout="responsive" width="585" height="196" src="/images/posts/2016/12-01/phpmyadmin.01.png" alt="phpmyadmin"></amp-img></p>
 <p>正文结束了，其实下面还有一些文字👇</p>
 <hr>
 <p>一个漂亮的无纺布手提袋，不单单只是一个商品的包装袋。</p>
@@ -680,13 +680,13 @@
 <p>适合任何公司、任何行业作为广告宣传、赠品以及外包装之用。</p>
 <p>海创以专业的设计和制作工艺，为您做出优质的手提袋，欢迎订购！</p>
 <p>联系一下子呗：<a href="tel:15003209070" target="_blank" rel="external">15003209070</a></p>
-<p><img src="/images/shoutidai.qrcode.jpg" alt="无纺布手提袋"></p>
+<p><amp-img layout="responsive" width="430" height="430" src="/images/shoutidai.qrcode.jpg" alt="无纺布手提袋"></amp-img></p>
 <hr>
 ]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;&lt;img src=&quot;/images/posts/2016/12-01/phpmyadmin.jpg&quot; alt=&quot;phpmyadmin&quot;&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;amp-img layout=&quot;responsive&quot; width=&quot;900&quot; height=&quot;499&quot; src=&quot;/images/posts/2016/12-01/phpmyadmin.jpg&quot; alt=&quot;phpmyadmin&quot;&gt;&lt;/p&gt;
 &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;vi /etc/my.cnf&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;p&gt;在&lt;code&gt;/etc/my.cnf&lt;/code&gt;文件的&lt;code&gt;[mysqld]&lt;/code&gt;下面（换行）添加&lt;code&gt;skip-grant-tables&lt;/code&gt;，保存并退出（&lt;code&gt;ESC&lt;/code&gt;-&amp;gt;&lt;code&gt;:&lt;/code&gt;-&amp;gt;&lt;code&gt;wq&lt;/code&gt;-&amp;gt;&lt;code&gt;回车&lt;/code&gt;）。&lt;/p&gt;
     
@@ -716,7 +716,7 @@
     <published>2016-11-30T23:24:25.000Z</published>
     <updated>2016-12-01T02:44:02.000Z</updated>
     
-    <content type="html"><![CDATA[<p><img src="/images/posts/2016/12-01/ssh-key.jpg" alt="ssh-key"></p>
+    <content type="html"><![CDATA[<p><amp-img layout="responsive" width="900" height="500" src="/images/posts/2016/12-01/ssh-key.jpg" alt="ssh-key"></amp-img></p>
 <p>最终结果文件<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">.</div><div class="line">├── authorized_keys</div><div class="line">├── config</div><div class="line">├── id_rsa.coding</div><div class="line">├── id_rsa.coding.company</div><div class="line">├── id_rsa.coding.company.pub</div><div class="line">├── id_rsa.coding.pub</div><div class="line">├── id_rsa.github</div><div class="line">├── id_rsa.github.pub</div><div class="line">└── known_hosts</div></pre></td></tr></table></figure></p>
 <a id="more"></a>
 <p>新建不同的密钥和Host去匹配(@wazi)。</p>
@@ -736,7 +736,7 @@
 </ol>
 <p>把你需要单独的网站SSH公钥密钥，都用以上步骤都生成下。</p>
 <p>这是我最终生成的文件（Coding公司、Coding个人、Github个人）：</p>
-<p><img src="/images/posts/2016/12-01/ssh-key.01.png" alt="ssh-key"></p>
+<p><amp-img layout="responsive" width="588" height="230" src="/images/posts/2016/12-01/ssh-key.01.png" alt="ssh-key"></amp-img></p>
 <p>添加到<code>authorized_keys</code>文件里面：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">ssh-rsa AAAAB3NzaC1yc2EAAAADAQCAQCw******RQw== keystion@A.com</div><div class="line">ssh-rsa AAAAB3NzaC1yc2EAAAADAQAB*******inUtQ== keystion@B.com</div><div class="line">ssh-rsa AAAAB3Nz********ZCcvI1xZhBRWpZZdhv4Q== keystion@C.com</div></pre></td></tr></table></figure>
 <p><code>config</code>文件</p>
@@ -744,7 +744,7 @@
 <h2 id="测试是否连接成功"><a href="#测试是否连接成功" class="headerlink" title="测试是否连接成功"></a>测试是否连接成功</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">ssh -T git@github.com</div><div class="line">Hi Keystion! You&apos;ve successfully authenticated, but GitHub does not provide shell access.</div><div class="line"></div><div class="line">ssh -T git@git.coding.net</div><div class="line">Enter passphrase for key &apos;/Users/key/.ssh/id_rsa.coding&apos;:</div><div class="line">Hello keystion! You&apos;ve connected to Coding.net via SSH successfully!</div><div class="line"></div><div class="line">ssh -T git@company.git.coding.net</div><div class="line">Hello key_kaikeba! You&apos;ve connected to Coding.net via SSH successfully!</div></pre></td></tr></table></figure>
 <p>clone仓库时候多少有一点变化，<code>pull</code>、<code>push</code>等无变化。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git clone git@[Hose]:[UserName]/****.git</div></pre></td></tr></table></figure>
-<p><img src="/images/posts/2016/12-01/ssh-key.02.png" alt="ssh-key"></p>
+<p><amp-img layout="responsive" width="725" height="458" src="/images/posts/2016/12-01/ssh-key.02.png" alt="ssh-key"></amp-img></p>
 <p>嗯，正文到这里结束。</p>
 <hr>
 <p>一个漂亮的无纺布手提袋，不单单只是一个商品的包装袋。</p>
@@ -752,13 +752,13 @@
 <p>适合任何公司、任何行业作为广告宣传、赠品以及外包装之用。</p>
 <p>海创以专业的设计和制作工艺，为您做出优质的手提袋，欢迎订购！</p>
 <p>联系一下子呗：<a href="tel:15003209070" target="_blank" rel="external">15003209070</a></p>
-<p><img src="/images/shoutidai.qrcode.jpg" alt="无纺布手提袋"></p>
+<p><amp-img layout="responsive" width="430" height="430" src="/images/shoutidai.qrcode.jpg" alt="无纺布手提袋"></amp-img></p>
 <hr>
 ]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;&lt;img src=&quot;/images/posts/2016/12-01/ssh-key.jpg&quot; alt=&quot;ssh-key&quot;&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;amp-img layout=&quot;responsive&quot; width=&quot;900&quot; height=&quot;500&quot; src=&quot;/images/posts/2016/12-01/ssh-key.jpg&quot; alt=&quot;ssh-key&quot;&gt;&lt;/p&gt;
 &lt;p&gt;最终结果文件&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;8&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;9&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;10&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;.&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;├── authorized_keys&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;├── config&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;├── id_rsa.coding&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;├── id_rsa.coding.company&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;├── id_rsa.coding.company.pub&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;├── id_rsa.coding.pub&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;├── id_rsa.github&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;├── id_rsa.github.pub&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;└── known_hosts&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
     
     </summary>
@@ -787,10 +787,10 @@
     <published>2016-11-29T14:03:03.000Z</published>
     <updated>2017-04-09T16:32:27.000Z</updated>
     
-    <content type="html"><![CDATA[<p><img src="/images/posts/2016/11-29/iTerm2.png" alt="iTerm2.png"></p>
+    <content type="html"><![CDATA[<p><amp-img layout="responsive" width="900" height="500" src="/images/posts/2016/11-29/iTerm2.png" alt="iTerm2.png"></amp-img></p>
 <p>很早之前<a href="http://weibo.com/u/1991492964" target="_blank" rel="external">@GhostBoyZone</a>发给我一个关于iTerm 2的主题配置，收藏了，后来也分享给小伙伴们了，特此来Mark到自己的博客里面，顺便修复了字体的问题。</p>
 <p>或许别人会觉得这个主题过于花哨，萝卜白菜各有所爱。还有很多大神直接用<code>vim</code>（应该算个神器吧？）。</p>
-<p><img src="/images/posts/2016/11-29/iterm2-zsh-agnoster-git.png" alt="iterm2-zsh-agnoster-git.png"></p>
+<p><amp-img layout="responsive" width="644" height="570" src="/images/posts/2016/11-29/iterm2-zsh-agnoster-git.png" alt="iterm2-zsh-agnoster-git.png"></amp-img></p>
 <p>所以正文从这里开始咯…</p>
 <hr>
 <h2 id="终端应用：iTerm2"><a href="#终端应用：iTerm2" class="headerlink" title="终端应用：iTerm2"></a>终端应用：<code>iTerm2</code></h2><p>下载安装，这个你懂的。</p>
@@ -835,10 +835,10 @@
     
     <summary type="html">
     
-      &lt;p&gt;&lt;img src=&quot;/images/posts/2016/11-29/iTerm2.png&quot; alt=&quot;iTerm2.png&quot;&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;amp-img layout=&quot;responsive&quot; width=&quot;900&quot; height=&quot;500&quot; src=&quot;/images/posts/2016/11-29/iTerm2.png&quot; alt=&quot;iTerm2.png&quot;&gt;&lt;/p&gt;
 &lt;p&gt;很早之前&lt;a href=&quot;http://weibo.com/u/1991492964&quot;&gt;@GhostBoyZone&lt;/a&gt;发给我一个关于iTerm 2的主题配置，收藏了，后来也分享给小伙伴们了，特此来Mark到自己的博客里面，顺便修复了字体的问题。&lt;/p&gt;
 &lt;p&gt;或许别人会觉得这个主题过于花哨，萝卜白菜各有所爱。还有很多大神直接用&lt;code&gt;vim&lt;/code&gt;（应该算个神器吧？）。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/images/posts/2016/11-29/iterm2-zsh-agnoster-git.png&quot; alt=&quot;iterm2-zsh-agnoster-git.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;amp-img layout=&quot;responsive&quot; width=&quot;644&quot; height=&quot;570&quot; src=&quot;/images/posts/2016/11-29/iterm2-zsh-agnoster-git.png&quot; alt=&quot;iterm2-zsh-agnoster-git.png&quot;&gt;&lt;/p&gt;
 &lt;p&gt;所以正文从这里开始咯…&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&quot;终端应用：iTerm2&quot;&gt;&lt;a href=&quot;#终端应用：iTerm2&quot; class=&quot;headerlink&quot; title=&quot;终端应用：iTerm2&quot;&gt;&lt;/a&gt;终端应用：&lt;code&gt;iTerm2&lt;/code&gt;&lt;/h2&gt;&lt;p&gt;下载安装，这个你懂的。&lt;/p&gt;
@@ -872,11 +872,11 @@
     <published>2016-11-17T23:41:55.000Z</published>
     <updated>2016-11-18T00:12:09.000Z</updated>
     
-    <content type="html"><![CDATA[<p><img src="/images/posts/2016/11-18/wc_command_not_found.jpg" alt="wc: command not found"></p>
+    <content type="html"><![CDATA[<p><amp-img layout="responsive" width="900" height="500" src="/images/posts/2016/11-18/wc_command_not_found.jpg" alt="wc: command not found"></amp-img></p>
 <p>环境：<code>macOS Sierra 10.12.1 (16B2555)</code></p>
 <p>今天<sup>2016.11.17</sup>在用户目录下面，编辑<code>.bash_profile</code>的时候把<code>PATH</code>的值写错了，结果就出现了小白心惶惶的现象；</p>
-<p><img src="/images/posts/2016/11-18/wc_command_not_found_01.jpg" alt="wc: command not found 01.jpg"></p>
-<p><img src="/images/posts/2016/11-18/wc_command_not_found_02.jpg" alt="wc: command not found 02.jpg"></p>
+<p><amp-img layout="responsive" width="790" height="327" src="/images/posts/2016/11-18/wc_command_not_found_01.jpg" alt="wc: command not found 01.jpg"></amp-img></p>
+<p><amp-img layout="responsive" width="790" height="143" src="/images/posts/2016/11-18/wc_command_not_found_02.jpg" alt="wc: command not found 02.jpg"></amp-img></p>
 <p>出现这样的现象，<code>sudo</code>、<code>cd</code>、<code>vi</code>等之类的命令都不能用，迷之尴尬啊，心慌了，怎么才能把<code>.bash_profile</code>里的<code>PATH</code>值修改了呢，就想到了<code>Sublime Text</code>编辑器可以显示隐藏文件，遂把整个用户目录丢到了编辑器里面，找到相应的值，加以修正，这才安心下来。😂</p>
 <p>解决方法：</p>
 <p>把用户目录丢到sublime text3里面修改了正确的<code>PATH</code>值。</p>
@@ -885,8 +885,7 @@
     
     <summary type="html">
     
-      &lt;p&gt;&lt;img src=&quot;/images/posts/2016/11-18/wc_command_not_found.jpg&quot; alt=&quot;wc: command not found&quot;&gt;&lt;/p&gt;
-&lt;p&gt;环境：&lt;code&gt;macOS Sierra 10.12.1 (16B2555)&lt;
+      &lt;p&gt;&lt;amp-img layout=&quot;responsive&quot; width=&quot;900&quot; height=&quot;500&quot; src=&quot;/images/posts/2016/11-18/wc_command_not_found.jpg&quot; alt=&quot;wc: command not found&quot;
     
     </summary>
     
@@ -908,12 +907,12 @@
     <published>2016-11-14T23:32:48.000Z</published>
     <updated>2016-11-16T09:49:48.000Z</updated>
     
-    <content type="html"><![CDATA[<p><img src="/images/posts/2016/11-15/z-index.jpg" alt="z-index"><br>图片来自：www.annyhe.com/zindex/#3</p>
+    <content type="html"><![CDATA[<p><amp-img layout="responsive" width="900" height="500" src="/images/posts/2016/11-15/z-index.jpg" alt="z-index"><br>图片来自：www.annyhe.com/zindex/#3</amp-img></p>
 <blockquote>
 <p><code>z-index</code>属性指定了一个元素及其子元素的 z-order。 当元素之间重叠的时候，z-order 决定哪一个元素覆盖在其余元素的上方显示。 通常来说 z-index 较大的元素会覆盖较小的一个。  —MDN z-index</p>
 </blockquote>
 <a id="more"></a>
-<p><img src="/images/posts/2016/11-15/z-index.01.jpg" alt="z-index sample"></p>
+<p><amp-img layout="responsive" width="1376" height="744" src="/images/posts/2016/11-15/z-index.01.jpg" alt="z-index sample"></amp-img></p>
 <p>业务代码中看见了这样一段code，然后想都没有想，直接把另一个元素的<code>z-index</code>值设置为：<code>999999999999999 + 1</code>，就能把它覆盖掉吧，结果并没有那么理想。◻︎_-||</p>
 <p>然后就去查找z-index在各个浏览器中的最大值是多少呢，Google了一番找到了下面这个表格，</p>
 <table>
@@ -991,7 +990,7 @@
     
     <summary type="html">
     
-      &lt;p&gt;&lt;img src=&quot;/images/posts/2016/11-15/z-index.jpg&quot; alt=&quot;z-index&quot;&gt;&lt;br&gt;图片来自：www.annyhe.com/zindex/#3&lt;/p&gt;
+      &lt;p&gt;&lt;amp-img layout=&quot;responsive&quot; width=&quot;900&quot; height=&quot;500&quot; src=&quot;/images/posts/2016/11-15/z-index.jpg&quot; alt=&quot;z-index&quot;&gt;&lt;br&gt;图片来自：www.annyhe.com/zindex/#3&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;code&gt;z-index&lt;/code&gt;属性指定了一个元素及其子元素的 z-order。 当元素之间重叠的时候，z-order 决定哪一个元素覆盖在其余元素的上方显示。 通常来说 z-index 较大的元素会覆盖较小的一个。  —MDN z-index&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -1046,7 +1045,7 @@
     <published>2016-11-13T08:33:04.000Z</published>
     <updated>2016-11-13T17:02:41.000Z</updated>
     
-    <content type="html"><![CDATA[<p><img src="/images/posts/2016/11-13/coder2leader.jpg" alt="coder2leader"></p>
+    <content type="html"><![CDATA[<p><amp-img layout="responsive" width="900" height="500" src="/images/posts/2016/11-13/coder2leader.jpg" alt="coder2leader"></amp-img></p>
 <p>公司内部TechDay分享，有<a href="http://weibo.com/spiritseekers" target="_blank" rel="external">@Terry</a>主讲，学习了很多，特此Mark一下。</p>
 <h3 id="困惑一：Code-vs-People"><a href="#困惑一：Code-vs-People" class="headerlink" title="困惑一：Code  vs  People"></a>困惑一：Code  vs  People</h3><blockquote>
 <p>机器/人</p>
@@ -1091,7 +1090,7 @@
     
     <summary type="html">
     
-      &lt;p&gt;&lt;img src=&quot;/images/posts/2016/11-13/coder2leader.jpg&quot; alt=&quot;coder2leader&quot;&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;amp-img layout=&quot;responsive&quot; width=&quot;900&quot; height=&quot;500&quot; src=&quot;/images/posts/2016/11-13/coder2leader.jpg&quot; alt=&quot;coder2leader&quot;&gt;&lt;/p&gt;
 &lt;p&gt;公司内部TechDay分享，有&lt;a href=&quot;http://weibo.com/spiritseekers&quot;&gt;@Terry&lt;/a&gt;主讲，学习了很多，特此Mark一下。&lt;/p&gt;
 &lt;h3 id=&quot;困惑一：Code-vs-People&quot;&gt;&lt;a href=&quot;#困惑一：Code-vs-People&quot; class=&quot;headerlink&quot; title=&quot;困惑一：Code  vs  People&quot;&gt;&lt;/a&gt;困惑一：Code  vs  People&lt;/h3&gt;&lt;blockquote&gt;
 &lt;p&gt;机器/人&lt;/p&gt;
@@ -1119,11 +1118,11 @@
     <updated>2016-11-13T15:43:26.000Z</updated>
     
     <content type="html"><![CDATA[<p>CSS盒模型描述了一个为文档树中的元素生成的并根据可视化格式模型进行布局的矩形框</p>
-<p>先上一张Banner.<br><img src="/images/posts/2016/06-02/css-box-model.jpg" alt="CSS box model"></p>
+<p>先上一张Banner.<br><amp-img layout="responsive" width="1288" height="632" src="/images/posts/2016/06-02/css-box-model.jpg" alt="CSS box model"></amp-img></p>
 <a id="more"></a>
 <p>Box-sizing这个CSS3中出现的新属性，以前只是用用，没有仔细的去学习一下（出来混总是要还的），最近不算忙就补习一下。</p>
 <p>整理了一个简单的脑图</p>
-<p><img src="/images/posts/2016/06-02/css-box-model-mind-map.png" alt="CSS box model mind map"></p>
+<p><amp-img layout="responsive" width="4066" height="2564" src="/images/posts/2016/06-02/css-box-model-mind-map.png" alt="CSS box model mind map"></amp-img></p>
 <p>一个简单的demo</p>
 <p></p><p data-height="265" data-theme-id="0" data-slug-hash="EyaqaV" data-default-tab="css,result" data-user="Keystion" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/Keystion/pen/EyaqaV/" target="_blank" rel="external">box-sizing</a> by Keystion (<a href="http://codepen.io/Keystion" target="_blank" rel="external">@Keystion</a>) on <a href="http://codepen.io" target="_blank" rel="external">CodePen</a>.</p><p></p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
@@ -1146,7 +1145,7 @@
     <summary type="html">
     
       &lt;p&gt;CSS盒模型描述了一个为文档树中的元素生成的并根据可视化格式模型进行布局的矩形框&lt;/p&gt;
-&lt;p&gt;先上一张Banner.&lt;br&gt;&lt;img src=&quot;/images/posts/2016/06-02/css-box-model.jpg&quot; alt=&quot;CSS box model&quot;&gt;&lt;/p&gt;
+&lt;p&gt;先上一张Banner.&lt;br&gt;&lt;amp-img layout=&quot;responsive&quot; width=&quot;1288&quot; height=&quot;632&quot; src=&quot;/images/posts/2016/06-02/css-box-model.jpg&quot; alt=&quot;CSS box model&quot;&gt;&lt;/p&gt;
     
     </summary>
     
@@ -1224,7 +1223,7 @@
 <blockquote>
 <p>天津塘沽外滩公园</p>
 </blockquote>
-<p><img src="/images/posts/2016/05-29/01.jpg" alt="天津塘沽外滩公园01"><br>为什么天津辣（那）么多漂亮的地方，偏偏放一张外滩公园的图片，因为在天津塘沽待的时间相对比天津其他地方久，所以就放一张到目前印象相对比较深刻的地方；</p>
+<p><amp-img layout="responsive" width="700" height="466" src="/images/posts/2016/05-29/01.jpg" alt="天津塘沽外滩公园01"><br>为什么天津辣（那）么多漂亮的地方，偏偏放一张外滩公园的图片，因为在天津塘沽待的时间相对比天津其他地方久，所以就放一张到目前印象相对比较深刻的地方；</amp-img></p>
 <a id="more"></a>
 <h3 id="天津"><a href="#天津" class="headerlink" title="天津"></a>天津</h3><p>记忆碎片：豆腐脑、豆浆、油条、煎饼果子、塘沽区、洋货市场、轻轨、天津方言、保税区、室内装修、学生、天津奥林匹克体育中心、第三大街、信义隆装饰有限公司、泰达</p>
 <p>初次结缘天津大概是初三毕业之后的暑假（2006年7、8月份），有两个月的空闲期；所以就出去打工（玩咯），正好这是亲戚有在承包奥体中心的基础建设；嗯，也就是这个时候接触到天津，在奥体中心度过了一个多月，之后就回去念高中了。</p>
@@ -1232,12 +1231,12 @@
 <p>当然也经历过奥运会了；</p>
 <p>感觉会写好多… 就先写这些吧。 </p>
 <hr>
-<h4 id="图片集咯"><a href="#图片集咯" class="headerlink" title="图片集咯"></a>图片集咯</h4><p><img src="/images/posts/2016/05-29/01.jpg" alt="标志建筑物"><br>↑ 外滩公园 标志建筑物</p>
-<p><img src="/images/posts/2016/05-29/02.jpg" alt="夜景"><br>↑ 外滩公园 夜景</p>
-<p><img src="/images/posts/2016/05-29/03.jpg" alt="船和调皮的顽童"><br>↑ 外滩公园 船和调皮的顽童</p>
-<p><img src="/images/posts/2016/05-29/04.jpg" alt="海门大桥"><br>↑ 外滩公园 海门大桥</p>
-<p><img src="/images/posts/2016/05-29/05.jpg" alt="东方公主"><br>↑ 外滩公园 东方公主</p>
-<p><img src="/images/posts/2016/05-29/06.jpg" alt="洋货市场"><br>↑ 洋货市场</p>
+<h4 id="图片集咯"><a href="#图片集咯" class="headerlink" title="图片集咯"></a>图片集咯</h4><p><amp-img layout="responsive" width="700" height="466" src="/images/posts/2016/05-29/01.jpg" alt="标志建筑物"><br>↑ 外滩公园 标志建筑物</amp-img></p>
+<p><amp-img layout="responsive" width="714" height="425" src="/images/posts/2016/05-29/02.jpg" alt="夜景"><br>↑ 外滩公园 夜景</amp-img></p>
+<p><amp-img layout="responsive" width="3236" height="2225" src="/images/posts/2016/05-29/03.jpg" alt="船和调皮的顽童"><br>↑ 外滩公园 船和调皮的顽童</amp-img></p>
+<p><amp-img layout="responsive" width="609" height="404" src="/images/posts/2016/05-29/04.jpg" alt="海门大桥"><br>↑ 外滩公园 海门大桥</amp-img></p>
+<p><amp-img layout="responsive" width="1000" height="726" src="/images/posts/2016/05-29/05.jpg" alt="东方公主"><br>↑ 外滩公园 东方公主</amp-img></p>
+<p><amp-img layout="responsive" width="3984" height="2656" src="/images/posts/2016/05-29/06.jpg" alt="洋货市场"><br>↑ 洋货市场</amp-img></p>
 <hr>
 <p>注：<br>① 装修装饰公司：北京信义隆装饰有限公司（天津分公司），位置天津滨海新区第三大街豪威大厦B座104；<br>② 韶山北里：天津市塘沽区杭州道与韶山路交口；</p>
 <p>图片资源：</p>
@@ -1253,7 +1252,7 @@
 &lt;blockquote&gt;
 &lt;p&gt;天津塘沽外滩公园&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&quot;/images/posts/2016/05-29/01.jpg&quot; alt=&quot;天津塘沽外滩公园01&quot;&gt;&lt;br&gt;为什么天津辣（那）么多漂亮的地方，偏偏放一张外滩公园的图片，因为在天津塘沽待的时间相对比天津其他地方久，所以就放一张到目前印象相对比较深刻的地方；&lt;/p&gt;
+&lt;p&gt;&lt;amp-img layout=&quot;responsive&quot; width=&quot;700&quot; height=&quot;466&quot; src=&quot;/images/posts/2016/05-29/01.jpg&quot; alt=&quot;天津塘沽外滩公园01&quot;&gt;&lt;br&gt;为什么天津辣（那）么多漂亮的地方，偏偏放一张外滩公园的图片，因为在天津塘沽待的时间相对比天津其他地方久，所以就放一张到目前印象相对比较深刻的地方；&lt;/p&gt;
     
     </summary>
     
@@ -1283,7 +1282,7 @@
 <p>我们的扯淡小分队又聚会了；聚会目的是什么呢，说白了就是扯扯大家近况。旭旭刚从日本团建回来，给我们带来一些【Made in Japan】的小点心，然后我们就愉快的决定周六聚聚😄（吃货联盟）。</p>
 </blockquote>
 <p>先来张美图：</p>
-<p><img src="/images/posts/2016/05-22/02.jpg" alt="小点心"></p>
+<p><amp-img layout="responsive" width="1920" height="1440" src="/images/posts/2016/05-22/02.jpg" alt="小点心"></amp-img></p>
 <a id="more"></a>
 <hr>
 <h3 id="简单的JavaScript异步之setTimeout（ES5）"><a href="#简单的JavaScript异步之setTimeout（ES5）" class="headerlink" title="简单的JavaScript异步之setTimeout（ES5）"></a>简单的JavaScript异步之setTimeout（ES5）</h3><p>猜想下会打印什么东西来；</p>
@@ -1294,11 +1293,11 @@
 <blockquote>
 <p>预览：</p>
 </blockquote>
-<p><img src="/images/posts/2016/05-22/setTimeout_1.gif" alt="setTimeout预览"></p>
+<p><amp-img layout="responsive" width="405" height="245" src="/images/posts/2016/05-22/setTimeout_1.gif" alt="setTimeout预览"></amp-img></p>
 <blockquote>
 <p>简单的解释：</p>
 </blockquote>
-<p><img src="/images/posts/2016/05-22/setTimeout_2.jpg" alt="setTimeout解释"></p>
+<p><amp-img layout="responsive" width="1920" height="2560" src="/images/posts/2016/05-22/setTimeout_2.jpg" alt="setTimeout解释"></amp-img></p>
 <p>嗯，就这些。</p>
 <h4 id="拓展-通过作用域来输出0-9"><a href="#拓展-通过作用域来输出0-9" class="headerlink" title="拓展 通过作用域来输出0-9"></a>拓展 通过作用域来输出0-9</h4><p>1） 可用ES5函数作用域；</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">for (var i = 0; i &lt; 10; i++) &#123;</div><div class="line">    (function (i) &#123; // 作用域</div><div class="line">        setTimeout(function() &#123;</div><div class="line">            console.log(i);</div><div class="line">        &#125;, 0);</div><div class="line">    &#125;)(i);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
@@ -1308,15 +1307,15 @@
 <h4 id="图片集咯"><a href="#图片集咯" class="headerlink" title="图片集咯"></a>图片集咯</h4><blockquote>
 <p>七年咖啡Desk</p>
 </blockquote>
-<p><img src="/images/posts/2016/05-22/01.jpg" alt="七年咖啡Desk"></p>
+<p><amp-img layout="responsive" width="1920" height="1440" src="/images/posts/2016/05-22/01.jpg" alt="七年咖啡Desk"></amp-img></p>
 <blockquote>
 <p>小点心 （巧克力&amp;&amp;杏仁饼干）</p>
 </blockquote>
-<p><img src="/images/posts/2016/05-22/02.jpg" alt="七年咖啡desk"></p>
+<p><amp-img layout="responsive" width="1920" height="1440" src="/images/posts/2016/05-22/02.jpg" alt="七年咖啡desk"></amp-img></p>
 <blockquote>
 <p>老北京前后涮羊肉的火锅</p>
 </blockquote>
-<p><img src="/images/posts/2016/05-22/03.jpg" alt="老北京前后涮羊肉的火锅"></p>
+<p><amp-img layout="responsive" width="1920" height="1920" src="/images/posts/2016/05-22/03.jpg" alt="老北京前后涮羊肉的火锅"></amp-img></p>
 <hr>
 <p>未完待续……</p>
 <hr>
@@ -1330,7 +1329,7 @@
 &lt;p&gt;我们的扯淡小分队又聚会了；聚会目的是什么呢，说白了就是扯扯大家近况。旭旭刚从日本团建回来，给我们带来一些【Made in Japan】的小点心，然后我们就愉快的决定周六聚聚😄（吃货联盟）。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;先来张美图：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/images/posts/2016/05-22/02.jpg&quot; alt=&quot;小点心&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;amp-img layout=&quot;responsive&quot; width=&quot;1920&quot; height=&quot;1440&quot; src=&quot;/images/posts/2016/05-22/02.jpg&quot; alt=&quot;小点心&quot;&gt;&lt;/p&gt;
     
     </summary>
     
